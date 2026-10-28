@@ -47,9 +47,8 @@
 | cpp | CWE-78 | 1 |
 | cpp | CWE-798 | 1 |
 
-## Arquivos
+## Arquivos (pós-limpeza GIGO 28/10/2026)
 
-- `pairs_c.py`, `pairs_cpp.py`, `pairs_bash.py` — fontes originais dos pares
-- `gen_realism.py` → `elon_realism_raw.jsonl`
-- gate: `scripts/gate_draft.py elon_realism_raw.jsonl --report gate-report.json`
-- `finalize.py` → `elon_realism_candidates.jsonl`, este REPORT, similaridades no gate-report
+- `elon_realism_candidates.jsonl` — lote aceito (36 pares) que entrou no buffer v0.4
+- `REPORT.md` — este relatório
+- Geradores (`pairs_*.py`, `gen_realism.py`, `finalize.py`) e `gate-report.json` intermediário foram removidos; o conteúdo final permanece neste JSONL.

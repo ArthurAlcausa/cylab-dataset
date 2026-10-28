@@ -13,7 +13,7 @@
 - O SHA-256 da v0.2 continua `aa0f9929…164cd3`, sem alteração.
 
 ## Rules endurecidas: 45 (todas com nome novo `cylab.<lang>.<slug>-gold`)
-As rules originais em `rules/` **não foram tocadas**. As `-gold` estão em `rules/` (o gate precisa delas lá) e em `contributions/.../rules/`. Gerador: `make_gold_rules.py`.
+As rules originais em `rules/` **não foram tocadas**. As `-gold` vivem em `rules-gold/` (canônico no repo). Cópia local em `contributions/.../rules/` e o gerador `make_gold_rules.py` foram removidos na limpeza GIGO de 28/10/2026 (eram duplicatas bit-a-bit de `rules-gold/`).
 - **C (15) e C++ (16):** 30 viraram patterns estruturados, com metavariáveis, `pattern-not` para literal (printf/fprintf/syslog), `metavariable-regex` (modo 0777/0666, campo len/size, algoritmos fracos do OpenSSL), `pattern-inside`/sequência para TOCTOU access→open e `std::` explícito. Duas continuam em regex ancorada em declaração: cpp.hardcoded-key-literal, porque o parser C++ do Opengrep 1.32 não casa `static const std::string X = "..."`, e cpp.dangling-cstr. Em c.scanf-unbounded-s, o padrão estrutural `scanf(...)` é intersectado com uma regex sobre o formato `%s`.
 - **Bash (14):** o suporte estrutural do Opengrep para bash é fraco, então essas rules usam regex restrita a linhas não comentadas (`^(?!\s*#)`, sem `#` antes do match) e com word boundaries. Comentário não dispara mais.
 
@@ -23,7 +23,7 @@ Não usamos `mode: taint`. No Opengrep 1.32, taint não produziu hits em C/C++ n
 ## Proposta de holdout/split global (não aplicada)
 Script: `holdout_split_proposal.py`. Os pares são agrupados por estrato (lang, rule sem `-gold`) e ordenados por sha256("cylab-holdout-v1:"+id). Vão para holdout floor(15%) de cada estrato, com mínimo de 1 quando o estrato tem 3 ou mais pares; estratos com 2 ou menos ficam todos em train. A ordem é determinística e estável a inclusões.
 - Global (`data/cylab-commercial-v0.3-gold-candidate.jsonl`, 722 pares): 134 holdout, 176 estratos → `holdout_split_proposal_global.json`
-- Fatia Elon (182 pares): 33 holdout → `holdout_split_proposal_elon.json`. O `elon_gold.jsonl` mantém o split da v0.2.
+- Fatia Elon (182 pares): 33 holdout (proposta local; JSON intermediário removido na limpeza GIGO). O `elon_gold.jsonl` mantém o split da v0.2.
 
-## Artefatos
-`elon_gold.jsonl`, `elon_gold_relaxed.jsonl` (vazio), `rules/*.yaml` (45), `gate-report.json`, `gold_near_dup_report.json` (thr 0.85), `gold_near_dup_report_relaxed090.json`, `make_gold_rules.py`, `holdout_split_proposal.py` e os JSONs gerados por ele, `data/` (staging).
+## Artefatos (pós-limpeza GIGO 28/10/2026)
+`elon_gold.jsonl`, `gold_near_dup_report.json` (thr 0.85), `holdout_split_proposal.py`, `holdout_split_proposal_global.json`, `REPORT.md`, `realism/elon_realism_candidates.jsonl` + `realism/REPORT.md`. Staging/relaxed/generators/cópia de rules foram removidos.
