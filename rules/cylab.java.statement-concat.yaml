@@ -1,0 +1,19 @@
+rules:
+  - id: cylab.java.statement-concat
+    message: "SQL montado com dado externo e executado via Statement (CWE-89)"
+    severity: ERROR
+    languages: [java]
+    mode: taint
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: markinho-gold
+    pattern-sources:
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., String $S, ...) { ... }
+          - pattern: $S
+    pattern-sinks:
+      - pattern: $ST.executeQuery($Q)
+      - pattern: $ST.executeUpdate($Q)
+      - pattern: $ST.execute($Q)

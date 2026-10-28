@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.bash.source-remote-script
+    message: "O script carrega funções/config de @T@ executando código remoto via source <(curl ...) sem verificação de integridade (CWE-494)"
+    severity: ERROR
+    languages: [bash]
+    metadata:
+      cwe: "CWE-494"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(source|\.)\s+<\(\s*(curl|wget)'

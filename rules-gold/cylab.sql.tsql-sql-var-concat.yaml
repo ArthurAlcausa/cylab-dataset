@@ -1,0 +1,16 @@
+rules:
+- id: cylab.sql.tsql-sql-var-concat
+  message: 'A procedure de @T@ monta @sql concatenando o parâmetro e o executa, mesmo
+    via sp_executesql, permitindo injeção (CWE-89) [gold: regex-tightened; opengrep
+    sem taint p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-89
+    source: sintetico-cylab
+    author: bill-csharp-sql
+    gold: regex-tightened-v1
+  patterns:
+  - pattern-regex: (?i)SET\s+@\w+\s*=\s*N?'(?:[^']|'')*'\s*\+\s*(?!QUOTENAME)@\w+
+  - pattern-not-regex: (?m)^\s*--.*$

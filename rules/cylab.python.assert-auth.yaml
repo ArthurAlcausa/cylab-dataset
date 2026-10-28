@@ -1,0 +1,8 @@
+rules:
+  - id: cylab.python.assert-auth
+    message: "assert para autorizacao (CWE-617)"
+    severity: ERROR
+    languages: [python]
+    metadata: {cwe: "CWE-617", source: sintetico-cylab}
+    pattern: |
+      assert $USER.is_admin

@@ -1,0 +1,14 @@
+rules:
+- id: cylab.cpp.ifstream-concat-gold
+  languages:
+  - cpp
+  severity: ERROR
+  message: O arquivo de @S@ é aberto concatenando a base com nome externo, o que permite
+    ../ e leitura fora do diretório (CWE-22)
+  metadata:
+    cwe: CWE-22
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-either:
+  - pattern: std::ifstream $F($A + $B);
+  - pattern: std::ifstream $F($A + $B, ...);

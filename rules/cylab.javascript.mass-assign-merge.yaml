@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.mass-assign-merge
+    message: "O corpo da requisição é mesclado inteiro no objeto de @S@, permitindo sobrescrever campos privilegiados e até __proto__ (CWE-915)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-915"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(_\.merge|_\.defaultsDeep|Object\.assign|_\.extend)\(\s*\w+(\.\w+)*\s*,\s*req\.body'

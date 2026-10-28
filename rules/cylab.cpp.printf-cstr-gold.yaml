@@ -1,0 +1,19 @@
+rules:
+- id: cylab.cpp.printf-cstr-gold
+  languages:
+  - cpp
+  severity: ERROR
+  message: A mensagem de @S@ vinda de fora é usada como string de formato em printf,
+    permitindo leitura/escrita de memória com %x/% (CWE-134)
+  metadata:
+    cwe: CWE-134
+    source: sintetico-cylab
+    author: bill-scale
+  patterns:
+  - pattern-either:
+    - pattern: printf($X)
+    - pattern: fprintf($F, $X)
+    - pattern: std::printf($X)
+  - pattern-not: printf("...")
+  - pattern-not: fprintf($F, "...")
+  - pattern-not: std::printf("...")

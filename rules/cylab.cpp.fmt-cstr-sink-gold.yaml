@@ -1,0 +1,15 @@
+rules:
+- id: cylab.cpp.fmt-cstr-sink-gold
+  languages:
+  - cpp
+  severity: ERROR
+  message: A mensagem de @S@ (std::string externa) é usada como string de formato
+    em snprintf/syslog, permitindo %n/%x (CWE-134)
+  metadata:
+    cwe: CWE-134
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-either:
+  - pattern: snprintf($B, $N, $S.c_str())
+  - pattern: std::snprintf($B, $N, $S.c_str())
+  - pattern: syslog($P, $S.c_str())

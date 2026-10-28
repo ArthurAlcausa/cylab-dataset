@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.printf-nonliteral
+    message: "O texto de @S@ controlado externamente é passado como string de formato; especificadores como %n ou %x permitem ler/escr (CWE-134)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-134"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(printf\(\s*[a-z_]\w*(->\w+|\[\w*\])?\s*\)|fprintf\(\s*\w+\s*,\s*[a-z_]\w*(->\w+)?\s*\)|syslog\(\s*\w+\s*,\s*[a-z_]\w*(->\w+)?\s*\))'

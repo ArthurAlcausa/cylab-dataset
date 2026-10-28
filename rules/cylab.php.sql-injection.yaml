@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.php.sql-injection
+    message: "mysqli_query com variavel superglobal (CWE-89)"
+    severity: ERROR
+    languages: [php]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: mysqli_query($C, "..." . $_GET[$K] . "...")
+      - pattern: mysqli_query($C, "..." . $_POST[$K] . "...")

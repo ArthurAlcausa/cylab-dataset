@@ -1,0 +1,1586 @@
+[
+ {
+  "rule": "cylab.sql.hardcoded-db-password",
+  "cwe": "CWE-798",
+  "lang": "sql",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.download-pipe-shell",
+  "cwe": "CWE-494",
+  "lang": "bash",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.weak-hash-createhash",
+  "cwe": "CWE-328",
+  "lang": "javascript",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.predictable-tmp",
+  "cwe": "CWE-377",
+  "lang": "bash",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.eval-variable",
+  "cwe": "CWE-78",
+  "lang": "bash",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.cors-wildcard-credentials",
+  "cwe": "CWE-942",
+  "lang": "typescript",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.malloc-mul-overflow",
+  "cwe": "CWE-190",
+  "lang": "c",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.chmod-world-writable",
+  "cwe": "CWE-732",
+  "lang": "bash",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.system-popen",
+  "cwe": "CWE-78",
+  "lang": "c",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.std-system",
+  "cwe": "CWE-78",
+  "lang": "cpp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.rand-token",
+  "cwe": "CWE-338",
+  "lang": "cpp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.hardcoded-secret-var",
+  "cwe": "CWE-798",
+  "lang": "bash",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.path-combine-file",
+  "cwe": "CWE-22",
+  "lang": "csharp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.ifstream-concat",
+  "cwe": "CWE-22",
+  "lang": "cpp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.strcpy-strcat",
+  "cwe": "CWE-120",
+  "lang": "c",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.math-random-token",
+  "cwe": "CWE-338",
+  "lang": "typescript",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.binaryformatter",
+  "cwe": "CWE-502",
+  "lang": "csharp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.sqlcommand-concat",
+  "cwe": "CWE-89",
+  "lang": "csharp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.process-start-shell",
+  "cwe": "CWE-78",
+  "lang": "csharp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.hardcoded-credential",
+  "cwe": "CWE-798",
+  "lang": "typescript",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.gets-call",
+  "cwe": "CWE-242",
+  "lang": "c",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.tsql-exec-concat",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.printf-cstr",
+  "cwe": "CWE-134",
+  "lang": "cpp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.grant-all-public",
+  "cwe": "CWE-269",
+  "lang": "sql",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.java.messagedigest-weak",
+  "cwe": "CWE-328",
+  "lang": "java",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.weak-hash-create",
+  "cwe": "CWE-328",
+  "lang": "csharp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.printf-nonliteral",
+  "cwe": "CWE-134",
+  "lang": "c",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.cstr-copy-unbounded",
+  "cwe": "CWE-120",
+  "lang": "cpp",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.hardcoded-secret",
+  "cwe": "CWE-798",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.java.trust-all-certs",
+  "cwe": "CWE-295",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.cookie-insecure-flags",
+  "cwe": "CWE-614",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.password-on-cmdline",
+  "cwe": "CWE-214",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.scanf-unbounded-s",
+  "cwe": "CWE-120",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.connstring-password",
+  "cwe": "CWE-798",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.source-remote-script",
+  "cwe": "CWE-494",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.openssl-weak-algo",
+  "cwe": "CWE-327",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.java.cipher-weak-mode",
+  "cwe": "CWE-327",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.memcpy-string-size",
+  "cwe": "CWE-120",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.php.weak-random-token",
+  "cwe": "CWE-330",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.new-array-mul",
+  "cwe": "CWE-190",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.sudoers-nopasswd-all",
+  "cwe": "CWE-250",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.link-mapping-password",
+  "cwe": "CWE-798",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.plaintext-password-column",
+  "cwe": "CWE-256",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.tls-insecure-flag",
+  "cwe": "CWE-295",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.sprintf-unbounded",
+  "cwe": "CWE-120",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.weak-cipher-mode",
+  "cwe": "CWE-327",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.system-random-token",
+  "cwe": "CWE-338",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.hardcoded-config-secret",
+  "cwe": "CWE-798",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.php.weak-password-hash",
+  "cwe": "CWE-328",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.access-then-open",
+  "cwe": "CWE-367",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.tls-verify-off",
+  "cwe": "CWE-295",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.ofstream-concat-path",
+  "cwe": "CWE-22",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.jwt-decode-no-verify",
+  "cwe": "CWE-347",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.sh-c-interpolated",
+  "cwe": "CWE-78",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.fmt-cstr-sink",
+  "cwe": "CWE-134",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.security-definer-no-path",
+  "cwe": "CWE-426",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.html-content-interp",
+  "cwe": "CWE-79",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.dangling-cstr",
+  "cwe": "CWE-416",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.secret-echo-to-file",
+  "cwe": "CWE-312",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.weak-symmetric",
+  "cwe": "CWE-327",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.insecure-tempname",
+  "cwe": "CWE-377",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.hardcoded-key-literal",
+  "cwe": "CWE-798",
+  "lang": "cpp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.httpclient-user-url",
+  "cwe": "CWE-918",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.xp-cmdshell",
+  "cwe": "CWE-78",
+  "lang": "sql",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.libc-rand-key",
+  "cwe": "CWE-338",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.memcpy-len-from-input",
+  "cwe": "CWE-787",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.unquoted-rm-var",
+  "cwe": "CWE-88",
+  "lang": "bash",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.world-writable-mode",
+  "cwe": "CWE-732",
+  "lang": "c",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.java.insecure-random",
+  "cwe": "CWE-330",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.hardcoded-secret",
+  "cwe": "CWE-798",
+  "lang": "javascript",
+  "pairs": 12,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.string-concat",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 8,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.weak-hash",
+  "cwe": "CWE-328",
+  "lang": "python",
+  "pairs": 5,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.sql-injection",
+  "cwe": "CWE-89",
+  "lang": "csharp",
+  "pairs": 5,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.insecure-deserialization",
+  "cwe": "CWE-502",
+  "lang": "csharp",
+  "pairs": 5,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.eval-injection",
+  "cwe": "CWE-78",
+  "lang": "bash",
+  "pairs": 5,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.bash.curl-pipe-shell",
+  "cwe": "CWE-78",
+  "lang": "bash",
+  "pairs": 5,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.weak-hash",
+  "cwe": "CWE-328",
+  "lang": "javascript",
+  "pairs": 4,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.java.weak-hash",
+  "cwe": "CWE-328",
+  "lang": "java",
+  "pairs": 4,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.sql.execute-immediate",
+  "cwe": "CWE-89",
+  "lang": "sql",
+  "pairs": 4,
+  "current_mode": "regex",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.strcpy",
+  "cwe": "CWE-120",
+  "lang": "cpp",
+  "pairs": 4,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.gets",
+  "cwe": "CWE-120",
+  "lang": "cpp",
+  "pairs": 4,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.sprintf",
+  "cwe": "CWE-120",
+  "lang": "cpp",
+  "pairs": 4,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.cpp.system",
+  "cwe": "CWE-78",
+  "lang": "cpp",
+  "pairs": 4,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.insecure-randomness",
+  "cwe": "CWE-338",
+  "lang": "typescript",
+  "pairs": 3,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.flask-debug",
+  "cwe": "CWE-489",
+  "lang": "python",
+  "pairs": 2,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.cors-star",
+  "cwe": "CWE-942",
+  "lang": "javascript",
+  "pairs": 2,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.buffer-overflow-strcpy",
+  "cwe": "CWE-120",
+  "lang": "c",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.format-string",
+  "cwe": "CWE-134",
+  "lang": "c",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.c.command-injection",
+  "cwe": "CWE-78",
+  "lang": "c",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.md5-password",
+  "cwe": "CWE-328",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.assert-auth",
+  "cwe": "CWE-617",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "stay-text-or-structural",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.xss-dangerously-set",
+  "cwe": "CWE-79",
+  "lang": "typescript",
+  "pairs": 12,
+  "current_mode": "regex",
+  "classification": "taint-attempted-blocked",
+  "note": "JSX em arquivo .ts: gate grava .ts, parser TS nao aceita JSX; taint candidate nao casa"
+ },
+ {
+  "rule": "cylab.java.xxe-documentbuilder",
+  "cwe": "CWE-611",
+  "lang": "java",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.php.header-location-user",
+  "cwe": "CWE-601",
+  "lang": "php",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.redirect-user",
+  "cwe": "CWE-601",
+  "lang": "javascript",
+  "pairs": 20,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.stdlib-xml-parse",
+  "cwe": "CWE-611",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.eval-exec-input",
+  "cwe": "CWE-95",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.mvc-redirect-return",
+  "cwe": "CWE-601",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.client-location-redirect",
+  "cwe": "CWE-601",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.php.eval-user-code",
+  "cwe": "CWE-95",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.regexp-user-input",
+  "cwe": "CWE-1333",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.java.ldap-filter-concat",
+  "cwe": "CWE-90",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.mass-assign-merge",
+  "cwe": "CWE-915",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.dynamic-code-function",
+  "cwe": "CWE-94",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.php.libxml-noent",
+  "cwe": "CWE-611",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.csharp.xml-dtd-parse",
+  "cwe": "CWE-611",
+  "lang": "csharp",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.log-sensitive",
+  "cwe": "CWE-532",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "regex",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.merge-proto",
+  "cwe": "CWE-1321",
+  "lang": "javascript",
+  "pairs": 2,
+  "current_mode": "structural",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.typescript.open-redirect",
+  "cwe": "CWE-601",
+  "lang": "typescript",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.javascript.eval-user",
+  "cwe": "CWE-95",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.xml-xxe",
+  "cwe": "CWE-611",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "structural",
+  "classification": "taint-feasible-next-wave",
+  "note": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+ },
+ {
+  "rule": "cylab.python.sql-injection",
+  "cwe": "CWE-89",
+  "lang": "python",
+  "pairs": 46,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.statement-concat",
+  "cwe": "CWE-89",
+  "lang": "java",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.objectinputstream",
+  "cwe": "CWE-502",
+  "lang": "java",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.innerhtml-assign",
+  "cwe": "CWE-79",
+  "lang": "typescript",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.echo-superglobal",
+  "cwe": "CWE-79",
+  "lang": "php",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.unsafe-yaml-pickle",
+  "cwe": "CWE-502",
+  "lang": "python",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.exec-template",
+  "cwe": "CWE-78",
+  "lang": "javascript",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.sqli-fstring-execute",
+  "cwe": "CWE-89",
+  "lang": "python",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.query-interpolated",
+  "cwe": "CWE-89",
+  "lang": "php",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.runtime-exec-concat",
+  "cwe": "CWE-78",
+  "lang": "java",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.sql-template-literal",
+  "cwe": "CWE-89",
+  "lang": "javascript",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.sql-template-query",
+  "cwe": "CWE-89",
+  "lang": "typescript",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.res-send-reflect",
+  "cwe": "CWE-79",
+  "lang": "javascript",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.requests-from-request",
+  "cwe": "CWE-918",
+  "lang": "python",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.file-superglobal",
+  "cwe": "CWE-22",
+  "lang": "php",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.open-join-user",
+  "cwe": "CWE-22",
+  "lang": "python",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.subprocess-shell-true",
+  "cwe": "CWE-78",
+  "lang": "python",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.shell-concat",
+  "cwe": "CWE-78",
+  "lang": "php",
+  "pairs": 20,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.xss-innerhtml",
+  "cwe": "CWE-79",
+  "lang": "javascript",
+  "pairs": 16,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.command-injection",
+  "cwe": "CWE-78",
+  "lang": "python",
+  "pairs": 15,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.sql-injection",
+  "cwe": "CWE-89",
+  "lang": "javascript",
+  "pairs": 14,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.url-from-parameter",
+  "cwe": "CWE-918",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.template-string-user",
+  "cwe": "CWE-79",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.laravel-raw-interp",
+  "cwe": "CWE-89",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.tar-zip-extractall",
+  "cwe": "CWE-22",
+  "lang": "python",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.express-file-param",
+  "cwe": "CWE-22",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.dom-sink-html",
+  "cwe": "CWE-79",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.http-client-user-url",
+  "cwe": "CWE-918",
+  "lang": "javascript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.readfile-template-path",
+  "cwe": "CWE-22",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.orm-raw-unsafe",
+  "cwe": "CWE-89",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.fetch-user-url",
+  "cwe": "CWE-918",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.unsafe-unserialize",
+  "cwe": "CWE-502",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.file-from-parameter",
+  "cwe": "CWE-22",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.angular-bypass-sanitizer",
+  "cwe": "CWE-79",
+  "lang": "typescript",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.servlet-writer-param",
+  "cwe": "CWE-79",
+  "lang": "java",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.unserialize-input",
+  "cwe": "CWE-502",
+  "lang": "php",
+  "pairs": 13,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.command-injection",
+  "cwe": "CWE-78",
+  "lang": "javascript",
+  "pairs": 11,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.sql-injection",
+  "cwe": "CWE-89",
+  "lang": "java",
+  "pairs": 8,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.command-injection",
+  "cwe": "CWE-78",
+  "lang": "java",
+  "pairs": 7,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.sql-injection",
+  "cwe": "CWE-89",
+  "lang": "php",
+  "pairs": 7,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.xss-echo",
+  "cwe": "CWE-79",
+  "lang": "php",
+  "pairs": 6,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.insecure-deserialization",
+  "cwe": "CWE-502",
+  "lang": "python",
+  "pairs": 5,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.path-traversal",
+  "cwe": "CWE-22",
+  "lang": "java",
+  "pairs": 5,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.command-injection",
+  "cwe": "CWE-78",
+  "lang": "php",
+  "pairs": 5,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.php.insecure-deserialization",
+  "cwe": "CWE-502",
+  "lang": "php",
+  "pairs": 5,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.flask-unsafe-html",
+  "cwe": "CWE-79",
+  "lang": "python",
+  "pairs": 2,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.path-traversal",
+  "cwe": "CWE-22",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.ssrf",
+  "cwe": "CWE-918",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.path-traversal",
+  "cwe": "CWE-22",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.ssrf",
+  "cwe": "CWE-918",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.typescript.sql-injection",
+  "cwe": "CWE-89",
+  "lang": "typescript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.java.insecure-deserialization",
+  "cwe": "CWE-502",
+  "lang": "java",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.os-system",
+  "cwe": "CWE-78",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.path-join-user",
+  "cwe": "CWE-22",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.pickle-loads",
+  "cwe": "CWE-502",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.python.requests-url-user",
+  "cwe": "CWE-918",
+  "lang": "python",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.sql-concat",
+  "cwe": "CWE-89",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.child-exec",
+  "cwe": "CWE-78",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.path-join-user",
+  "cwe": "CWE-22",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ },
+ {
+  "rule": "cylab.javascript.innerhtml-user",
+  "cwe": "CWE-79",
+  "lang": "javascript",
+  "pairs": 1,
+  "current_mode": "taint",
+  "classification": "upgraded-taint",
+  "note": ""
+ }
+]

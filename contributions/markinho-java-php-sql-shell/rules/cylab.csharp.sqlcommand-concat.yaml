@@ -1,0 +1,18 @@
+rules:
+  - id: cylab.csharp.sqlcommand-concat
+    message: "SqlCommand montado com concatenacao/interpolacao (CWE-89)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: markinho-gold
+    pattern-sources:
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., string $S, ...) { ... }
+          - pattern: $S
+    pattern-sinks:
+      - pattern: new SqlCommand($Q, ...)
+      - pattern: new SqlCommand($Q)

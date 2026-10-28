@@ -1,0 +1,12 @@
+rules:
+  - id: cylab.python.insecure-deserialization
+    message: "Desserializacao insegura de dados nao confiaveis (CWE-502)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: pickle.loads(...)
+      - pattern: pickle.load(...)
+      - pattern: yaml.load(...)

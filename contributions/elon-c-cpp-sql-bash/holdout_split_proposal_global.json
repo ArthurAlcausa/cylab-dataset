@@ -1,0 +1,1842 @@
+{
+ "input": "data/cylab-commercial-v0.3-gold-candidate.jsonl",
+ "salt": "cylab-holdout-v1:",
+ "pct": 0.15,
+ "method": [
+  "Estrato = (lang, opengrep_rule sem sufixo -gold). Dentro do estrato ordena por sha256(SALT+id) e",
+  "manda floor(n*PCT) para holdout, com minimo 1 se n>=3 (n<=2 -> tudo train). Deterministico e",
+  "estavel: adicionar pares novos nao move pares existentes, exceto na borda do estrato."
+ ],
+ "total": 722,
+ "holdout": 134,
+ "by_lang": {
+  "python": {
+   "train": 77,
+   "holdout": 17
+  },
+  "javascript": {
+   "holdout": 16,
+   "train": 98
+  },
+  "typescript": {
+   "train": 51,
+   "holdout": 14
+  },
+  "java": {
+   "train": 46,
+   "holdout": 13
+  },
+  "php": {
+   "train": 44,
+   "holdout": 15
+  },
+  "csharp": {
+   "train": 40,
+   "holdout": 12
+  },
+  "c": {
+   "train": 41,
+   "holdout": 10
+  },
+  "bash": {
+   "train": 40,
+   "holdout": 13
+  },
+  "sql": {
+   "train": 91,
+   "holdout": 14
+  },
+  "cpp": {
+   "train": 60,
+   "holdout": 10
+  }
+ },
+ "diff_vs_current_split": {
+  "train->train": 530,
+  "holdout->train": 58,
+  "train->holdout": 120,
+  "holdout->holdout": 14
+ },
+ "strata": [
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.chmod-world-writable",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.curl-pipe-shell",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.download-pipe-shell",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.eval-injection",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.eval-variable",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.hardcoded-secret-var",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.password-on-cmdline",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.predictable-tmp",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.secret-echo-to-file",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.sh-c-interpolated",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.source-remote-script",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.sudoers-nopasswd-all",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.tls-insecure-flag",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "bash",
+   "rule": "cylab.bash.unquoted-rm-var",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.access-then-open",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.buffer-overflow-strcpy",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.command-injection",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.format-string",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.gets-call",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.insecure-tempname",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.libc-rand-key",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.malloc-mul-overflow",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.memcpy-len-from-input",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.printf-nonliteral",
+   "n": 6,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.scanf-unbounded-s",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.sprintf-unbounded",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.strcpy-strcat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.system-popen",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "c",
+   "rule": "cylab.c.world-writable-mode",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.cstr-copy-unbounded",
+   "n": 14,
+   "holdout": 2
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.dangling-cstr",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.fmt-cstr-sink",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.gets",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.hardcoded-key-literal",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.ifstream-concat",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.memcpy-string-size",
+   "n": 13,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.new-array-mul",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.ofstream-concat-path",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.openssl-weak-algo",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.printf-cstr",
+   "n": 6,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.rand-token",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.sprintf",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.std-system",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.strcpy",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "cpp",
+   "rule": "cylab.cpp.system",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.binaryformatter",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.connstring-password",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.html-content-interp",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.httpclient-user-url",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.insecure-deserialization",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.mvc-redirect-return",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.path-combine-file",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.process-start-shell",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.sql-injection",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.sqlcommand-concat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.system-random-token",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.weak-hash-create",
+   "n": 6,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.weak-symmetric",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "csharp",
+   "rule": "cylab.csharp.xml-dtd-parse",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.cipher-weak-mode",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.command-injection",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.file-from-parameter",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.insecure-deserialization",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.insecure-random",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.ldap-filter-concat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.messagedigest-weak",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.objectinputstream",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.path-traversal",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.runtime-exec-concat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.servlet-writer-param",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.sql-injection",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.statement-concat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.trust-all-certs",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.url-from-parameter",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.weak-hash",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "java",
+   "rule": "cylab.java.xxe-documentbuilder",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.child-exec",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.command-injection",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.cors-star",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.dom-sink-html",
+   "n": 8,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.dynamic-code-function",
+   "n": 8,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.eval-user",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.exec-template",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.express-file-param",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.hardcoded-config-secret",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.hardcoded-secret",
+   "n": 12,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.http-client-user-url",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.innerhtml-user",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.mass-assign-merge",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.merge-proto",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.path-join-user",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.path-traversal",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.redirect-user",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.regexp-user-input",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.res-send-reflect",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.sql-concat",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.sql-injection",
+   "n": 6,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.sql-template-literal",
+   "n": 12,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.ssrf",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.weak-hash",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.weak-hash-createhash",
+   "n": 12,
+   "holdout": 1
+  },
+  {
+   "lang": "javascript",
+   "rule": "cylab.javascript.xss-innerhtml",
+   "n": 6,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.command-injection",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.echo-superglobal",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.eval-user-code",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.fetch-user-url",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.file-superglobal",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.header-location-user",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.insecure-deserialization",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.laravel-raw-interp",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.libxml-noent",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.query-interpolated",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.shell-concat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.sql-injection",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.unserialize-input",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.weak-password-hash",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.weak-random-token",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "php",
+   "rule": "cylab.php.xss-echo",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.assert-auth",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.command-injection",
+   "n": 7,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.eval-exec-input",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.flask-debug",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.flask-unsafe-html",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.hardcoded-secret",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.insecure-deserialization",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.log-sensitive",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.md5-password",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.open-join-user",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.os-system",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.path-join-user",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.path-traversal",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.pickle-loads",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.requests-from-request",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.requests-url-user",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.sql-injection",
+   "n": 8,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.sqli-fstring-execute",
+   "n": 6,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.ssrf",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.stdlib-xml-parse",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.subprocess-shell-true",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.tar-zip-extractall",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.template-string-user",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.tls-verify-off",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.unsafe-yaml-pickle",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.weak-cipher-mode",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.weak-hash",
+   "n": 5,
+   "holdout": 1
+  },
+  {
+   "lang": "python",
+   "rule": "cylab.python.xml-xxe",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.execute-immediate",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.grant-all-public",
+   "n": 12,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.hardcoded-db-password",
+   "n": 12,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.link-mapping-password",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.mysql-prepare-concat",
+   "n": 2,
+   "holdout": 0
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.oracle-execute-immediate",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.pg-format-unsafe-s",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.plaintext-password-column",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.plpgsql-execute-concat",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.security-definer-no-path",
+   "n": 13,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.string-concat",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.tsql-exec-concat",
+   "n": 20,
+   "holdout": 3
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.tsql-sql-var-concat",
+   "n": 13,
+   "holdout": 1
+  },
+  {
+   "lang": "sql",
+   "rule": "cylab.sql.xp-cmdshell",
+   "n": 8,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.angular-bypass-sanitizer",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.client-location-redirect",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.cookie-insecure-flags",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.cors-wildcard-credentials",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.hardcoded-credential",
+   "n": 12,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.innerhtml-assign",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.insecure-randomness",
+   "n": 3,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.jwt-decode-no-verify",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.math-random-token",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.open-redirect",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.orm-raw-unsafe",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.readfile-template-path",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.sql-injection",
+   "n": 1,
+   "holdout": 0
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.sql-template-query",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.unsafe-unserialize",
+   "n": 4,
+   "holdout": 1
+  },
+  {
+   "lang": "typescript",
+   "rule": "cylab.typescript.xss-dangerously-set",
+   "n": 4,
+   "holdout": 1
+  }
+ ],
+ "assignment": {
+  "cylab-bill-bash-732-0963": "holdout",
+  "cylab-bill-bash-732-0968": "train",
+  "cylab-bill-bash-732-0972": "train",
+  "cylab-bill-bash-732-0961": "train",
+  "cylab-v0.1-0038": "holdout",
+  "cylab-mk-0012": "train",
+  "cylab-mk-0904": "train",
+  "cylab-bill-bash-494-0934": "holdout",
+  "cylab-bill-bash-494-0939": "train",
+  "cylab-bill-bash-494-0928": "train",
+  "cylab-bill-bash-494-0921": "train",
+  "cylab-mk-0901": "holdout",
+  "cylab-v0.1-0037": "train",
+  "cylab-mk-0011": "train",
+  "cylab-bill-bash-78-0912": "holdout",
+  "cylab-bill-bash-78-0911": "train",
+  "cylab-bill-bash-78-0908": "train",
+  "cylab-bill-bash-78-0919": "train",
+  "cylab-bill-bash-798-0997": "holdout",
+  "cylab-bill-bash-798-0992": "train",
+  "cylab-bill-bash-798-0995": "train",
+  "cylab-bill-bash-798-1000": "train",
+  "cylab-bill-bash-214-1854": "holdout",
+  "cylab-bill-bash-214-1853": "train",
+  "cylab-bill-bash-214-1858": "train",
+  "cylab-bill-bash-214-1851": "train",
+  "cylab-bill-bash-377-0944": "holdout",
+  "cylab-bill-bash-377-0947": "train",
+  "cylab-bill-bash-377-0959": "train",
+  "cylab-bill-bash-377-0948": "train",
+  "cylab-bill-bash-312-1896": "holdout",
+  "cylab-bill-bash-312-1891": "train",
+  "cylab-bill-bash-312-1894": "train",
+  "cylab-bill-bash-312-1889": "train",
+  "cylab-bill-bash-78-1867": "holdout",
+  "cylab-bill-bash-78-1862": "train",
+  "cylab-bill-bash-78-1869": "train",
+  "cylab-bill-bash-78-1859": "train",
+  "cylab-bill-bash-78-1864": "train",
+  "cylab-bill-bash-494-1903": "holdout",
+  "cylab-bill-bash-494-1906": "train",
+  "cylab-bill-bash-494-1899": "train",
+  "cylab-bill-bash-494-1898": "train",
+  "cylab-bill-bash-250-1875": "train",
+  "cylab-bill-bash-250-1873": "train",
+  "cylab-bill-bash-295-1836": "holdout",
+  "cylab-bill-bash-295-1844": "train",
+  "cylab-bill-bash-295-1837": "train",
+  "cylab-bill-bash-295-1833": "train",
+  "cylab-bill-bash-88-1820": "holdout",
+  "cylab-bill-bash-88-1825": "train",
+  "cylab-bill-bash-88-1829": "train",
+  "cylab-bill-bash-88-1828": "train",
+  "cylab-bill-c-367-1575": "train",
+  "cylab-bill-c-367-1579": "train",
+  "cylab-v0.1-0034": "train",
+  "cylab-v0.1-0036": "train",
+  "cylab-v0.1-0035": "train",
+  "cylab-bill-c-242-0672": "holdout",
+  "cylab-bill-c-242-0664": "train",
+  "cylab-bill-c-242-0662": "train",
+  "cylab-bill-c-242-0680": "train",
+  "cylab-bill-c-377-1588": "holdout",
+  "cylab-bill-c-377-1595": "train",
+  "cylab-bill-c-377-1596": "train",
+  "cylab-bill-c-377-1593": "train",
+  "cylab-bill-c-338-1608": "holdout",
+  "cylab-bill-c-338-1609": "train",
+  "cylab-bill-c-338-1600": "train",
+  "cylab-bill-c-338-1601": "train",
+  "cylab-bill-c-190-0686": "holdout",
+  "cylab-bill-c-190-0689": "train",
+  "cylab-bill-c-190-0682": "train",
+  "cylab-bill-c-190-0700": "train",
+  "cylab-bill-c-787-1620": "train",
+  "cylab-bill-c-787-1614": "train",
+  "cylab-bill-c-134-0638": "holdout",
+  "cylab-bill-c-134-0621": "train",
+  "cylab-bill-c-134-0623": "train",
+  "cylab-bill-c-134-0622": "train",
+  "cylab-bill-c-134-0639": "train",
+  "cylab-bill-c-134-0637": "train",
+  "cylab-bill-c-120-1566": "holdout",
+  "cylab-bill-c-120-1563": "train",
+  "cylab-bill-c-120-1567": "train",
+  "cylab-bill-c-120-1560": "train",
+  "cylab-bill-c-120-1564": "train",
+  "cylab-bill-c-120-1556": "holdout",
+  "cylab-bill-c-120-1549": "train",
+  "cylab-bill-c-120-1559": "train",
+  "cylab-bill-c-120-1547": "train",
+  "cylab-bill-c-120-1550": "train",
+  "cylab-bill-c-120-0613": "holdout",
+  "cylab-bill-c-120-0610": "train",
+  "cylab-bill-c-120-0618": "train",
+  "cylab-bill-c-120-0607": "train",
+  "cylab-bill-c-78-0642": "holdout",
+  "cylab-bill-c-78-0654": "train",
+  "cylab-bill-c-78-0653": "train",
+  "cylab-bill-c-78-0660": "train",
+  "cylab-bill-c-732-1628": "holdout",
+  "cylab-bill-c-732-1637": "train",
+  "cylab-bill-c-732-1636": "train",
+  "cylab-bill-c-732-1627": "train",
+  "cylab-bill-cpp-120-0701": "holdout",
+  "cylab-bill-cpp-120-0711": "holdout",
+  "cylab-bill-cpp-120-0710": "train",
+  "cylab-bill-cpp-120-0704": "train",
+  "cylab-bill-cpp-120-0703": "train",
+  "cylab-bill-cpp-120-0705": "train",
+  "cylab-bill-cpp-120-0702": "train",
+  "cylab-bill-cpp-120-0713": "train",
+  "cylab-bill-cpp-120-0709": "train",
+  "cylab-bill-cpp-120-0717": "train",
+  "cylab-bill-cpp-120-0707": "train",
+  "cylab-bill-cpp-120-0715": "train",
+  "cylab-bill-cpp-120-0720": "train",
+  "cylab-bill-cpp-120-0719": "train",
+  "cylab-bill-cpp-416-1659": "holdout",
+  "cylab-bill-cpp-416-1662": "train",
+  "cylab-bill-cpp-416-1654": "train",
+  "cylab-bill-cpp-416-1651": "train",
+  "cylab-bill-cpp-134-1709": "holdout",
+  "cylab-bill-cpp-134-1710": "train",
+  "cylab-bill-cpp-134-1713": "train",
+  "cylab-bill-cpp-134-1712": "train",
+  "cylab-mk-0306": "train",
+  "cylab-mk-0305": "train",
+  "cylab-bill-cpp-798-1722": "holdout",
+  "cylab-bill-cpp-798-1717": "train",
+  "cylab-bill-cpp-798-1719": "train",
+  "cylab-bill-cpp-798-1718": "train",
+  "cylab-bill-cpp-22-0794": "train",
+  "cylab-bill-cpp-22-0784": "train",
+  "cylab-bill-cpp-120-1643": "holdout",
+  "cylab-bill-cpp-120-1638": "train",
+  "cylab-bill-cpp-120-1641": "train",
+  "cylab-bill-cpp-120-1639": "train",
+  "cylab-bill-cpp-120-1650": "train",
+  "cylab-bill-cpp-120-1640": "train",
+  "cylab-bill-cpp-120-1646": "train",
+  "cylab-bill-cpp-120-1644": "train",
+  "cylab-bill-cpp-120-1645": "train",
+  "cylab-bill-cpp-120-1647": "train",
+  "cylab-bill-cpp-120-1648": "train",
+  "cylab-bill-cpp-120-1642": "train",
+  "cylab-bill-cpp-120-1649": "train",
+  "cylab-bill-cpp-190-1668": "train",
+  "cylab-bill-cpp-190-1667": "train",
+  "cylab-bill-cpp-22-1678": "holdout",
+  "cylab-bill-cpp-22-1683": "train",
+  "cylab-bill-cpp-22-1689": "train",
+  "cylab-bill-cpp-22-1688": "train",
+  "cylab-bill-cpp-327-1696": "holdout",
+  "cylab-bill-cpp-327-1698": "train",
+  "cylab-bill-cpp-327-1697": "train",
+  "cylab-bill-cpp-327-1691": "train",
+  "cylab-bill-cpp-134-0760": "holdout",
+  "cylab-bill-cpp-134-0759": "train",
+  "cylab-bill-cpp-134-0755": "train",
+  "cylab-bill-cpp-134-0748": "train",
+  "cylab-bill-cpp-134-0744": "train",
+  "cylab-bill-cpp-134-0742": "train",
+  "cylab-bill-cpp-338-0775": "train",
+  "cylab-bill-cpp-338-0761": "train",
+  "cylab-mk-0310": "train",
+  "cylab-mk-0309": "train",
+  "cylab-bill-cpp-78-0722": "train",
+  "cylab-bill-cpp-78-0736": "train",
+  "cylab-mk-0302": "holdout",
+  "cylab-mk-0301": "train",
+  "cylab-mk-0303": "train",
+  "cylab-mk-0402": "train",
+  "cylab-mk-0401": "train",
+  "cylab-bill-csharp-502-0543": "train",
+  "cylab-bill-csharp-502-0556": "train",
+  "cylab-bill-csharp-798-1524": "holdout",
+  "cylab-bill-csharp-798-1528": "train",
+  "cylab-bill-csharp-798-1529": "train",
+  "cylab-bill-csharp-798-1523": "train",
+  "cylab-bill-csharp-79-1461": "holdout",
+  "cylab-bill-csharp-79-1468": "train",
+  "cylab-bill-csharp-79-1460": "train",
+  "cylab-bill-csharp-79-1467": "train",
+  "cylab-bill-csharp-918-1492": "holdout",
+  "cylab-bill-csharp-918-1489": "train",
+  "cylab-bill-csharp-918-1483": "train",
+  "cylab-bill-csharp-918-1486": "train",
+  "cylab-v0.1-0033": "holdout",
+  "cylab-mk-0807": "train",
+  "cylab-mk-0010": "train",
+  "cylab-bill-csharp-601-1507": "train",
+  "cylab-bill-csharp-601-1500": "train",
+  "cylab-bill-csharp-22-0584": "holdout",
+  "cylab-bill-csharp-22-0595": "train",
+  "cylab-bill-csharp-22-0593": "train",
+  "cylab-bill-csharp-22-0582": "train",
+  "cylab-bill-csharp-78-0534": "holdout",
+  "cylab-bill-csharp-78-0532": "train",
+  "cylab-bill-csharp-78-0535": "train",
+  "cylab-bill-csharp-78-0539": "train",
+  "cylab-mk-0009": "holdout",
+  "cylab-mk-0804": "train",
+  "cylab-v0.1-0032": "train",
+  "cylab-bill-csharp-89-0511": "holdout",
+  "cylab-bill-csharp-89-0516": "train",
+  "cylab-bill-csharp-89-0502": "train",
+  "cylab-bill-csharp-89-0517": "train",
+  "cylab-bill-csharp-338-1518": "holdout",
+  "cylab-bill-csharp-338-1519": "train",
+  "cylab-bill-csharp-338-1508": "train",
+  "cylab-bill-csharp-338-1517": "train",
+  "cylab-bill-csharp-328-0568": "holdout",
+  "cylab-bill-csharp-328-0566": "train",
+  "cylab-bill-csharp-328-0580": "train",
+  "cylab-bill-csharp-328-0562": "train",
+  "cylab-bill-csharp-328-0577": "train",
+  "cylab-bill-csharp-328-0575": "train",
+  "cylab-bill-csharp-327-1537": "holdout",
+  "cylab-bill-csharp-327-1538": "train",
+  "cylab-bill-csharp-327-1541": "train",
+  "cylab-bill-csharp-327-1536": "train",
+  "cylab-bill-csharp-611-1479": "holdout",
+  "cylab-bill-csharp-611-1470": "train",
+  "cylab-bill-csharp-611-1472": "train",
+  "cylab-bill-csharp-611-1481": "train",
+  "cylab-bill-java-327-1331": "holdout",
+  "cylab-bill-java-327-1338": "train",
+  "cylab-bill-java-327-1333": "train",
+  "cylab-bill-java-327-1336": "train",
+  "cylab-mk-0506": "holdout",
+  "cylab-mk-0015": "train",
+  "cylab-v0.1-0024": "train",
+  "cylab-mk-0507": "train",
+  "cylab-mk-0002": "train",
+  "cylab-bill-java-22-1286": "holdout",
+  "cylab-bill-java-22-1281": "train",
+  "cylab-bill-java-22-1283": "train",
+  "cylab-bill-java-22-1280": "train",
+  "cylab-v0.1-0025": "train",
+  "cylab-bill-java-330-1315": "holdout",
+  "cylab-bill-java-330-1321": "train",
+  "cylab-bill-java-330-1314": "train",
+  "cylab-bill-java-330-1322": "train",
+  "cylab-bill-java-90-1342": "holdout",
+  "cylab-bill-java-90-1343": "train",
+  "cylab-bill-java-90-1346": "train",
+  "cylab-bill-java-90-1349": "train",
+  "cylab-bill-java-328-0378": "holdout",
+  "cylab-bill-java-328-0369": "train",
+  "cylab-bill-java-328-0372": "train",
+  "cylab-bill-java-328-0377": "train",
+  "cylab-bill-java-502-0383": "train",
+  "cylab-bill-java-502-0387": "train",
+  "cylab-mk-0003": "holdout",
+  "cylab-mk-0601": "train",
+  "cylab-v0.1-0027": "train",
+  "cylab-bill-java-78-0330": "holdout",
+  "cylab-bill-java-78-0339": "train",
+  "cylab-bill-java-78-0335": "train",
+  "cylab-bill-java-78-0328": "train",
+  "cylab-bill-java-79-1295": "train",
+  "cylab-bill-java-79-1290": "train",
+  "cylab-mk-0013": "holdout",
+  "cylab-mk-0502": "train",
+  "cylab-mk-0001": "train",
+  "cylab-v0.1-0023": "train",
+  "cylab-mk-0501": "train",
+  "cylab-bill-java-89-0315": "holdout",
+  "cylab-bill-java-89-0309": "train",
+  "cylab-bill-java-89-0310": "train",
+  "cylab-bill-java-89-0314": "train",
+  "cylab-bill-java-295-1359": "holdout",
+  "cylab-bill-java-295-1358": "train",
+  "cylab-bill-java-295-1364": "train",
+  "cylab-bill-java-295-1357": "train",
+  "cylab-bill-java-918-1308": "holdout",
+  "cylab-bill-java-918-1303": "train",
+  "cylab-bill-java-918-1300": "train",
+  "cylab-bill-java-918-1305": "train",
+  "cylab-mk-0004": "holdout",
+  "cylab-mk-0604": "train",
+  "cylab-v0.1-0026": "train",
+  "cylab-bill-java-611-0350": "train",
+  "cylab-bill-java-611-0360": "train",
+  "cylab-js-cmdi-001": "train",
+  "cylab-sam-js-cmdi-002": "holdout",
+  "cylab-sam-js-cmdi-b5-000": "train",
+  "cylab-v0.1-0014": "train",
+  "cylab-sam-js-cmdi-b5-001": "train",
+  "cylab-sam-js-cmdi-004": "train",
+  "cylab-sam-js-cors-001": "train",
+  "cylab-sam-js-cors-002": "train",
+  "cylab-bill-javascript-79-1151": "holdout",
+  "cylab-bill-javascript-79-1155": "train",
+  "cylab-bill-javascript-79-1149": "train",
+  "cylab-bill-javascript-79-1145": "train",
+  "cylab-bill-javascript-79-1153": "train",
+  "cylab-bill-javascript-79-1152": "train",
+  "cylab-bill-javascript-79-1147": "train",
+  "cylab-bill-javascript-79-1148": "train",
+  "cylab-bill-javascript-94-1173": "holdout",
+  "cylab-bill-javascript-94-1171": "train",
+  "cylab-bill-javascript-94-1178": "train",
+  "cylab-bill-javascript-94-1170": "train",
+  "cylab-bill-javascript-94-1179": "train",
+  "cylab-bill-javascript-94-1177": "train",
+  "cylab-bill-javascript-94-1175": "train",
+  "cylab-bill-javascript-94-1181": "train",
+  "cylab-js-eval-001": "train",
+  "cylab-bill-javascript-78-0139": "holdout",
+  "cylab-bill-javascript-78-0140": "train",
+  "cylab-bill-javascript-78-0125": "train",
+  "cylab-bill-javascript-78-0132": "train",
+  "cylab-bill-javascript-22-1115": "holdout",
+  "cylab-bill-javascript-22-1106": "train",
+  "cylab-bill-javascript-22-1113": "train",
+  "cylab-bill-javascript-22-1108": "train",
+  "cylab-bill-javascript-798-1132": "holdout",
+  "cylab-bill-javascript-798-1137": "train",
+  "cylab-bill-javascript-798-1143": "train",
+  "cylab-bill-javascript-798-1136": "train",
+  "cylab-sam-js-secret-002": "holdout",
+  "cylab-sam-js-secret-003": "train",
+  "cylab-sam-js-secret-b5-007": "train",
+  "cylab-sam-js-secret-b5-002": "train",
+  "cylab-v0.1-0016": "train",
+  "cylab-sam-js-secret-b5-004": "train",
+  "cylab-sam-js-secret-b5-003": "train",
+  "cylab-sam-js-secret-b5-005": "train",
+  "cylab-sam-js-secret-b5-006": "train",
+  "cylab-sam-js-secret-004": "train",
+  "cylab-sam-js-secret-b5-000": "train",
+  "cylab-sam-js-secret-b5-001": "train",
+  "cylab-bill-javascript-918-1129": "holdout",
+  "cylab-bill-javascript-918-1123": "train",
+  "cylab-bill-javascript-918-1122": "train",
+  "cylab-bill-javascript-918-1118": "train",
+  "cylab-js-xss-001": "train",
+  "cylab-bill-javascript-915-1092": "holdout",
+  "cylab-bill-javascript-915-1096": "train",
+  "cylab-bill-javascript-915-1094": "train",
+  "cylab-bill-javascript-915-1101": "train",
+  "cylab-bill-javascript-915-1099": "train",
+  "cylab-sam-js-proto-002": "train",
+  "cylab-js-proto-001": "train",
+  "cylab-js-path-001": "train",
+  "cylab-v0.1-0015": "train",
+  "cylab-bill-javascript-601-0179": "holdout",
+  "cylab-bill-javascript-601-0164": "train",
+  "cylab-bill-javascript-601-0161": "train",
+  "cylab-bill-javascript-601-0180": "train",
+  "cylab-bill-javascript-1333-1167": "train",
+  "cylab-bill-javascript-1333-1161": "train",
+  "cylab-bill-javascript-79-0152": "holdout",
+  "cylab-bill-javascript-79-0144": "train",
+  "cylab-bill-javascript-79-0149": "train",
+  "cylab-bill-javascript-79-0157": "train",
+  "cylab-js-sqli-001": "train",
+  "cylab-v0.1-0011": "holdout",
+  "cylab-sam-js-sqli-b5-000": "train",
+  "cylab-sam-js-sqli-tpl-001": "train",
+  "cylab-sam-js-sql-002": "train",
+  "cylab-sam-js-sql-003": "train",
+  "cylab-sam-js-sqli-b5-001": "train",
+  "cylab-bill-javascript-89-0119": "holdout",
+  "cylab-bill-javascript-89-0105": "train",
+  "cylab-bill-javascript-89-0101": "train",
+  "cylab-bill-javascript-89-0115": "train",
+  "cylab-bill-javascript-89-0117": "train",
+  "cylab-bill-javascript-89-0113": "train",
+  "cylab-bill-javascript-89-0107": "train",
+  "cylab-bill-javascript-89-0112": "train",
+  "cylab-bill-javascript-89-0103": "train",
+  "cylab-bill-javascript-89-0111": "train",
+  "cylab-bill-javascript-89-0109": "train",
+  "cylab-bill-javascript-89-0110": "train",
+  "cylab-v0.1-0018": "train",
+  "cylab-sam-js-weakhash-001": "holdout",
+  "cylab-v0.1-0017": "train",
+  "cylab-sam-js-hash-002": "train",
+  "cylab-bill-javascript-328-0195": "holdout",
+  "cylab-bill-javascript-328-0188": "train",
+  "cylab-bill-javascript-328-0186": "train",
+  "cylab-bill-javascript-328-0184": "train",
+  "cylab-bill-javascript-328-0190": "train",
+  "cylab-bill-javascript-328-0194": "train",
+  "cylab-bill-javascript-328-0200": "train",
+  "cylab-bill-javascript-328-0182": "train",
+  "cylab-bill-javascript-328-0196": "train",
+  "cylab-bill-javascript-328-0198": "train",
+  "cylab-bill-javascript-328-0197": "train",
+  "cylab-bill-javascript-328-0192": "train",
+  "cylab-sam-js-xss-003": "holdout",
+  "cylab-v0.1-0012": "train",
+  "cylab-sam-js-xss-b5-001": "train",
+  "cylab-v0.1-0013": "train",
+  "cylab-sam-js-xss-002": "train",
+  "cylab-sam-js-xss-b5-000": "train",
+  "cylab-mk-0705": "holdout",
+  "cylab-mk-0006": "train",
+  "cylab-v0.1-0030": "train",
+  "cylab-bill-php-79-0443": "holdout",
+  "cylab-bill-php-79-0446": "train",
+  "cylab-bill-php-79-0444": "train",
+  "cylab-bill-php-79-0455": "train",
+  "cylab-bill-php-95-1390": "holdout",
+  "cylab-bill-php-95-1379": "train",
+  "cylab-bill-php-95-1380": "train",
+  "cylab-bill-php-95-1387": "train",
+  "cylab-bill-php-918-1397": "holdout",
+  "cylab-bill-php-918-1394": "train",
+  "cylab-bill-php-918-1400": "train",
+  "cylab-bill-php-918-1395": "train",
+  "cylab-bill-php-22-0466": "holdout",
+  "cylab-bill-php-22-0461": "train",
+  "cylab-bill-php-22-0469": "train",
+  "cylab-bill-php-22-0476": "train",
+  "cylab-bill-php-601-0489": "train",
+  "cylab-bill-php-601-0488": "train",
+  "cylab-v0.1-0031": "holdout",
+  "cylab-mk-0008": "train",
+  "cylab-mk-0801": "train",
+  "cylab-bill-php-89-1426": "holdout",
+  "cylab-bill-php-89-1418": "train",
+  "cylab-bill-php-89-1425": "train",
+  "cylab-bill-php-89-1423": "train",
+  "cylab-bill-php-611-1430": "holdout",
+  "cylab-bill-php-611-1437": "train",
+  "cylab-bill-php-611-1440": "train",
+  "cylab-bill-php-611-1435": "train",
+  "cylab-bill-php-611-1434": "train",
+  "cylab-bill-php-89-0416": "holdout",
+  "cylab-bill-php-89-0415": "train",
+  "cylab-bill-php-89-0418": "train",
+  "cylab-bill-php-89-0417": "train",
+  "cylab-bill-php-78-0424": "holdout",
+  "cylab-bill-php-78-0423": "train",
+  "cylab-bill-php-78-0425": "train",
+  "cylab-bill-php-78-0436": "train",
+  "cylab-mk-0014": "holdout",
+  "cylab-v0.1-0028": "train",
+  "cylab-mk-0005": "train",
+  "cylab-bill-php-502-1366": "holdout",
+  "cylab-bill-php-502-1375": "train",
+  "cylab-bill-php-502-1373": "train",
+  "cylab-bill-php-502-1376": "train",
+  "cylab-bill-php-328-1412": "holdout",
+  "cylab-bill-php-328-1413": "train",
+  "cylab-bill-php-328-1416": "train",
+  "cylab-bill-php-328-1409": "train",
+  "cylab-bill-php-330-1455": "holdout",
+  "cylab-bill-php-330-1450": "train",
+  "cylab-bill-php-330-1446": "train",
+  "cylab-bill-php-330-1443": "train",
+  "cylab-mk-0708": "holdout",
+  "cylab-mk-0007": "train",
+  "cylab-v0.1-0029": "train",
+  "cylab-sam-py-assert-001": "train",
+  "cylab-sam-py-cmdi-003": "holdout",
+  "cylab-sam-py-cmdi-shell-001": "train",
+  "cylab-sam-py-cmdi-b5-000": "train",
+  "cylab-v0.1-0003": "train",
+  "cylab-v0.1-0004": "train",
+  "cylab-sam-py-cmdi-b5-001": "train",
+  "cylab-sam-py-cmdi-002": "train",
+  "cylab-bill-python-95-1030": "holdout",
+  "cylab-bill-python-95-1027": "train",
+  "cylab-bill-python-95-1028": "train",
+  "cylab-bill-python-95-1039": "train",
+  "cylab-sam-py-debug-002": "train",
+  "cylab-sam-py-debug-001": "train",
+  "cylab-py-xss-tpl-001": "train",
+  "cylab-sam-py-flask-xss-002": "train",
+  "cylab-sam-py-secret-003": "holdout",
+  "cylab-sam-py-secret-b5-000": "train",
+  "cylab-sam-py-secret-b5-001": "train",
+  "cylab-v0.1-0006": "train",
+  "cylab-sam-py-secret-002": "train",
+  "cylab-sam-py-deser-b5-000": "holdout",
+  "cylab-sam-py-deser-001": "train",
+  "cylab-v0.1-0008": "train",
+  "cylab-sam-py-deser-002": "train",
+  "cylab-v0.1-0009": "train",
+  "cylab-bill-python-532-1070": "holdout",
+  "cylab-bill-python-532-1067": "train",
+  "cylab-bill-python-532-1073": "train",
+  "cylab-bill-python-532-1068": "train",
+  "cylab-py-crypto-001": "train",
+  "cylab-bill-python-22-0058": "holdout",
+  "cylab-bill-python-22-0045": "train",
+  "cylab-bill-python-22-0053": "train",
+  "cylab-bill-python-22-0052": "train",
+  "cylab-py-cmdi-001": "train",
+  "cylab-py-path-001": "train",
+  "cylab-v0.1-0005": "train",
+  "cylab-py-pickle-001": "train",
+  "cylab-bill-python-918-0078": "holdout",
+  "cylab-bill-python-918-0070": "train",
+  "cylab-bill-python-918-0079": "train",
+  "cylab-bill-python-918-0077": "train",
+  "cylab-py-ssrf-001": "train",
+  "cylab-sam-py-sqli-003": "holdout",
+  "cylab-sam-py-sqli-004": "train",
+  "cylab-sam-py-sqli-002": "train",
+  "cylab-sam-py-sqli-b5-000": "train",
+  "cylab-v0.1-0001": "train",
+  "cylab-sam-py-sqli-b5-001": "train",
+  "cylab-sam-py-sqli-005": "train",
+  "cylab-v0.1-0002": "train",
+  "cylab-bill-python-89-0014": "holdout",
+  "cylab-bill-python-89-0003": "train",
+  "cylab-bill-python-89-0004": "train",
+  "cylab-bill-python-89-0012": "train",
+  "cylab-bill-python-89-0007": "train",
+  "cylab-bill-python-89-0011": "train",
+  "cylab-v0.1-0010": "train",
+  "cylab-bill-python-611-1023": "holdout",
+  "cylab-bill-python-611-1025": "train",
+  "cylab-bill-python-611-1024": "train",
+  "cylab-bill-python-611-1014": "train",
+  "cylab-bill-python-78-0040": "holdout",
+  "cylab-bill-python-78-0033": "train",
+  "cylab-bill-python-78-0025": "train",
+  "cylab-bill-python-78-0032": "train",
+  "cylab-bill-python-22-1084": "holdout",
+  "cylab-bill-python-22-1091": "train",
+  "cylab-bill-python-22-1079": "train",
+  "cylab-bill-python-22-1082": "train",
+  "cylab-bill-python-79-1003": "holdout",
+  "cylab-bill-python-79-1001": "train",
+  "cylab-bill-python-79-1011": "train",
+  "cylab-bill-python-79-1008": "train",
+  "cylab-bill-python-79-1002": "train",
+  "cylab-bill-python-295-1053": "holdout",
+  "cylab-bill-python-295-1060": "train",
+  "cylab-bill-python-295-1058": "train",
+  "cylab-bill-python-295-1057": "train",
+  "cylab-bill-python-502-0099": "holdout",
+  "cylab-bill-python-502-0090": "train",
+  "cylab-bill-python-502-0082": "train",
+  "cylab-bill-python-502-0091": "train",
+  "cylab-bill-python-327-1047": "holdout",
+  "cylab-bill-python-327-1052": "train",
+  "cylab-bill-python-327-1050": "train",
+  "cylab-bill-python-327-1041": "train",
+  "cylab-sam-py-hash-b5-00": "holdout",
+  "cylab-sam-py-hash-002": "train",
+  "cylab-v0.1-0007": "train",
+  "cylab-sam-py-hash-b5-10": "train",
+  "cylab-sam-py-hash-003": "train",
+  "cylab-sam-py-xxe-001": "train",
+  "cylab-mk-0209": "train",
+  "cylab-mk-0210": "train",
+  "cylab-bill-sql-269-0886": "holdout",
+  "cylab-bill-sql-269-0900": "train",
+  "cylab-bill-sql-269-0881": "train",
+  "cylab-bill-sql-269-0896": "train",
+  "cylab-bill-sql-269-0894": "train",
+  "cylab-bill-sql-269-0884": "train",
+  "cylab-bill-sql-269-0888": "train",
+  "cylab-bill-sql-269-0887": "train",
+  "cylab-bill-sql-269-0890": "train",
+  "cylab-bill-sql-269-0898": "train",
+  "cylab-bill-sql-269-0892": "train",
+  "cylab-bill-sql-269-0882": "train",
+  "cylab-bill-sql-798-0879": "holdout",
+  "cylab-bill-sql-798-0873": "train",
+  "cylab-bill-sql-798-0865": "train",
+  "cylab-bill-sql-798-0877": "train",
+  "cylab-bill-sql-798-0876": "train",
+  "cylab-bill-sql-798-0861": "train",
+  "cylab-bill-sql-798-0871": "train",
+  "cylab-bill-sql-798-0875": "train",
+  "cylab-bill-sql-798-0862": "train",
+  "cylab-bill-sql-798-0869": "train",
+  "cylab-bill-sql-798-0863": "train",
+  "cylab-bill-sql-798-0867": "train",
+  "cylab-bill-sql-798-1807": "holdout",
+  "cylab-bill-sql-798-1816": "train",
+  "cylab-bill-sql-798-1818": "train",
+  "cylab-bill-sql-798-1819": "train",
+  "cylab-bill-sql-89-0858": "train",
+  "cylab-bill-sql-89-0851": "train",
+  "cylab-bill-sql-89-1739": "holdout",
+  "cylab-bill-sql-89-1740": "train",
+  "cylab-bill-sql-89-1734": "train",
+  "cylab-bill-sql-89-1733": "train",
+  "cylab-bill-sql-89-1802": "holdout",
+  "cylab-bill-sql-89-1804": "train",
+  "cylab-bill-sql-89-1799": "train",
+  "cylab-bill-sql-89-1795": "train",
+  "cylab-bill-sql-256-1774": "holdout",
+  "cylab-bill-sql-256-1771": "train",
+  "cylab-bill-sql-256-1775": "train",
+  "cylab-bill-sql-256-1772": "train",
+  "cylab-bill-sql-89-0839": "holdout",
+  "cylab-bill-sql-89-0826": "train",
+  "cylab-bill-sql-89-0823": "train",
+  "cylab-bill-sql-89-0832": "train",
+  "cylab-bill-sql-426-1756": "holdout",
+  "cylab-bill-sql-426-1760": "train",
+  "cylab-bill-sql-426-1763": "train",
+  "cylab-bill-sql-426-1761": "train",
+  "cylab-bill-sql-426-1762": "train",
+  "cylab-bill-sql-426-1757": "train",
+  "cylab-bill-sql-426-1758": "train",
+  "cylab-bill-sql-426-1765": "train",
+  "cylab-bill-sql-426-1766": "train",
+  "cylab-bill-sql-426-1764": "train",
+  "cylab-bill-sql-426-1767": "train",
+  "cylab-bill-sql-426-1755": "train",
+  "cylab-bill-sql-426-1759": "train",
+  "cylab-mk-0205": "holdout",
+  "cylab-mk-0201": "train",
+  "cylab-mk-0202": "train",
+  "cylab-bill-sql-89-0801": "holdout",
+  "cylab-bill-sql-89-0819": "holdout",
+  "cylab-bill-sql-89-0815": "holdout",
+  "cylab-bill-sql-89-0814": "train",
+  "cylab-bill-sql-89-0808": "train",
+  "cylab-bill-sql-89-0809": "train",
+  "cylab-bill-sql-89-0804": "train",
+  "cylab-bill-sql-89-0813": "train",
+  "cylab-bill-sql-89-0817": "train",
+  "cylab-bill-sql-89-0806": "train",
+  "cylab-bill-sql-89-0802": "train",
+  "cylab-bill-sql-89-0807": "train",
+  "cylab-bill-sql-89-0816": "train",
+  "cylab-bill-sql-89-0811": "train",
+  "cylab-bill-sql-89-0810": "train",
+  "cylab-bill-sql-89-0818": "train",
+  "cylab-bill-sql-89-0820": "train",
+  "cylab-bill-sql-89-0805": "train",
+  "cylab-bill-sql-89-0803": "train",
+  "cylab-bill-sql-89-0812": "train",
+  "cylab-bill-sql-89-1747": "holdout",
+  "cylab-bill-sql-89-1754": "train",
+  "cylab-bill-sql-89-1742": "train",
+  "cylab-bill-sql-89-1749": "train",
+  "cylab-bill-sql-89-1751": "train",
+  "cylab-bill-sql-89-1746": "train",
+  "cylab-bill-sql-89-1752": "train",
+  "cylab-bill-sql-89-1750": "train",
+  "cylab-bill-sql-89-1745": "train",
+  "cylab-bill-sql-89-1753": "train",
+  "cylab-bill-sql-89-1743": "train",
+  "cylab-bill-sql-89-1744": "train",
+  "cylab-bill-sql-89-1748": "train",
+  "cylab-bill-sql-78-1781": "holdout",
+  "cylab-bill-sql-78-1787": "train",
+  "cylab-bill-sql-78-1788": "train",
+  "cylab-bill-sql-78-1782": "train",
+  "cylab-bill-sql-78-1792": "train",
+  "cylab-bill-sql-78-1786": "train",
+  "cylab-bill-sql-78-1784": "train",
+  "cylab-bill-sql-78-1790": "train",
+  "cylab-bill-typescript-79-1200": "holdout",
+  "cylab-bill-typescript-79-1197": "train",
+  "cylab-bill-typescript-79-1199": "train",
+  "cylab-bill-typescript-79-1198": "train",
+  "cylab-bill-typescript-601-1212": "holdout",
+  "cylab-bill-typescript-601-1213": "train",
+  "cylab-bill-typescript-601-1217": "train",
+  "cylab-bill-typescript-601-1210": "train",
+  "cylab-bill-typescript-614-1238": "holdout",
+  "cylab-bill-typescript-614-1237": "train",
+  "cylab-bill-typescript-614-1239": "train",
+  "cylab-bill-typescript-614-1246": "train",
+  "cylab-bill-typescript-942-0215": "holdout",
+  "cylab-bill-typescript-942-0216": "train",
+  "cylab-bill-typescript-942-0204": "train",
+  "cylab-bill-typescript-942-0219": "train",
+  "cylab-bill-typescript-798-0224": "holdout",
+  "cylab-bill-typescript-798-0234": "train",
+  "cylab-bill-typescript-798-0228": "train",
+  "cylab-bill-typescript-798-0231": "train",
+  "cylab-bill-typescript-798-0223": "train",
+  "cylab-bill-typescript-798-0222": "train",
+  "cylab-bill-typescript-798-0226": "train",
+  "cylab-bill-typescript-798-0232": "train",
+  "cylab-bill-typescript-798-0238": "train",
+  "cylab-bill-typescript-798-0236": "train",
+  "cylab-bill-typescript-798-0240": "train",
+  "cylab-bill-typescript-798-0230": "train",
+  "cylab-bill-typescript-79-0278": "holdout",
+  "cylab-bill-typescript-79-0267": "train",
+  "cylab-bill-typescript-79-0265": "train",
+  "cylab-bill-typescript-79-0262": "train",
+  "cylab-sam-ts-rand-002": "holdout",
+  "cylab-v0.1-0021": "train",
+  "cylab-sam-ts-random-001": "train",
+  "cylab-bill-typescript-347-1272": "holdout",
+  "cylab-bill-typescript-347-1271": "train",
+  "cylab-bill-typescript-347-1268": "train",
+  "cylab-bill-typescript-347-1267": "train",
+  "cylab-bill-typescript-338-0242": "holdout",
+  "cylab-bill-typescript-338-0248": "train",
+  "cylab-bill-typescript-338-0241": "train",
+  "cylab-bill-typescript-338-0245": "train",
+  "cylab-v0.1-0022": "train",
+  "cylab-bill-typescript-89-1189": "holdout",
+  "cylab-bill-typescript-89-1194": "train",
+  "cylab-bill-typescript-89-1186": "train",
+  "cylab-bill-typescript-89-1187": "train",
+  "cylab-bill-typescript-22-1228": "holdout",
+  "cylab-bill-typescript-22-1227": "train",
+  "cylab-bill-typescript-22-1222": "train",
+  "cylab-bill-typescript-22-1231": "train",
+  "cylab-v0.1-0019": "train",
+  "cylab-bill-typescript-89-0290": "holdout",
+  "cylab-bill-typescript-89-0296": "train",
+  "cylab-bill-typescript-89-0299": "train",
+  "cylab-bill-typescript-89-0291": "train",
+  "cylab-bill-typescript-502-1260": "holdout",
+  "cylab-bill-typescript-502-1254": "train",
+  "cylab-bill-typescript-502-1255": "train",
+  "cylab-bill-typescript-502-1251": "train",
+  "cylab-v0.1-0020": "holdout",
+  "cylab-sam-ts-xss-b5-001": "train",
+  "cylab-sam-ts-xss-b5-000": "train",
+  "cylab-sam-ts-xss-002": "train"
+ }
+}

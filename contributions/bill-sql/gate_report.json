@@ -1,0 +1,219 @@
+[
+ {
+  "id": "cylab-bill-sqlreal-89-string-concat-01",
+  "rule": "cylab.sql.string-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-string-concat-02",
+  "rule": "cylab.sql.string-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-string-concat-03",
+  "rule": "cylab.sql.string-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-mysql-prepare-concat-01",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-mysql-prepare-concat-02",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-plpgsql-execute-concat-01",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-plpgsql-execute-concat-02",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-tsql-exec-concat-01",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-tsql-exec-concat-02",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-tsql-sql-var-concat-01",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-tsql-sql-var-concat-02",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-execute-immediate-01",
+  "rule": "cylab.sql.execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-execute-immediate-02",
+  "rule": "cylab.sql.execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-oracle-execute-immediate-01",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-oracle-execute-immediate-02",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-78-xp-cmdshell-01",
+  "rule": "cylab.sql.xp-cmdshell",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-78-xp-cmdshell-02",
+  "rule": "cylab.sql.xp-cmdshell",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-269-grant-all-public-01",
+  "rule": "cylab.sql.grant-all-public",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-269-grant-all-public-02",
+  "rule": "cylab.sql.grant-all-public",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-798-hardcoded-db-password-01",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-798-hardcoded-db-password-02",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-798-hardcoded-db-password-03",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-256-plaintext-password-column-01",
+  "rule": "cylab.sql.plaintext-password-column",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-256-plaintext-password-column-02",
+  "rule": "cylab.sql.plaintext-password-column",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-256-plaintext-password-column-03",
+  "rule": "cylab.sql.plaintext-password-column",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-798-link-mapping-password-01",
+  "rule": "cylab.sql.link-mapping-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-798-link-mapping-password-02",
+  "rule": "cylab.sql.link-mapping-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-426-security-definer-no-path-01",
+  "rule": "cylab.sql.security-definer-no-path",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-426-security-definer-no-path-02",
+  "rule": "cylab.sql.security-definer-no-path",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-pg-format-unsafe-s-01",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-pg-format-unsafe-s-02",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ }
+]

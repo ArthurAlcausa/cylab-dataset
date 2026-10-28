@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.jwt-decode-no-verify
+    message: "A identidade do usuário de @T@ é lida do JWT sem verificar a assinatura (decode ou alg none), permitindo forjar tokens (CWE-347)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-347"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'jwt\.decode\(|algorithms\s*:\s*\[[^\]]*[''"]none[''"]'

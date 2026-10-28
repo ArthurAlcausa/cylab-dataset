@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.regexp-user-input
+    message: "Uma expressão regular é criada direto do texto de busca de @T@ enviado pelo usuário, permitindo ReDoS e mudança de semân (CWE-1333)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-1333"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'new RegExp\(\s*req\.(query|body|params)'

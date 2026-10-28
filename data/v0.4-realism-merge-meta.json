@@ -1,0 +1,128 @@
+{
+ "draft": "data/cylab-commercial-v0.4-realism-DRAFT.jsonl",
+ "sha256_draft": "ca5e020164f948173e7921270ac9790537379c0211be031ebc5b0216ffb4319e",
+ "v03_gold": "data/cylab-commercial-v0.3-gold.jsonl",
+ "sha256_v03_before": "f37e131674bb1c01c444de40b957e1aa546703f0ff819b13b350200e47a25ea3",
+ "sha256_v03_after": "f37e131674bb1c01c444de40b957e1aa546703f0ff819b13b350200e47a25ea3",
+ "n": 100,
+ "by_owner": {
+  "markinho": 18,
+  "bill": 31,
+  "elon": 36,
+  "sam": 15
+ },
+ "by_lang": {
+  "java": 6,
+  "php": 6,
+  "csharp": 6,
+  "sql": 31,
+  "c": 12,
+  "cpp": 12,
+  "bash": 12,
+  "javascript": 5,
+  "python": 6,
+  "typescript": 4
+ },
+ "by_cwe": {
+  "CWE-78": 12,
+  "CWE-22": 8,
+  "CWE-502": 3,
+  "CWE-79": 6,
+  "CWE-918": 3,
+  "CWE-90": 1,
+  "CWE-95": 1,
+  "CWE-601": 1,
+  "CWE-89": 23,
+  "CWE-269": 2,
+  "CWE-798": 7,
+  "CWE-256": 3,
+  "CWE-426": 2,
+  "CWE-120": 5,
+  "CWE-134": 3,
+  "CWE-242": 1,
+  "CWE-377": 2,
+  "CWE-732": 2,
+  "CWE-190": 2,
+  "CWE-338": 2,
+  "CWE-367": 1,
+  "CWE-787": 1,
+  "CWE-327": 1,
+  "CWE-416": 1,
+  "CWE-494": 2,
+  "CWE-214": 1,
+  "CWE-295": 1,
+  "CWE-312": 1,
+  "CWE-250": 1,
+  "CWE-88": 1
+ },
+ "by_split": {
+  "holdout": 12,
+  "train": 88
+ },
+ "split_by_owner": {
+  "markinho": {
+   "holdout": 3,
+   "train": 15
+  },
+  "bill": {
+   "train": 28,
+   "holdout": 3
+  },
+  "elon": {
+   "train": 33,
+   "holdout": 3
+  },
+  "sam": {
+   "holdout": 3,
+   "train": 12
+  }
+ },
+ "holdout_ids": [
+  "cylab-markinho-java-78-r001",
+  "cylab-markinho-java-918-r001",
+  "cylab-markinho-java-90-r001",
+  "cylab-bill-sqlreal-269-grant-all-public-01",
+  "cylab-bill-sqlreal-798-link-mapping-password-01",
+  "cylab-bill-sqlreal-426-security-definer-no-path-02",
+  "cylab-elon-real-c-78-0001",
+  "cylab-elon-real-c-338-0001",
+  "cylab-elon-real-c-787-0001",
+  "cylab-sam-real-js-22-001",
+  "cylab-sam-real-py-78-002",
+  "cylab-sam-real-ts-79-001"
+ ],
+ "fixes": [],
+ "sources": {
+  "markinho": "contributions/markinho-java-php-sql-shell/realistic_v04_candidates.jsonl",
+  "bill": "contributions/bill-sql/realism_buffer.jsonl",
+  "elon": "contributions/elon-c-cpp-sql-bash/realism/elon_realism_candidates.jsonl",
+  "sam": "contributions/sam-py-js/gold_realism_v0.4_candidates.jsonl"
+ },
+ "near_dup": {
+  "method": "SequenceMatcher ratio OR 5-token Jaccard >=0.85, same lang+cwe",
+  "hits": [
+   {
+    "a": "cylab-bill-sqlreal-89-string-concat-02",
+    "b": "cylab-bill-sqlreal-89-tsql-exec-concat-01",
+    "seq": 0.857,
+    "jac": 0.521,
+    "scope": "intra"
+   }
+  ],
+  "max_score_intra": 0.857,
+  "max_score_vs_v03": 0.376,
+  "vs_v03_comparisons": 792,
+  "drops": [],
+  "gold_near_dup_py": {
+   "intra": "1 cluster (bill string-concat-02 + tsql-sql-var-concat-01, 4-gram norm Jaccard 0.914), drop 0",
+   "vs_v03": "combined run: only draft-involving cluster is the same intra one; 0 draft pairs clustered with v0.3",
+   "report": "data/near-dup-v0.4-realism-draft.json"
+  }
+ },
+ "gate": {
+  "cmd": "python3 scripts/gate_gold.py data/cylab-commercial-v0.4-realism-DRAFT.jsonl --rules-dir rules-gold --report data/gate-report-v0.4-realism-draft.json",
+  "result": "100/100"
+ },
+ "validate_dataset": "OK: 100 pares, 12 holdout",
+ "checklist": "24/24"
+}

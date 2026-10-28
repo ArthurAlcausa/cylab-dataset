@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.cpp.ofstream-concat-path
+    message: "O caminho de escrita/remoção de @S@ é composto com nome externo sem normalizar, permitindo ../ fora do diretório (CWE-22)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-22"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'std::ofstream\s+\w+\s*\(\s*\w+\s*\+|fs::remove(_all)?\(\s*\w+\s*/\s*\w+\s*\)'

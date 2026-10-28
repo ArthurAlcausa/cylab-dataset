@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.math-random-token
+    message: "O token de @S@ é gerado com Math.random, que não é criptograficamente seguro e pode ser previsto (CWE-338)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-338"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'Math\.random\(\)'

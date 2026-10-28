@@ -1,0 +1,13 @@
+rules:
+- id: cylab.c.gets-call-gold
+  languages:
+  - c
+  severity: ERROR
+  message: gets() lê o @C@ sem limite de tamanho e sempre permite estouro do buffer
+    (CWE-242)
+  metadata:
+    cwe: CWE-242
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-either:
+  - pattern: gets($B)

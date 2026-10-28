@@ -1,0 +1,8 @@
+rules:
+  - id: cylab.python.ssl-verify-false
+    message: TLS verify disabled
+    severity: ERROR
+    languages: [python]
+    pattern-either:
+      - pattern: requests.get(..., verify=False, ...)
+      - pattern: requests.post(..., verify=False, ...)

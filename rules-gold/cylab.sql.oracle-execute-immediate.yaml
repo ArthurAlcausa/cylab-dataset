@@ -1,0 +1,15 @@
+rules:
+- id: cylab.sql.oracle-execute-immediate
+  message: 'O bloco PL/SQL de @T@ concatena o parâmetro ao EXECUTE IMMEDIATE, permitindo
+    injeção de SQL (CWE-89) [gold: regex-tightened; opengrep sem taint p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-89
+    source: sintetico-cylab
+    author: bill-csharp-sql
+    gold: regex-tightened-v1
+  patterns:
+  - pattern-regex: (?i)EXECUTE\s+IMMEDIATE\s+'(?:[^']|'')*'\s*\|\|\s*(?!DBMS_ASSERT\.)(?!')[A-Za-z_:]
+  - pattern-not-regex: (?m)^\s*--.*$

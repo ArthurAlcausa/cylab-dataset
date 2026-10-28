@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.php.laravel-raw-interp
+    message: "A query Laravel de @T@ usa método *Raw/DB::select com variável interpolada, contornando o binding e permitindo injeção (CWE-89)"
+    severity: ERROR
+    languages: [php]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(whereRaw|selectRaw|orderByRaw|havingRaw|DB::raw|DB::select|DB::statement)\(\s*("[^"]*\$|''[^'']*''\s*\.\s*\$)'

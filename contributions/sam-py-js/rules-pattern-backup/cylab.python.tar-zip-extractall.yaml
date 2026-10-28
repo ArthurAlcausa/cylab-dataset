@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.tar-zip-extractall
+    message: "O arquivo compactado de @T@ é extraído inteiro sem validar os nomes, e entradas com ../ ou caminho absoluto escrevem for (CWE-22)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-22"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\.extractall\('

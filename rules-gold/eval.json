@@ -1,0 +1,429 @@
+{
+ "cylab.java.command-injection": {
+  "pairs": 7,
+  "passed": 7,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.file-from-parameter": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.insecure-deserialization": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.objectinputstream": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.path-traversal": {
+  "pairs": 5,
+  "passed": 5,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.runtime-exec-concat": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.servlet-writer-param": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.sql-injection": {
+  "pairs": 8,
+  "passed": 8,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.statement-concat": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.java.url-from-parameter": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.child-exec": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.command-injection": {
+  "pairs": 11,
+  "passed": 11,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.dom-sink-html": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.exec-template": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.express-file-param": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.http-client-user-url": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.innerhtml-user": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.path-join-user": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.path-traversal": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.res-send-reflect": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.sql-concat": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.sql-injection": {
+  "pairs": 14,
+  "passed": 14,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.sql-template-literal": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.ssrf": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.javascript.xss-innerhtml": {
+  "pairs": 16,
+  "passed": 16,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.command-injection": {
+  "pairs": 5,
+  "passed": 5,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.echo-superglobal": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.fetch-user-url": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.file-superglobal": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.insecure-deserialization": {
+  "pairs": 5,
+  "passed": 5,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.laravel-raw-interp": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.query-interpolated": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.shell-concat": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.sql-injection": {
+  "pairs": 7,
+  "passed": 7,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.unserialize-input": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.php.xss-echo": {
+  "pairs": 6,
+  "passed": 6,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.command-injection": {
+  "pairs": 15,
+  "passed": 15,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.flask-unsafe-html": {
+  "pairs": 2,
+  "passed": 2,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.insecure-deserialization": {
+  "pairs": 5,
+  "passed": 5,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.open-join-user": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.os-system": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.path-join-user": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.path-traversal": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.pickle-loads": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.requests-from-request": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.requests-url-user": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.sql-injection": {
+  "pairs": 46,
+  "passed": 46,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.sqli-fstring-execute": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.ssrf": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.subprocess-shell-true": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.tar-zip-extractall": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.template-string-user": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.python.unsafe-yaml-pickle": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.angular-bypass-sanitizer": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.innerhtml-assign": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.orm-raw-unsafe": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.readfile-template-path": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.sql-injection": {
+  "pairs": 1,
+  "passed": 1,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.sql-template-query": {
+  "pairs": 20,
+  "passed": 20,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.unsafe-unserialize": {
+  "pairs": 13,
+  "passed": 13,
+  "fails": [],
+  "errors": []
+ },
+ "cylab.typescript.xss-dangerously-set": {
+  "pairs": 12,
+  "passed": 0,
+  "fails": [
+   {
+    "id": "cylab-v0.1-0020",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-002",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-000",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-001",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-002",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-003",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-004",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-005",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-006",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-007",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-008",
+    "before_hits": 0,
+    "after_hits": 0
+   },
+   {
+    "id": "cylab-sam-ts-xss-b5-009",
+    "before_hits": 0,
+    "after_hits": 0
+   }
+  ],
+  "errors": []
+ }
+}

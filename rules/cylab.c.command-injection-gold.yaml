@@ -1,0 +1,12 @@
+rules:
+- id: cylab.c.command-injection-gold
+  languages:
+  - c
+  severity: ERROR
+  message: system com buffer montado (CWE-78)
+  metadata:
+    cwe: CWE-78
+    source: sintetico-cylab
+  patterns:
+  - pattern: system($CMD)
+  - pattern-not: system("...")

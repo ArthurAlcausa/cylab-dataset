@@ -1,0 +1,355 @@
+rules:
+- id: cylab.java.runtime-exec-concat
+  mode: taint
+  message: 'Runtime.exec com comando derivado de dado externo (CWE-78) [gold: taint]'
+  severity: ERROR
+  languages:
+  - java
+  metadata:
+    cwe: CWE-78
+    source: sintetico-cylab
+    gold: taint-v1
+  pattern-sources:
+  - patterns:
+    - pattern-inside: $RT $M(..., $T $P, ...) {...}
+    - pattern: $P
+    - metavariable-regex:
+        metavariable: $T
+        regex: ^(String|InputStream|byte\[\]|Object|String\[\]|HttpServletRequest)$
+  - pattern: (HttpServletRequest $R).$F(...)
+  - pattern: $R.getParameter(...)
+  - pattern: $R.getHeader(...)
+  pattern-sinks:
+  - patterns:
+    - pattern: $R.exec($X, ...)
+    - focus-metavariable: $X
+    - metavariable-pattern:
+        metavariable: $X
+        patterns:
+        - pattern-not: new String[]{...}
+        - pattern-not: List.of(...)
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: $R.exec(new String[]{"sh", "-c", $X})
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: $R.exec(new String[]{"/bin/sh", "-c", $X})
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: $R.exec(new String[]{"bash", "-c", $X})
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: new ProcessBuilder("sh", "-c", $X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: new ProcessBuilder("bash", "-c", $X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: new ProcessBuilder("/bin/sh", "-c", $X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  pattern-sanitizers:
+  - pattern: '$C ? $A : $D'
+  - pattern: URLEncoder.encode(...)
+  - pattern: Integer.parseInt(...)
+  - pattern: Long.parseLong(...)
+  - pattern: Integer.valueOf(...)
+  - pattern: Long.valueOf(...)
+  - pattern: StringEscapeUtils.escapeHtml4(...)
+  - pattern: Encode.forHtml(...)
+  - pattern: HtmlUtils.htmlEscape(...)
+  - pattern: $P.getFileName()
+  - pattern: FilenameUtils.getName(...)
+  - pattern: UUID.fromString(...)

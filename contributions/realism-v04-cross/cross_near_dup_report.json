@@ -1,0 +1,6 @@
+{
+ "threshold": 0.85,
+ "metrics": "SequenceMatcher ratio + 5-shingle Jaccard on before/after, cross-buffer same lang+cwe",
+ "pairs_compared": 0,
+ "flagged": []
+}

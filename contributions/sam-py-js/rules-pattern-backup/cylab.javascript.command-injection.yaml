@@ -1,0 +1,14 @@
+rules:
+  - id: cylab.javascript.command-injection
+    message: "child_process.exec com entrada externa (CWE-78)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-78"
+      source: sintetico-cylab
+    patterns:
+      - pattern-either:
+          - pattern: $CP.exec(`...${$X}...`, ...)
+          - pattern: $CP.exec("..." + $X, ...)
+          - pattern: exec(`...${$X}...`, ...)
+          - pattern: exec("..." + $X, ...)

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.angular-bypass-sanitizer
+    message: "O componente de @S@ marca conteúdo vindo da API/usuário como confiável com bypassSecurityTrust*, desativando a sanitizaç (CWE-79)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-79"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'bypassSecurityTrust(Html|Url|Script|ResourceUrl|Style)\('

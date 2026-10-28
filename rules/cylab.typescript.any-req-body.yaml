@@ -1,0 +1,8 @@
+rules:
+  - id: cylab.typescript.any-req-body
+    message: "req.body sem validacao tipada"
+    severity: ERROR
+    languages: [typescript]
+    metadata: {cwe: "CWE-20", source: sintetico-cylab}
+    pattern: |
+      const $X: any = req.body

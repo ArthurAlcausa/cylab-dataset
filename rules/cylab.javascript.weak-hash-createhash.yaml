@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.weak-hash-createhash
+    message: "Senha ou segredo de @S@ é derivado com MD5/SHA-1, hashes rápidos e quebráveis por força bruta (CWE-328)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-328"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'createHash\(\s*[''"](md5|sha1)[''"]'

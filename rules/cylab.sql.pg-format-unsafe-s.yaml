@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.sql.pg-format-unsafe-s
+    message: "A função usa format() com %s para inserir valor/identificador de @T@ no SQL dinâmico, sem quoting, permitindo injeção (CWE-89)"
+    severity: ERROR
+    languages: [generic]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?i)format\(\s*''(?:[^'']|'''')*%s'

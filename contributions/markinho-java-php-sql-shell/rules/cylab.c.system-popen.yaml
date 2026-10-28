@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.system-popen
+    message: "O comando é montado com @C@ externo e passado para system/popen, que invocam /bin/sh e permitem injeção de comandos (CWE-78)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-78"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(system|popen)\s*\('

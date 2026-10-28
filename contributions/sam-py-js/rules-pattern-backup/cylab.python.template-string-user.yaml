@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.template-string-user
+    message: "O HTML de @S@ é montado interpolando o valor do usuário antes do template/Markup, então o conteúdo não é escapado e gera (CWE-79)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-79"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'render_template_string\(\s*(f["'']|[^)]*(\+|%\s|\.format))|Markup\(\s*f["'']'

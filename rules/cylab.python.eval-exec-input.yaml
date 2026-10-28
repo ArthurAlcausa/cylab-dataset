@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.eval-exec-input
+    message: "O texto enviado para calcular/configurar @S@ é executado com eval/exec, permitindo execução de código arbitrário (CWE-95)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-95"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?<![\w.])(eval|exec)\('

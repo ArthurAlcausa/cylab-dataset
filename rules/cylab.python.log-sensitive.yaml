@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.log-sensitive
+    message: "O log de @S@ grava credenciais/dados sensíveis em texto claro, que ficam expostos em arquivos e agregadores de log (CWE-532)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-532"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(logger|logging|log)\.(info|debug|warning|error|exception)\([^\n]*\b(senha|password|token|cartao|cvv)\b'

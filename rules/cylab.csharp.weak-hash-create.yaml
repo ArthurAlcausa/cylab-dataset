@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.csharp.weak-hash-create
+    message: "A senha de @S@ é armazenada com MD5/SHA-1, hash rápido e inadequado para senhas (CWE-328)"
+    severity: ERROR
+    languages: [csharp]
+    metadata:
+      cwe: "CWE-328"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(MD5|SHA1)\.(Create\(|HashData\()|new\s+(MD5|SHA1)CryptoServiceProvider'

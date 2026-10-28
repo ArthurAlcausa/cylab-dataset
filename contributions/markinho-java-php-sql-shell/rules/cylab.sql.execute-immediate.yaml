@@ -1,0 +1,9 @@
+rules:
+  - id: cylab.sql.execute-immediate
+    message: "EXECUTE IMMEDIATE com concatenacao (CWE-89)"
+    severity: ERROR
+    languages: [generic]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+    pattern-regex: "(?i)EXECUTE\\s+IMMEDIATE\\s+.{0,80}(\\+|\\|\\|)"

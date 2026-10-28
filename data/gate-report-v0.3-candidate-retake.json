@@ -1,0 +1,3962 @@
+[
+ {
+  "id": "cylab-v0.1-0001",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0002",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0003",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0004",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0005",
+  "lang": "python",
+  "rule": "cylab.python.path-traversal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0006",
+  "lang": "python",
+  "rule": "cylab.python.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0007",
+  "lang": "python",
+  "rule": "cylab.python.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0008",
+  "lang": "python",
+  "rule": "cylab.python.insecure-deserialization",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0009",
+  "lang": "python",
+  "rule": "cylab.python.insecure-deserialization",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0010",
+  "lang": "python",
+  "rule": "cylab.python.ssrf",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0011",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0012",
+  "lang": "javascript",
+  "rule": "cylab.javascript.xss-innerhtml",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0013",
+  "lang": "javascript",
+  "rule": "cylab.javascript.xss-innerhtml",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0014",
+  "lang": "javascript",
+  "rule": "cylab.javascript.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0015",
+  "lang": "javascript",
+  "rule": "cylab.javascript.path-traversal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0016",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0017",
+  "lang": "javascript",
+  "rule": "cylab.javascript.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0018",
+  "lang": "javascript",
+  "rule": "cylab.javascript.ssrf",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0019",
+  "lang": "typescript",
+  "rule": "cylab.typescript.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0020",
+  "lang": "typescript",
+  "rule": "cylab.typescript.xss-dangerously-set",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0021",
+  "lang": "typescript",
+  "rule": "cylab.typescript.insecure-randomness",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0022",
+  "lang": "typescript",
+  "rule": "cylab.typescript.open-redirect",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0023",
+  "lang": "java",
+  "rule": "cylab.java.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0024",
+  "lang": "java",
+  "rule": "cylab.java.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0025",
+  "lang": "java",
+  "rule": "cylab.java.insecure-deserialization",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0026",
+  "lang": "java",
+  "rule": "cylab.java.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0027",
+  "lang": "java",
+  "rule": "cylab.java.path-traversal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0028",
+  "lang": "php",
+  "rule": "cylab.php.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0029",
+  "lang": "php",
+  "rule": "cylab.php.xss-echo",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0030",
+  "lang": "php",
+  "rule": "cylab.php.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0031",
+  "lang": "php",
+  "rule": "cylab.php.insecure-deserialization",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0032",
+  "lang": "csharp",
+  "rule": "cylab.csharp.sql-injection",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0033",
+  "lang": "csharp",
+  "rule": "cylab.csharp.insecure-deserialization",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0034",
+  "lang": "c",
+  "rule": "cylab.c.buffer-overflow-strcpy",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0035",
+  "lang": "c",
+  "rule": "cylab.c.format-string",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0036",
+  "lang": "c",
+  "rule": "cylab.c.command-injection",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0037",
+  "lang": "bash",
+  "rule": "cylab.bash.eval-injection",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0038",
+  "lang": "bash",
+  "rule": "cylab.bash.curl-pipe-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-py-cmdi-001",
+  "lang": "python",
+  "rule": "cylab.python.os-system",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-py-path-001",
+  "lang": "python",
+  "rule": "cylab.python.path-join-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-py-pickle-001",
+  "lang": "python",
+  "rule": "cylab.python.pickle-loads",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-py-ssrf-001",
+  "lang": "python",
+  "rule": "cylab.python.requests-url-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-py-crypto-001",
+  "lang": "python",
+  "rule": "cylab.python.md5-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-py-xss-tpl-001",
+  "lang": "python",
+  "rule": "cylab.python.flask-unsafe-html",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-js-sqli-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-js-cmdi-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.child-exec",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-js-path-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.path-join-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-js-xss-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.innerhtml-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-js-eval-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.eval-user",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-js-proto-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.merge-proto",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-sqli-002",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-secret-002",
+  "lang": "python",
+  "rule": "cylab.python.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-secret-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-xxe-001",
+  "lang": "python",
+  "rule": "cylab.python.xml-xxe",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-debug-001",
+  "lang": "python",
+  "rule": "cylab.python.flask-debug",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-assert-001",
+  "lang": "python",
+  "rule": "cylab.python.assert-auth",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-cmdi-shell-001",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-sqli-tpl-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-cors-001",
+  "lang": "javascript",
+  "rule": "cylab.javascript.cors-star",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-ts-random-001",
+  "lang": "typescript",
+  "rule": "cylab.typescript.insecure-randomness",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-cmdi-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-sqli-003",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-sqli-004",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-cmdi-002",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-secret-003",
+  "lang": "python",
+  "rule": "cylab.python.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-hash-002",
+  "lang": "python",
+  "rule": "cylab.python.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-xss-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.xss-innerhtml",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-secret-003",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-sql-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-ts-rand-002",
+  "lang": "typescript",
+  "rule": "cylab.typescript.insecure-randomness",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-flask-xss-002",
+  "lang": "python",
+  "rule": "cylab.python.flask-unsafe-html",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-proto-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.merge-proto",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-sqli-005",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-cmdi-003",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-secret-004",
+  "lang": "python",
+  "rule": "cylab.python.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-hash-003",
+  "lang": "python",
+  "rule": "cylab.python.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-sql-003",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-xss-003",
+  "lang": "javascript",
+  "rule": "cylab.javascript.xss-innerhtml",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-secret-004",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-hash-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-cmdi-004",
+  "lang": "javascript",
+  "rule": "cylab.javascript.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-ts-xss-002",
+  "lang": "typescript",
+  "rule": "cylab.typescript.xss-dangerously-set",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-debug-002",
+  "lang": "python",
+  "rule": "cylab.python.flask-debug",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-cors-002",
+  "lang": "javascript",
+  "rule": "cylab.javascript.cors-star",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-sqli-b5-000",
+  "lang": "python",
+  "rule": "cylab.python.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-cmdi-b5-000",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-cmdi-b5-001",
+  "lang": "python",
+  "rule": "cylab.python.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-secret-b5-000",
+  "lang": "python",
+  "rule": "cylab.python.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-py-secret-b5-001",
+  "lang": "python",
+  "rule": "cylab.python.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-sqli-b5-000",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-secret-b5-000",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-js-cmdi-b5-000",
+  "lang": "javascript",
+  "rule": "cylab.javascript.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-sam-ts-xss-b5-000",
+  "lang": "typescript",
+  "rule": "cylab.typescript.xss-dangerously-set",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0001",
+  "lang": "java",
+  "rule": "cylab.java.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0002",
+  "lang": "java",
+  "rule": "cylab.java.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0004",
+  "lang": "java",
+  "rule": "cylab.java.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0005",
+  "lang": "php",
+  "rule": "cylab.php.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0006",
+  "lang": "php",
+  "rule": "cylab.php.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0007",
+  "lang": "php",
+  "rule": "cylab.php.xss-echo",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0008",
+  "lang": "php",
+  "rule": "cylab.php.insecure-deserialization",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0009",
+  "lang": "csharp",
+  "rule": "cylab.csharp.sql-injection",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0010",
+  "lang": "csharp",
+  "rule": "cylab.csharp.insecure-deserialization",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0011",
+  "lang": "bash",
+  "rule": "cylab.bash.eval-injection",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0012",
+  "lang": "bash",
+  "rule": "cylab.bash.curl-pipe-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0013",
+  "lang": "java",
+  "rule": "cylab.java.sql-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0015",
+  "lang": "java",
+  "rule": "cylab.java.command-injection",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0201",
+  "lang": "sql",
+  "rule": "cylab.sql.string-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0209",
+  "lang": "sql",
+  "rule": "cylab.sql.execute-immediate",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0210",
+  "lang": "sql",
+  "rule": "cylab.sql.execute-immediate",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0301",
+  "lang": "cpp",
+  "rule": "cylab.cpp.strcpy",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0303",
+  "lang": "cpp",
+  "rule": "cylab.cpp.strcpy",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0305",
+  "lang": "cpp",
+  "rule": "cylab.cpp.gets",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0309",
+  "lang": "cpp",
+  "rule": "cylab.cpp.sprintf",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0310",
+  "lang": "cpp",
+  "rule": "cylab.cpp.sprintf",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0401",
+  "lang": "cpp",
+  "rule": "cylab.cpp.system",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0601",
+  "lang": "java",
+  "rule": "cylab.java.path-traversal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0604",
+  "lang": "java",
+  "rule": "cylab.java.weak-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0901",
+  "lang": "bash",
+  "rule": "cylab.bash.eval-injection",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0904",
+  "lang": "bash",
+  "rule": "cylab.bash.curl-pipe-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-79-0262",
+  "lang": "typescript",
+  "rule": "cylab.typescript.innerhtml-assign",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-502-0082",
+  "lang": "python",
+  "rule": "cylab.python.unsafe-yaml-pickle",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-78-0722",
+  "lang": "cpp",
+  "rule": "cylab.cpp.std-system",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-22-0582",
+  "lang": "csharp",
+  "rule": "cylab.csharp.path-combine-file",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-0144",
+  "lang": "javascript",
+  "rule": "cylab.javascript.res-send-reflect",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-601-0164",
+  "lang": "javascript",
+  "rule": "cylab.javascript.redirect-user",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-22-0461",
+  "lang": "php",
+  "rule": "cylab.php.file-superglobal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0823",
+  "lang": "sql",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-89-0502",
+  "lang": "csharp",
+  "rule": "cylab.csharp.sqlcommand-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-79-0444",
+  "lang": "php",
+  "rule": "cylab.php.echo-superglobal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-798-0223",
+  "lang": "typescript",
+  "rule": "cylab.typescript.hardcoded-credential",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-942-0203",
+  "lang": "typescript",
+  "rule": "cylab.typescript.cors-wildcard-credentials",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-338-0242",
+  "lang": "typescript",
+  "rule": "cylab.typescript.math-random-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-601-0161",
+  "lang": "javascript",
+  "rule": "cylab.javascript.redirect-user",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-78-0641",
+  "lang": "c",
+  "rule": "cylab.c.system-popen",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-78-0423",
+  "lang": "php",
+  "rule": "cylab.php.shell-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-338-0241",
+  "lang": "typescript",
+  "rule": "cylab.typescript.math-random-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-0042",
+  "lang": "python",
+  "rule": "cylab.python.open-join-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-22-0462",
+  "lang": "php",
+  "rule": "cylab.php.file-superglobal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-338-0761",
+  "lang": "cpp",
+  "rule": "cylab.cpp.rand-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-328-0182",
+  "lang": "javascript",
+  "rule": "cylab.javascript.weak-hash-createhash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-78-0021",
+  "lang": "python",
+  "rule": "cylab.python.subprocess-shell-true",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-0142",
+  "lang": "javascript",
+  "rule": "cylab.javascript.res-send-reflect",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-0403",
+  "lang": "php",
+  "rule": "cylab.php.query-interpolated",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-0282",
+  "lang": "typescript",
+  "rule": "cylab.typescript.sql-template-query",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-0602",
+  "lang": "c",
+  "rule": "cylab.c.strcpy-strcat",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-732-0961",
+  "lang": "bash",
+  "rule": "cylab.bash.chmod-world-writable",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-0862",
+  "lang": "sql",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-89-0004",
+  "lang": "python",
+  "rule": "cylab.python.sqli-fstring-execute",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-134-0741",
+  "lang": "cpp",
+  "rule": "cylab.cpp.printf-cstr",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0822",
+  "lang": "sql",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0802",
+  "lang": "sql",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-89-0304",
+  "lang": "java",
+  "rule": "cylab.java.statement-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-601-0162",
+  "lang": "javascript",
+  "rule": "cylab.javascript.redirect-user",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-134-0623",
+  "lang": "c",
+  "rule": "cylab.c.printf-nonliteral",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-78-0522",
+  "lang": "csharp",
+  "rule": "cylab.csharp.process-start-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-494-0924",
+  "lang": "bash",
+  "rule": "cylab.bash.download-pipe-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-269-0881",
+  "lang": "sql",
+  "rule": "cylab.sql.grant-all-public",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-78-0122",
+  "lang": "javascript",
+  "rule": "cylab.javascript.exec-template",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-22-0583",
+  "lang": "csharp",
+  "rule": "cylab.csharp.path-combine-file",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-79-0261",
+  "lang": "typescript",
+  "rule": "cylab.typescript.innerhtml-assign",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-78-0524",
+  "lang": "csharp",
+  "rule": "cylab.csharp.process-start-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-732-0962",
+  "lang": "bash",
+  "rule": "cylab.bash.chmod-world-writable",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-502-0381",
+  "lang": "java",
+  "rule": "cylab.java.objectinputstream",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-120-0702",
+  "lang": "cpp",
+  "rule": "cylab.cpp.cstr-copy-unbounded",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-78-0902",
+  "lang": "bash",
+  "rule": "cylab.bash.eval-variable",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-89-0302",
+  "lang": "java",
+  "rule": "cylab.java.statement-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-22-0463",
+  "lang": "php",
+  "rule": "cylab.php.file-superglobal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0804",
+  "lang": "sql",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-377-0941",
+  "lang": "bash",
+  "rule": "cylab.bash.predictable-tmp",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-79-0263",
+  "lang": "typescript",
+  "rule": "cylab.typescript.innerhtml-assign",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-89-0504",
+  "lang": "csharp",
+  "rule": "cylab.csharp.sqlcommand-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-78-0421",
+  "lang": "php",
+  "rule": "cylab.php.shell-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-78-0422",
+  "lang": "php",
+  "rule": "cylab.php.shell-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-0864",
+  "lang": "sql",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-89-0003",
+  "lang": "python",
+  "rule": "cylab.python.sqli-fstring-execute",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-89-0103",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-template-literal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-0281",
+  "lang": "typescript",
+  "rule": "cylab.typescript.sql-template-query",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-502-0081",
+  "lang": "python",
+  "rule": "cylab.python.unsafe-yaml-pickle",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-494-0921",
+  "lang": "bash",
+  "rule": "cylab.bash.download-pipe-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-0863",
+  "lang": "sql",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-377-0943",
+  "lang": "bash",
+  "rule": "cylab.bash.predictable-tmp",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-798-0221",
+  "lang": "typescript",
+  "rule": "cylab.typescript.hardcoded-credential",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-78-0321",
+  "lang": "java",
+  "rule": "cylab.java.runtime-exec-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-328-0362",
+  "lang": "java",
+  "rule": "cylab.java.messagedigest-weak",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-89-0102",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-template-literal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-798-0222",
+  "lang": "typescript",
+  "rule": "cylab.typescript.hardcoded-credential",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-0283",
+  "lang": "typescript",
+  "rule": "cylab.typescript.sql-template-query",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-78-0023",
+  "lang": "python",
+  "rule": "cylab.python.subprocess-shell-true",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-89-0006",
+  "lang": "python",
+  "rule": "cylab.python.sqli-fstring-execute",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-0043",
+  "lang": "python",
+  "rule": "cylab.python.open-join-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-601-0481",
+  "lang": "php",
+  "rule": "cylab.php.header-location-user",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-120-0701",
+  "lang": "cpp",
+  "rule": "cylab.cpp.cstr-copy-unbounded",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-377-0942",
+  "lang": "bash",
+  "rule": "cylab.bash.predictable-tmp",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-242-0661",
+  "lang": "c",
+  "rule": "cylab.c.gets-call",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-134-0622",
+  "lang": "c",
+  "rule": "cylab.c.printf-nonliteral",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0801",
+  "lang": "sql",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-942-0201",
+  "lang": "typescript",
+  "rule": "cylab.typescript.cors-wildcard-credentials",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-79-0442",
+  "lang": "php",
+  "rule": "cylab.php.echo-superglobal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-78-0324",
+  "lang": "java",
+  "rule": "cylab.java.runtime-exec-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-78-0521",
+  "lang": "csharp",
+  "rule": "cylab.csharp.process-start-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-78-0901",
+  "lang": "bash",
+  "rule": "cylab.bash.eval-variable",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-22-0464",
+  "lang": "php",
+  "rule": "cylab.php.file-superglobal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-89-0101",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-template-literal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-0044",
+  "lang": "python",
+  "rule": "cylab.python.open-join-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-0284",
+  "lang": "typescript",
+  "rule": "cylab.typescript.sql-template-query",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-120-0704",
+  "lang": "cpp",
+  "rule": "cylab.cpp.cstr-copy-unbounded",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-22-0781",
+  "lang": "cpp",
+  "rule": "cylab.cpp.ifstream-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-78-0523",
+  "lang": "csharp",
+  "rule": "cylab.csharp.process-start-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-0601",
+  "lang": "c",
+  "rule": "cylab.c.strcpy-strcat",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-0143",
+  "lang": "javascript",
+  "rule": "cylab.javascript.res-send-reflect",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-78-0022",
+  "lang": "python",
+  "rule": "cylab.python.subprocess-shell-true",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-328-0562",
+  "lang": "csharp",
+  "rule": "cylab.csharp.weak-hash-create",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-269-0882",
+  "lang": "sql",
+  "rule": "cylab.sql.grant-all-public",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-601-0163",
+  "lang": "javascript",
+  "rule": "cylab.javascript.redirect-user",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-798-0983",
+  "lang": "bash",
+  "rule": "cylab.bash.hardcoded-secret-var",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-611-0341",
+  "lang": "java",
+  "rule": "cylab.java.xxe-documentbuilder",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-798-0982",
+  "lang": "bash",
+  "rule": "cylab.bash.hardcoded-secret-var",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-89-0002",
+  "lang": "python",
+  "rule": "cylab.python.sqli-fstring-execute",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0803",
+  "lang": "sql",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-942-0202",
+  "lang": "typescript",
+  "rule": "cylab.typescript.cors-wildcard-credentials",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-134-0742",
+  "lang": "cpp",
+  "rule": "cylab.cpp.printf-cstr",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-78-0721",
+  "lang": "cpp",
+  "rule": "cylab.cpp.std-system",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-22-0782",
+  "lang": "cpp",
+  "rule": "cylab.cpp.ifstream-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-494-0922",
+  "lang": "bash",
+  "rule": "cylab.bash.download-pipe-shell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-502-0541",
+  "lang": "csharp",
+  "rule": "cylab.csharp.binaryformatter",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-89-0104",
+  "lang": "javascript",
+  "rule": "cylab.javascript.sql-template-literal",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-22-0581",
+  "lang": "csharp",
+  "rule": "cylab.csharp.path-combine-file",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-89-0001",
+  "lang": "python",
+  "rule": "cylab.python.sqli-fstring-execute",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-0404",
+  "lang": "php",
+  "rule": "cylab.php.query-interpolated",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-0402",
+  "lang": "php",
+  "rule": "cylab.php.query-interpolated",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-89-0005",
+  "lang": "python",
+  "rule": "cylab.python.sqli-fstring-execute",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-0604",
+  "lang": "c",
+  "rule": "cylab.c.strcpy-strcat",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0821",
+  "lang": "sql",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-0141",
+  "lang": "javascript",
+  "rule": "cylab.javascript.res-send-reflect",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-0401",
+  "lang": "php",
+  "rule": "cylab.php.query-interpolated",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-798-0224",
+  "lang": "typescript",
+  "rule": "cylab.typescript.hardcoded-credential",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-78-0024",
+  "lang": "python",
+  "rule": "cylab.python.subprocess-shell-true",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0842",
+  "lang": "sql",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-190-0681",
+  "lang": "c",
+  "rule": "cylab.c.malloc-mul-overflow",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-0861",
+  "lang": "sql",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-0041",
+  "lang": "python",
+  "rule": "cylab.python.open-join-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-798-0981",
+  "lang": "bash",
+  "rule": "cylab.bash.hardcoded-secret-var",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-502-0084",
+  "lang": "python",
+  "rule": "cylab.python.unsafe-yaml-pickle",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-78-0322",
+  "lang": "java",
+  "rule": "cylab.java.runtime-exec-concat",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-918-0062",
+  "lang": "python",
+  "rule": "cylab.python.requests-from-request",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-328-0561",
+  "lang": "csharp",
+  "rule": "cylab.csharp.weak-hash-create",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-78-0121",
+  "lang": "javascript",
+  "rule": "cylab.javascript.exec-template",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-918-0064",
+  "lang": "python",
+  "rule": "cylab.python.requests-from-request",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-918-0061",
+  "lang": "python",
+  "rule": "cylab.python.requests-from-request",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0841",
+  "lang": "sql",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-918-1300",
+  "lang": "java",
+  "rule": "cylab.java.url-from-parameter",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-611-1014",
+  "lang": "python",
+  "rule": "cylab.python.stdlib-xml-parse",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-1418",
+  "lang": "php",
+  "rule": "cylab.php.laravel-raw-interp",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-798-1523",
+  "lang": "csharp",
+  "rule": "cylab.csharp.connstring-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-327-1691",
+  "lang": "cpp",
+  "rule": "cylab.cpp.openssl-weak-algo",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-601-1210",
+  "lang": "typescript",
+  "rule": "cylab.typescript.client-location-redirect",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-798-1524",
+  "lang": "csharp",
+  "rule": "cylab.csharp.connstring-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-22-1222",
+  "lang": "typescript",
+  "rule": "cylab.typescript.readfile-template-path",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-22-1106",
+  "lang": "javascript",
+  "rule": "cylab.javascript.express-file-param",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-295-1833",
+  "lang": "bash",
+  "rule": "cylab.bash.tls-insecure-flag",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-1186",
+  "lang": "typescript",
+  "rule": "cylab.typescript.orm-raw-unsafe",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-1079",
+  "lang": "python",
+  "rule": "cylab.python.tar-zip-extractall",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-426-1755",
+  "lang": "sql",
+  "rule": "cylab.sql.security-definer-no-path",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-416-1654",
+  "lang": "cpp",
+  "rule": "cylab.cpp.dangling-cstr",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-95-1027",
+  "lang": "python",
+  "rule": "cylab.python.eval-exec-input",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-95-1379",
+  "lang": "php",
+  "rule": "cylab.php.eval-user-code",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-79-1198",
+  "lang": "typescript",
+  "rule": "cylab.typescript.angular-bypass-sanitizer",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-611-1470",
+  "lang": "csharp",
+  "rule": "cylab.csharp.xml-dtd-parse",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-918-1118",
+  "lang": "javascript",
+  "rule": "cylab.javascript.http-client-user-url",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-22-1678",
+  "lang": "cpp",
+  "rule": "cylab.cpp.ofstream-concat-path",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-250-1873",
+  "lang": "bash",
+  "rule": "cylab.bash.sudoers-nopasswd-all",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-798-1719",
+  "lang": "cpp",
+  "rule": "cylab.cpp.hardcoded-key-literal",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-1807",
+  "lang": "sql",
+  "rule": "cylab.sql.link-mapping-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-416-1651",
+  "lang": "cpp",
+  "rule": "cylab.cpp.dangling-cstr",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-79-1002",
+  "lang": "python",
+  "rule": "cylab.python.template-string-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-915-1094",
+  "lang": "javascript",
+  "rule": "cylab.javascript.mass-assign-merge",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-94-1170",
+  "lang": "javascript",
+  "rule": "cylab.javascript.dynamic-code-function",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-1333-1157",
+  "lang": "javascript",
+  "rule": "cylab.javascript.regexp-user-input",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-918-1391",
+  "lang": "php",
+  "rule": "cylab.php.fetch-user-url",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-338-1600",
+  "lang": "c",
+  "rule": "cylab.c.libc-rand-key",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1743",
+  "lang": "sql",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-338-1508",
+  "lang": "csharp",
+  "rule": "cylab.csharp.system-random-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-95-1028",
+  "lang": "python",
+  "rule": "cylab.python.eval-exec-input",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1732",
+  "lang": "sql",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-494-1898",
+  "lang": "bash",
+  "rule": "cylab.bash.source-remote-script",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-502-1366",
+  "lang": "php",
+  "rule": "cylab.php.unserialize-input",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-78-1784",
+  "lang": "sql",
+  "rule": "cylab.sql.xp-cmdshell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-94-1171",
+  "lang": "javascript",
+  "rule": "cylab.javascript.dynamic-code-function",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-915-1092",
+  "lang": "javascript",
+  "rule": "cylab.javascript.mass-assign-merge",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-1549",
+  "lang": "c",
+  "rule": "cylab.c.sprintf-unbounded",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-295-1053",
+  "lang": "python",
+  "rule": "cylab.python.tls-verify-off",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-79-1197",
+  "lang": "typescript",
+  "rule": "cylab.typescript.angular-bypass-sanitizer",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-327-1041",
+  "lang": "python",
+  "rule": "cylab.python.weak-cipher-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-90-1340",
+  "lang": "java",
+  "rule": "cylab.java.ldap-filter-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-214-1849",
+  "lang": "bash",
+  "rule": "cylab.bash.password-on-cmdline",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1796",
+  "lang": "sql",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-327-1326",
+  "lang": "java",
+  "rule": "cylab.java.cipher-weak-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-330-1443",
+  "lang": "php",
+  "rule": "cylab.php.weak-random-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-78-1781",
+  "lang": "sql",
+  "rule": "cylab.sql.xp-cmdshell",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-732-1628",
+  "lang": "c",
+  "rule": "cylab.c.world-writable-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-78-1782",
+  "lang": "sql",
+  "rule": "cylab.sql.xp-cmdshell",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-494-1899",
+  "lang": "bash",
+  "rule": "cylab.bash.source-remote-script",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-327-1690",
+  "lang": "cpp",
+  "rule": "cylab.cpp.openssl-weak-algo",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-256-1769",
+  "lang": "sql",
+  "rule": "cylab.sql.plaintext-password-column",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-22-1108",
+  "lang": "javascript",
+  "rule": "cylab.javascript.express-file-param",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-502-1365",
+  "lang": "php",
+  "rule": "cylab.php.unserialize-input",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-614-1237",
+  "lang": "typescript",
+  "rule": "cylab.typescript.cookie-insecure-flags",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-798-1718",
+  "lang": "cpp",
+  "rule": "cylab.cpp.hardcoded-key-literal",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-611-1433",
+  "lang": "php",
+  "rule": "cylab.php.libxml-noent",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-295-1055",
+  "lang": "python",
+  "rule": "cylab.python.tls-verify-off",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-1185",
+  "lang": "typescript",
+  "rule": "cylab.typescript.orm-raw-unsafe",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-312-1885",
+  "lang": "bash",
+  "rule": "cylab.bash.secret-echo-to-file",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-532-1068",
+  "lang": "python",
+  "rule": "cylab.python.log-sensitive",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-732-1627",
+  "lang": "c",
+  "rule": "cylab.c.world-writable-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-330-1314",
+  "lang": "java",
+  "rule": "cylab.java.insecure-random",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-22-1274",
+  "lang": "java",
+  "rule": "cylab.java.file-from-parameter",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-1082",
+  "lang": "python",
+  "rule": "cylab.python.tar-zip-extractall",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-78-1861",
+  "lang": "bash",
+  "rule": "cylab.bash.sh-c-interpolated",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-22-1224",
+  "lang": "typescript",
+  "rule": "cylab.typescript.readfile-template-path",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-88-1820",
+  "lang": "bash",
+  "rule": "cylab.bash.unquoted-rm-var",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-787-1612",
+  "lang": "c",
+  "rule": "cylab.c.memcpy-len-from-input",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-327-1534",
+  "lang": "csharp",
+  "rule": "cylab.csharp.weak-symmetric",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-532-1067",
+  "lang": "python",
+  "rule": "cylab.python.log-sensitive",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-1547",
+  "lang": "c",
+  "rule": "cylab.c.sprintf-unbounded",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-22-1223",
+  "lang": "typescript",
+  "rule": "cylab.typescript.readfile-template-path",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-614-1235",
+  "lang": "typescript",
+  "rule": "cylab.typescript.cookie-insecure-flags",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-22-1680",
+  "lang": "cpp",
+  "rule": "cylab.cpp.ofstream-concat-path",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-79-1456",
+  "lang": "csharp",
+  "rule": "cylab.csharp.html-content-interp",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-79-1003",
+  "lang": "python",
+  "rule": "cylab.python.template-string-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-330-1313",
+  "lang": "java",
+  "rule": "cylab.java.insecure-random",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-798-1132",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-config-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-798-1717",
+  "lang": "cpp",
+  "rule": "cylab.cpp.hardcoded-key-literal",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-1809",
+  "lang": "sql",
+  "rule": "cylab.sql.link-mapping-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-1810",
+  "lang": "sql",
+  "rule": "cylab.sql.link-mapping-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-295-1353",
+  "lang": "java",
+  "rule": "cylab.java.trust-all-certs",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-1561",
+  "lang": "c",
+  "rule": "cylab.c.scanf-unbounded-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-295-1834",
+  "lang": "bash",
+  "rule": "cylab.bash.tls-insecure-flag",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-256-1768",
+  "lang": "sql",
+  "rule": "cylab.sql.plaintext-password-column",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-1548",
+  "lang": "c",
+  "rule": "cylab.c.sprintf-unbounded",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-312-1886",
+  "lang": "bash",
+  "rule": "cylab.bash.secret-echo-to-file",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-22-1275",
+  "lang": "java",
+  "rule": "cylab.java.file-from-parameter",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-502-1368",
+  "lang": "php",
+  "rule": "cylab.php.unserialize-input",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-1562",
+  "lang": "c",
+  "rule": "cylab.c.scanf-unbounded-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-1419",
+  "lang": "php",
+  "rule": "cylab.php.laravel-raw-interp",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-330-1444",
+  "lang": "php",
+  "rule": "cylab.php.weak-random-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-22-1105",
+  "lang": "javascript",
+  "rule": "cylab.javascript.express-file-param",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-295-1352",
+  "lang": "java",
+  "rule": "cylab.java.trust-all-certs",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-798-1134",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-config-secret",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-1184",
+  "lang": "typescript",
+  "rule": "cylab.typescript.orm-raw-unsafe",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-89-1183",
+  "lang": "typescript",
+  "rule": "cylab.typescript.orm-raw-unsafe",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-190-1664",
+  "lang": "cpp",
+  "rule": "cylab.cpp.new-array-mul",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1729",
+  "lang": "sql",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-798-1716",
+  "lang": "cpp",
+  "rule": "cylab.cpp.hardcoded-key-literal",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-1145",
+  "lang": "javascript",
+  "rule": "cylab.javascript.dom-sink-html",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-79-1288",
+  "lang": "java",
+  "rule": "cylab.java.servlet-writer-param",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-214-1846",
+  "lang": "bash",
+  "rule": "cylab.bash.password-on-cmdline",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-134-1703",
+  "lang": "cpp",
+  "rule": "cylab.cpp.fmt-cstr-sink",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-22-1677",
+  "lang": "cpp",
+  "rule": "cylab.cpp.ofstream-concat-path",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-918-1483",
+  "lang": "csharp",
+  "rule": "cylab.csharp.httpclient-user-url",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-532-1066",
+  "lang": "python",
+  "rule": "cylab.python.log-sensitive",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-338-1509",
+  "lang": "csharp",
+  "rule": "cylab.csharp.system-random-token",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-88-1821",
+  "lang": "bash",
+  "rule": "cylab.bash.unquoted-rm-var",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-22-1225",
+  "lang": "typescript",
+  "rule": "cylab.typescript.readfile-template-path",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-78-1860",
+  "lang": "bash",
+  "rule": "cylab.bash.sh-c-interpolated",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-1147",
+  "lang": "javascript",
+  "rule": "cylab.javascript.dom-sink-html",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1795",
+  "lang": "sql",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1742",
+  "lang": "sql",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-78-1859",
+  "lang": "bash",
+  "rule": "cylab.bash.sh-c-interpolated",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-214-1847",
+  "lang": "bash",
+  "rule": "cylab.bash.password-on-cmdline",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-918-1119",
+  "lang": "javascript",
+  "rule": "cylab.javascript.http-client-user-url",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-918-1392",
+  "lang": "php",
+  "rule": "cylab.php.fetch-user-url",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-611-1015",
+  "lang": "python",
+  "rule": "cylab.python.stdlib-xml-parse",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-377-1587",
+  "lang": "c",
+  "rule": "cylab.c.insecure-tempname",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-295-1835",
+  "lang": "bash",
+  "rule": "cylab.bash.tls-insecure-flag",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-22-1080",
+  "lang": "python",
+  "rule": "cylab.python.tar-zip-extractall",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-798-1133",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-config-secret",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-120-1560",
+  "lang": "c",
+  "rule": "cylab.c.scanf-unbounded-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-327-1327",
+  "lang": "java",
+  "rule": "cylab.java.cipher-weak-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1731",
+  "lang": "sql",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-502-1367",
+  "lang": "php",
+  "rule": "cylab.php.unserialize-input",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-1144",
+  "lang": "javascript",
+  "rule": "cylab.javascript.dom-sink-html",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-338-1599",
+  "lang": "c",
+  "rule": "cylab.c.libc-rand-key",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-327-1535",
+  "lang": "csharp",
+  "rule": "cylab.csharp.weak-symmetric",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-90-1339",
+  "lang": "java",
+  "rule": "cylab.java.ldap-filter-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-915-1095",
+  "lang": "javascript",
+  "rule": "cylab.javascript.mass-assign-merge",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-78-1783",
+  "lang": "sql",
+  "rule": "cylab.sql.xp-cmdshell",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-377-1586",
+  "lang": "c",
+  "rule": "cylab.c.insecure-tempname",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1794",
+  "lang": "sql",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-79-1457",
+  "lang": "csharp",
+  "rule": "cylab.csharp.html-content-interp",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-22-1276",
+  "lang": "java",
+  "rule": "cylab.java.file-from-parameter",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-611-1017",
+  "lang": "python",
+  "rule": "cylab.python.stdlib-xml-parse",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-601-1209",
+  "lang": "typescript",
+  "rule": "cylab.typescript.client-location-redirect",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-79-1287",
+  "lang": "java",
+  "rule": "cylab.java.servlet-writer-param",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1730",
+  "lang": "sql",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-918-1301",
+  "lang": "java",
+  "rule": "cylab.java.url-from-parameter",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-347-1262",
+  "lang": "typescript",
+  "rule": "cylab.typescript.jwt-decode-no-verify",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-327-1040",
+  "lang": "python",
+  "rule": "cylab.python.weak-cipher-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-22-1107",
+  "lang": "javascript",
+  "rule": "cylab.javascript.express-file-param",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-601-1495",
+  "lang": "csharp",
+  "rule": "cylab.csharp.mvc-redirect-return",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-134-1704",
+  "lang": "cpp",
+  "rule": "cylab.cpp.fmt-cstr-sink",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-732-1626",
+  "lang": "c",
+  "rule": "cylab.c.world-writable-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-1333-1158",
+  "lang": "javascript",
+  "rule": "cylab.javascript.regexp-user-input",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-377-1589",
+  "lang": "c",
+  "rule": "cylab.c.insecure-tempname",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-798-1131",
+  "lang": "javascript",
+  "rule": "cylab.javascript.hardcoded-config-secret",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-120-1638",
+  "lang": "cpp",
+  "rule": "cylab.cpp.memcpy-string-size",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-95-1381",
+  "lang": "php",
+  "rule": "cylab.php.eval-user-code",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-95-1378",
+  "lang": "php",
+  "rule": "cylab.php.eval-user-code",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-502-1249",
+  "lang": "typescript",
+  "rule": "cylab.typescript.unsafe-unserialize",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-416-1652",
+  "lang": "cpp",
+  "rule": "cylab.cpp.dangling-cstr",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-732-1625",
+  "lang": "c",
+  "rule": "cylab.c.world-writable-mode",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-328-1404",
+  "lang": "php",
+  "rule": "cylab.php.weak-password-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-1808",
+  "lang": "sql",
+  "rule": "cylab.sql.link-mapping-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-611-1431",
+  "lang": "php",
+  "rule": "cylab.php.libxml-noent",
+  "rule_dir": "rules",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-328-1405",
+  "lang": "php",
+  "rule": "cylab.php.weak-password-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-918-1120",
+  "lang": "javascript",
+  "rule": "cylab.javascript.http-client-user-url",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-79-1196",
+  "lang": "typescript",
+  "rule": "cylab.typescript.angular-bypass-sanitizer",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-798-1522",
+  "lang": "csharp",
+  "rule": "cylab.csharp.connstring-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-79-1459",
+  "lang": "csharp",
+  "rule": "cylab.csharp.html-content-interp",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-c-367-1573",
+  "lang": "c",
+  "rule": "cylab.c.access-then-open",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-918-1121",
+  "lang": "javascript",
+  "rule": "cylab.javascript.http-client-user-url",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-250-1872",
+  "lang": "bash",
+  "rule": "cylab.bash.sudoers-nopasswd-all",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-90-1341",
+  "lang": "java",
+  "rule": "cylab.java.ldap-filter-concat",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-22-1277",
+  "lang": "java",
+  "rule": "cylab.java.file-from-parameter",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-611-1430",
+  "lang": "php",
+  "rule": "cylab.php.libxml-noent",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-918-1482",
+  "lang": "csharp",
+  "rule": "cylab.csharp.httpclient-user-url",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-295-1054",
+  "lang": "python",
+  "rule": "cylab.python.tls-verify-off",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-79-1001",
+  "lang": "python",
+  "rule": "cylab.python.template-string-user",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-614-1236",
+  "lang": "typescript",
+  "rule": "cylab.typescript.cookie-insecure-flags",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-347-1261",
+  "lang": "typescript",
+  "rule": "cylab.typescript.jwt-decode-no-verify",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-1417",
+  "lang": "php",
+  "rule": "cylab.php.laravel-raw-interp",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-611-1469",
+  "lang": "csharp",
+  "rule": "cylab.csharp.xml-dtd-parse",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-cpp-22-1679",
+  "lang": "cpp",
+  "rule": "cylab.cpp.ofstream-concat-path",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1797",
+  "lang": "sql",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-typescript-502-1248",
+  "lang": "typescript",
+  "rule": "cylab.typescript.unsafe-unserialize",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-python-611-1016",
+  "lang": "python",
+  "rule": "cylab.python.stdlib-xml-parse",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-328-1406",
+  "lang": "php",
+  "rule": "cylab.php.weak-password-hash",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-915-1093",
+  "lang": "javascript",
+  "rule": "cylab.javascript.mass-assign-merge",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-javascript-79-1146",
+  "lang": "javascript",
+  "rule": "cylab.javascript.dom-sink-html",
+  "rule_dir": "rules-gold",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-798-1521",
+  "lang": "csharp",
+  "rule": "cylab.csharp.connstring-password",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-bash-312-1887",
+  "lang": "bash",
+  "rule": "cylab.bash.secret-echo-to-file",
+  "rule_dir": "rules",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ }
+]

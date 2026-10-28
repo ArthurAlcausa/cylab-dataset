@@ -1,0 +1,12 @@
+rules:
+- id: cylab.bash.eval-variable-gold
+  languages:
+  - bash
+  severity: ERROR
+  message: eval reinterpreta o conteúdo de @C@ como código de shell, permitindo injeção
+    de comandos (CWE-78)
+  metadata:
+    cwe: CWE-78
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-regex: (?m)^(?!\s*#)[^#\n]*?\beval\s+["\']?[^\n#]*\$

@@ -1,0 +1,11 @@
+rules:
+- id: cylab.cpp.gets-gold
+  languages:
+  - cpp
+  severity: ERROR
+  message: gets sem limite (CWE-120)
+  metadata:
+    cwe: CWE-120
+    source: sintetico-cylab
+  pattern-either:
+  - pattern: gets($B)

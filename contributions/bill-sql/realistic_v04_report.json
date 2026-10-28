@@ -1,0 +1,325 @@
+{
+ "total_authored": 31,
+ "gate_pass": 31,
+ "near_dup_drops": [],
+ "kept": 31,
+ "before_lines": {
+  "min": 25,
+  "median": 34,
+  "max": 41
+ },
+ "max_similarity_overall": 0.724,
+ "near_dup_method": "SequenceMatcher + 5-token shingle Jaccard vs data/*.jsonl and contributions/**/*.jsonl same lang+cwe, threshold 0.85",
+ "pairs": [
+  {
+   "id": "cylab-bill-sqlreal-89-string-concat-01",
+   "rule": "cylab.sql.string-concat",
+   "max_similarity": 0.25,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-pg-format-unsafe-s-01",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 34
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-string-concat-02",
+   "rule": "cylab.sql.string-concat",
+   "max_similarity": 0.672,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-tsql-exec-concat-01",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 37
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-string-concat-03",
+   "rule": "cylab.sql.string-concat",
+   "max_similarity": 0.693,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-oracle-execute-immediate-01",
+   "src": "buffer-internal",
+   "before_lines": 33,
+   "after_lines": 33
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-mysql-prepare-concat-01",
+   "rule": "cylab.sql.mysql-prepare-concat",
+   "max_similarity": 0.642,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-mysql-prepare-concat-02",
+   "src": "buffer-internal",
+   "before_lines": 33,
+   "after_lines": 33
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-mysql-prepare-concat-02",
+   "rule": "cylab.sql.mysql-prepare-concat",
+   "max_similarity": 0.389,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-mysql-prepare-concat-01",
+   "src": "buffer-internal",
+   "before_lines": 32,
+   "after_lines": 31
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-plpgsql-execute-concat-01",
+   "rule": "cylab.sql.plpgsql-execute-concat",
+   "max_similarity": 0.552,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-string-concat-01",
+   "src": "buffer-internal",
+   "before_lines": 37,
+   "after_lines": 40
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-plpgsql-execute-concat-02",
+   "rule": "cylab.sql.plpgsql-execute-concat",
+   "max_similarity": 0.724,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-pg-format-unsafe-s-02",
+   "src": "buffer-internal",
+   "before_lines": 34,
+   "after_lines": 36
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-tsql-exec-concat-01",
+   "rule": "cylab.sql.tsql-exec-concat",
+   "max_similarity": 0.67,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-string-concat-02",
+   "src": "buffer-internal",
+   "before_lines": 38,
+   "after_lines": 36
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-tsql-exec-concat-02",
+   "rule": "cylab.sql.tsql-exec-concat",
+   "max_similarity": 0.576,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-tsql-sql-var-concat-01",
+   "src": "buffer-internal",
+   "before_lines": 37,
+   "after_lines": 37
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-tsql-sql-var-concat-01",
+   "rule": "cylab.sql.tsql-sql-var-concat",
+   "max_similarity": 0.33,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-tsql-sql-var-concat-02",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 35
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-tsql-sql-var-concat-02",
+   "rule": "cylab.sql.tsql-sql-var-concat",
+   "max_similarity": 0.278,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-tsql-exec-concat-01",
+   "src": "buffer-internal",
+   "before_lines": 36,
+   "after_lines": 37
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-execute-immediate-01",
+   "rule": "cylab.sql.execute-immediate",
+   "max_similarity": 0.564,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-execute-immediate-02",
+   "src": "buffer-internal",
+   "before_lines": 34,
+   "after_lines": 34
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-execute-immediate-02",
+   "rule": "cylab.sql.execute-immediate",
+   "max_similarity": 0.583,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-execute-immediate-01",
+   "src": "buffer-internal",
+   "before_lines": 28,
+   "after_lines": 30
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-oracle-execute-immediate-01",
+   "rule": "cylab.sql.oracle-execute-immediate",
+   "max_similarity": 0.649,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-string-concat-03",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 35
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-oracle-execute-immediate-02",
+   "rule": "cylab.sql.oracle-execute-immediate",
+   "max_similarity": 0.326,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-execute-immediate-01",
+   "src": "buffer-internal",
+   "before_lines": 33,
+   "after_lines": 33
+  },
+  {
+   "id": "cylab-bill-sqlreal-78-xp-cmdshell-01",
+   "rule": "cylab.sql.xp-cmdshell",
+   "max_similarity": 0.28,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-78-xp-cmdshell-02",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 34
+  },
+  {
+   "id": "cylab-bill-sqlreal-78-xp-cmdshell-02",
+   "rule": "cylab.sql.xp-cmdshell",
+   "max_similarity": 0.28,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-78-xp-cmdshell-01",
+   "src": "buffer-internal",
+   "before_lines": 41,
+   "after_lines": 41
+  },
+  {
+   "id": "cylab-bill-sqlreal-269-grant-all-public-01",
+   "rule": "cylab.sql.grant-all-public",
+   "max_similarity": 0.083,
+   "near_dup": false,
+   "vs": "cylab-bill-sql-269-0882",
+   "src": "data/cylab-commercial-v0.3-gold.jsonl",
+   "before_lines": 34,
+   "after_lines": 35
+  },
+  {
+   "id": "cylab-bill-sqlreal-269-grant-all-public-02",
+   "rule": "cylab.sql.grant-all-public",
+   "max_similarity": 0.085,
+   "near_dup": false,
+   "vs": "cylab-bill-sql-269-0896",
+   "src": "contributions/bill-scale/batch_0007.jsonl",
+   "before_lines": 31,
+   "after_lines": 31
+  },
+  {
+   "id": "cylab-bill-sqlreal-798-hardcoded-db-password-01",
+   "rule": "cylab.sql.hardcoded-db-password",
+   "max_similarity": 0.525,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-798-link-mapping-password-01",
+   "src": "buffer-internal",
+   "before_lines": 34,
+   "after_lines": 36
+  },
+  {
+   "id": "cylab-bill-sqlreal-798-hardcoded-db-password-02",
+   "rule": "cylab.sql.hardcoded-db-password",
+   "max_similarity": 0.143,
+   "near_dup": false,
+   "vs": "cylab-bill-sql-798-0872",
+   "src": "contributions/bill-scale/batch_0008.jsonl",
+   "before_lines": 34,
+   "after_lines": 35
+  },
+  {
+   "id": "cylab-bill-sqlreal-798-hardcoded-db-password-03",
+   "rule": "cylab.sql.hardcoded-db-password",
+   "max_similarity": 0.337,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-798-link-mapping-password-02",
+   "src": "buffer-internal",
+   "before_lines": 25,
+   "after_lines": 25
+  },
+  {
+   "id": "cylab-bill-sqlreal-256-plaintext-password-column-01",
+   "rule": "cylab.sql.plaintext-password-column",
+   "max_similarity": 0.195,
+   "near_dup": false,
+   "vs": "cylab-bill-sql-256-1774",
+   "src": "contributions/bill-scale/batch_0011.jsonl",
+   "before_lines": 37,
+   "after_lines": 39
+  },
+  {
+   "id": "cylab-bill-sqlreal-256-plaintext-password-column-02",
+   "rule": "cylab.sql.plaintext-password-column",
+   "max_similarity": 0.16,
+   "near_dup": false,
+   "vs": "cylab-bill-sql-256-1778",
+   "src": "contributions/bill-scale/batch_0015.jsonl",
+   "before_lines": 32,
+   "after_lines": 32
+  },
+  {
+   "id": "cylab-bill-sqlreal-256-plaintext-password-column-03",
+   "rule": "cylab.sql.plaintext-password-column",
+   "max_similarity": 0.148,
+   "near_dup": false,
+   "vs": "cylab-bill-sql-256-1770",
+   "src": "contributions/bill-scale/batch_0015.jsonl",
+   "before_lines": 35,
+   "after_lines": 36
+  },
+  {
+   "id": "cylab-bill-sqlreal-798-link-mapping-password-01",
+   "rule": "cylab.sql.link-mapping-password",
+   "max_similarity": 0.226,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-798-hardcoded-db-password-01",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 36
+  },
+  {
+   "id": "cylab-bill-sqlreal-798-link-mapping-password-02",
+   "rule": "cylab.sql.link-mapping-password",
+   "max_similarity": 0.337,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-798-hardcoded-db-password-03",
+   "src": "buffer-internal",
+   "before_lines": 30,
+   "after_lines": 31
+  },
+  {
+   "id": "cylab-bill-sqlreal-426-security-definer-no-path-01",
+   "rule": "cylab.sql.security-definer-no-path",
+   "max_similarity": 0.248,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-426-security-definer-no-path-02",
+   "src": "buffer-internal",
+   "before_lines": 37,
+   "after_lines": 38
+  },
+  {
+   "id": "cylab-bill-sqlreal-426-security-definer-no-path-02",
+   "rule": "cylab.sql.security-definer-no-path",
+   "max_similarity": 0.603,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-426-security-definer-no-path-01",
+   "src": "buffer-internal",
+   "before_lines": 35,
+   "after_lines": 37
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-pg-format-unsafe-s-01",
+   "rule": "cylab.sql.pg-format-unsafe-s",
+   "max_similarity": 0.261,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-pg-format-unsafe-s-02",
+   "src": "buffer-internal",
+   "before_lines": 34,
+   "after_lines": 37
+  },
+  {
+   "id": "cylab-bill-sqlreal-89-pg-format-unsafe-s-02",
+   "rule": "cylab.sql.pg-format-unsafe-s",
+   "max_similarity": 0.656,
+   "near_dup": false,
+   "vs": "cylab-bill-sqlreal-89-plpgsql-execute-concat-02",
+   "src": "buffer-internal",
+   "before_lines": 34,
+   "after_lines": 37
+  }
+ ]
+}

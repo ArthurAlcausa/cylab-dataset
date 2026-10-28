@@ -1,0 +1,9 @@
+rules:
+  - id: cylab.java.command-injection
+    message: "Runtime.exec com string concatenada (CWE-78)"
+    severity: ERROR
+    languages: [java]
+    metadata:
+      cwe: "CWE-78"
+      source: sintetico-cylab
+    pattern: Runtime.getRuntime().exec("..." + $X)

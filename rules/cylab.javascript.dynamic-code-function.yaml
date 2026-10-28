@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.dynamic-code-function
+    message: "A regra de @S@ enviada pelo usuário vira código JavaScript (new Function/vm), permitindo execução arbitrária no servidor (CWE-94)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-94"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'new Function\(|vm\.runIn(New|This)?Context\(|\bvm\.Script\('

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.memcpy-len-from-input
+    message: "O tamanho copiado para o buffer de @S@ vem do próprio pacote (campo len) sem validação contra o destino, permitindo escr (CWE-787)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-787"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'memcpy\(\s*\w+(->\w+)?\s*,\s*[^,]+,\s*\w+(->|\.)(len|tamanho|size)\s*\)'

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.gets-call
+    message: "gets() lê o @C@ sem limite de tamanho e sempre permite estouro do buffer (CWE-242)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-242"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\bgets\s*\('

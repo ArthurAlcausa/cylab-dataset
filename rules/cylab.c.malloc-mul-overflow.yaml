@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.malloc-mul-overflow
+    message: "A alocação de n @T@ multiplica contagem externa por sizeof sem checar overflow; o produto pode estourar e alocar menos q (CWE-190)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-190"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'malloc\(\s*\w+\s*\*\s*sizeof'

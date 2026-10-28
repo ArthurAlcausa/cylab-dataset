@@ -1,0 +1,38 @@
+{
+ "input": "data/cylab-commercial-v0.4-realism-DRAFT.jsonl",
+ "n_pairs": 100,
+ "criteria": {
+  "normalization": "strip comments; string literals->S; numbers->N; non-keyword identifiers->ID; whitespace ignored (token stream)",
+  "scope": "clusters only within same (lang,cwe)",
+  "link": "identical normalized before OR Jaccard(4-gram token shingles)>=0.85; single-linkage union-find",
+  "keep_policy": "cluster with a single before shape, single after shape AND single string-preserving shape: keep 1; otherwise: keep up to 2, prefer non-template sources (v0.1/mk/sam over bill), then distinct normalized-after (fix diversity), then distinct string-preserving before (L2)"
+ },
+ "n_clusters": 1,
+ "pairs_in_clusters": 2,
+ "n_drop": 0,
+ "n_keep": 100,
+ "by_source_drop": {},
+ "clusters": [
+  {
+   "cluster_id": "nd-0001",
+   "lang": "sql",
+   "cwe": "CWE-89",
+   "size": 2,
+   "exact_normalized": false,
+   "distinct_before_shapes": 2,
+   "distinct_after_shapes": 2,
+   "distinct_before_with_strings": 2,
+   "min_link_sim": 0.914,
+   "rules": [
+    "cylab.sql.string-concat",
+    "cylab.sql.tsql-sql-var-concat"
+   ],
+   "keep": [
+    "cylab-bill-sqlreal-89-string-concat-02",
+    "cylab-bill-sqlreal-89-tsql-sql-var-concat-01"
+   ],
+   "drop": []
+  }
+ ],
+ "drop_ids": []
+}

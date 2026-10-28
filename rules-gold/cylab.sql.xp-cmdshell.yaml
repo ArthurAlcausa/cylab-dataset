@@ -1,0 +1,16 @@
+rules:
+- id: cylab.sql.xp-cmdshell
+  message: 'A rotina de @T@ habilita/usa xp_cmdshell, executando comandos do sistema
+    operacional a partir do SQL e ampliando muito o (CWE-78) [gold: regex-tightened;
+    opengrep sem taint p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-78
+    source: sintetico-cylab
+    author: bill-csharp-sql
+    gold: regex-tightened-v1
+  patterns:
+  - pattern-regex: (?i)'xp_cmdshell'\s*,\s*1|EXEC(UTE)?\s+(master\.\.|master\.dbo\.)?xp_cmdshell
+  - pattern-not-regex: (?m)^\s*--.*$

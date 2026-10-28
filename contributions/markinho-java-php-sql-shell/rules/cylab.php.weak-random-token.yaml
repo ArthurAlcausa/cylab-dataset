@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.php.weak-random-token
+    message: "O token de @S@ é gerado com rand/mt_rand/uniqid, que não são criptograficamente seguros e podem ser previstos (CWE-330)"
+    severity: ERROR
+    languages: [php]
+    metadata:
+      cwe: "CWE-330"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(rand|mt_rand|uniqid|lcg_value)\('

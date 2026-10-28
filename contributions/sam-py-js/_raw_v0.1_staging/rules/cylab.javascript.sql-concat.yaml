@@ -1,0 +1,6 @@
+rules:
+- id: cylab.javascript.sql-concat
+  message: SQL concat
+  languages: [javascript]
+  severity: ERROR
+  pattern-regex: 'SELECT \* FROM .*\+'

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.strcpy-strcat
+    message: "strcpy/strcat copiam o @C@ de @S@ sem checar o tamanho do buffer de destino, causando estouro de buffer (CWE-120)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(strcpy|strcat)\s*\('

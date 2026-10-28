@@ -1,0 +1,9 @@
+rules:
+  - id: cylab.bash.eval-injection
+    message: "eval com variavel externa (CWE-95)"
+    severity: ERROR
+    languages: [bash]
+    metadata:
+      cwe: "CWE-95"
+      source: sintetico-cylab
+    pattern: eval "...$X..."

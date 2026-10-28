@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.csharp.httpclient-user-url
+    message: "O serviço de @T@ faz HttpClient.Get na URL recebida do cliente, permitindo SSRF (CWE-918)"
+    severity: ERROR
+    languages: [csharp]
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\.(GetAsync|GetStringAsync|GetStreamAsync|PostAsync)\(\s*(url|Request\.Query\[[^\]]+\])'

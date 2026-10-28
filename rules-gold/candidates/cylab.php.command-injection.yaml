@@ -1,0 +1,387 @@
+rules:
+- id: cylab.php.command-injection
+  mode: taint
+  message: 'shell_exec/system com entrada externa (CWE-78) [gold: taint]'
+  severity: ERROR
+  languages:
+  - php
+  metadata:
+    cwe: CWE-78
+    source: sintetico-cylab
+    gold: taint-v1
+  pattern-sources:
+  - pattern: $_GET
+  - pattern: $_POST
+  - pattern: $_REQUEST
+  - pattern: $_COOKIE
+  - pattern: $_SERVER
+  - pattern: $_FILES
+  - pattern: file_get_contents('php://input')
+  - patterns:
+    - pattern-inside: function $F(..., $P, ...) {...}
+    - pattern: $P
+    - metavariable-regex:
+        metavariable: $P
+        regex: ^\$(?!(db|conn|pdo|mysqli)$)
+  pattern-sinks:
+  - patterns:
+    - pattern: shell_exec($X)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: exec($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: system($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: passthru($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: popen($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: proc_open($X, ...)
+    - focus-metavariable: $X
+    - metavariable-pattern:
+        metavariable: $X
+        patterns:
+        - pattern-not: '[...]'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  pattern-sanitizers:
+  - pattern: '$C ? $A : $D'
+  - pattern: urlencode(...)
+  - pattern: rawurlencode(...)
+  - pattern: intval(...)
+  - pattern: (int) $X
+  - pattern: htmlspecialchars(...)
+  - pattern: htmlentities(...)
+  - pattern: escapeshellarg(...)
+  - pattern: basename(...)
+  - pattern: filter_var(...)
+  - pattern: (float) $X
+  - pattern: $C->real_escape_string(...)
+  - pattern: mysqli_real_escape_string(...)
+  - pattern: json_decode(...)

@@ -1,0 +1,7 @@
+rules:
+  - id: cylab.python.flask-debug
+    message: "Flask debug em producao (CWE-489)"
+    severity: ERROR
+    languages: [python]
+    metadata: {cwe: "CWE-489", source: sintetico-cylab}
+    pattern: app.run(..., debug=True, ...)

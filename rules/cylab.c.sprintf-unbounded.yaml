@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.sprintf-unbounded
+    message: "sprintf escreve o texto de @S@ em buffer fixo sem limite; entrada longa estoura o buffer (CWE-120)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?<![\w])v?sprintf\s*\('

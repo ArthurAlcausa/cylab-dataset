@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.sql.tsql-sql-var-concat
+    message: "A procedure de @T@ monta @sql concatenando o parâmetro e o executa, mesmo via sp_executesql, permitindo injeção (CWE-89)"
+    severity: ERROR
+    languages: [generic]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?i)SET\s+@\w+\s*=\s*N?''(?:[^'']|'''')*''\s*\+\s*@\w+'

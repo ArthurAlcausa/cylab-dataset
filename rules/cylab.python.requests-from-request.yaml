@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.requests-from-request
+    message: "A URL requisitada pelo servidor vem direto do parâmetro do cliente, permitindo SSRF para serviços internos ou metadados  (CWE-918)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'requests\.\w+\(\s*request\.(args|form|json|values)'

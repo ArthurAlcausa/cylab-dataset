@@ -1,0 +1,20 @@
+rules:
+  - id: cylab.csharp.process-start-shell
+    message: "Process.Start via shell com argumento externo (CWE-78)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-78"
+      source: sintetico-cylab
+      author: markinho-gold
+    pattern-sources:
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., string $S, ...) { ... }
+          - pattern: $S
+    pattern-sinks:
+      - pattern: Process.Start("cmd.exe", $ARGS)
+      - pattern: Process.Start("cmd", $ARGS)
+      - pattern: Process.Start("/bin/sh", $ARGS)
+      - pattern: Process.Start("bash", $ARGS)

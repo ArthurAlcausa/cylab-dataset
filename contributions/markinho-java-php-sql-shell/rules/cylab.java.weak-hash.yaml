@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.java.weak-hash
+    message: "MessageDigest MD5/SHA-1 (CWE-328)"
+    severity: ERROR
+    languages: [java]
+    metadata:
+      cwe: "CWE-328"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: MessageDigest.getInstance("MD5")
+      - pattern: MessageDigest.getInstance("SHA-1")

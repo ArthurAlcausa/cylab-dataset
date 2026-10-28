@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.http-client-user-url
+    message: "O servidor faz requisição para a URL informada pelo cliente, permitindo SSRF contra rede interna e metadados (CWE-918)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(axios(\.get|\.post)?|fetch|got|needle\.get)\(\s*req\.(query|body|params)'

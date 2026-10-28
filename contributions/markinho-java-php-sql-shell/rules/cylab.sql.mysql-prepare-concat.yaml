@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.sql.mysql-prepare-concat
+    message: "A procedure MySQL monta a query de @T@ com CONCAT do parâmetro e a executa via PREPARE, permitindo injeção (CWE-89)"
+    severity: ERROR
+    languages: [generic]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?i)CONCAT\(\s*''[^'']*\b(WHERE|SET|VALUES|ORDER BY|FROM)\b(?:[^'']|'''')*''\s*,'

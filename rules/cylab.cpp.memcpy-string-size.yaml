@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.cpp.memcpy-string-size
+    message: "Copia-se o conteúdo de @C@ para um array fixo usando o tamanho da string de origem, sem limitar ao destino, causando est (CWE-120)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(std::)?memcpy\([^;]*\.(size|length)\(\)\s*\)'

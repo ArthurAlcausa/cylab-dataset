@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.java.objectinputstream
+    message: "Ler objetos de @S@ com ObjectInputStream a partir de dados externos permite gadget chains e execução remota (CWE-502)"
+    severity: ERROR
+    languages: [java]
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'new\s+ObjectInputStream\s*\('

@@ -1,0 +1,29 @@
+rules:
+  - id: cylab.csharp.html-content-interp
+    message: "O controller de @T@ monta HTML interpolando valor do usuário e o devolve como conteúdo bruto, causando XSS (CWE-79)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-79"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-sources:
+      - pattern: Request.Query[...]
+      - pattern: Request.Form[...]
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) => $E;
+          - pattern: $S
+    pattern-sanitizers:
+      - pattern: HtmlEncoder.Default.Encode(...)
+      - pattern: WebUtility.HtmlEncode(...)
+      - pattern: HttpUtility.HtmlEncode(...)
+    pattern-sinks:
+      - pattern: Content($X, ...)
+      - pattern: new HtmlString($X)
+      - pattern: Html.Raw($X)

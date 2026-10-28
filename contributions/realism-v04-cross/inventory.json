@@ -1,0 +1,246 @@
+{
+ "total": 100,
+ "final_v03_count": 476,
+ "per_buffer": {
+  "markinho": {
+   "path": "contributions/markinho-java-php-sql-shell/realistic_v04_candidates.jsonl",
+   "count": 18,
+   "lang": {
+    "java": 6,
+    "php": 6,
+    "csharp": 6
+   },
+   "cwe": {
+    "CWE-78": 3,
+    "CWE-22": 3,
+    "CWE-502": 3,
+    "CWE-79": 3,
+    "CWE-918": 3,
+    "CWE-90": 1,
+    "CWE-95": 1,
+    "CWE-601": 1
+   },
+   "split": {
+    "train": 18
+   },
+   "source": {
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/78.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/22.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/502.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/79.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/918.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/90.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/95.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/601.html": 1
+   },
+   "before_lines": {
+    "n": 18,
+    "median": 34.0,
+    "min": 30,
+    "max": 40,
+    "mean": 34.1
+   }
+  },
+  "bill": {
+   "path": "contributions/bill-sql/realism_buffer.jsonl",
+   "count": 31,
+   "lang": {
+    "sql": 31
+   },
+   "cwe": {
+    "CWE-89": 17,
+    "CWE-798": 5,
+    "CWE-256": 3,
+    "CWE-78": 2,
+    "CWE-269": 2,
+    "CWE-426": 2
+   },
+   "split": {
+    "train": 31
+   },
+   "source": {
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/89.html": 17,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/798.html": 5,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/256.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/78.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/269.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/426.html": 2
+   },
+   "before_lines": {
+    "n": 31,
+    "median": 34,
+    "min": 25,
+    "max": 41,
+    "mean": 34.1
+   }
+  },
+  "elon": {
+   "path": "contributions/elon-c-cpp-sql-bash/realism/elon_realism_candidates.jsonl",
+   "count": 36,
+   "lang": {
+    "c": 12,
+    "cpp": 12,
+    "bash": 12
+   },
+   "cwe": {
+    "CWE-120": 5,
+    "CWE-78": 4,
+    "CWE-134": 3,
+    "CWE-377": 2,
+    "CWE-732": 2,
+    "CWE-190": 2,
+    "CWE-338": 2,
+    "CWE-22": 2,
+    "CWE-798": 2,
+    "CWE-494": 2,
+    "CWE-242": 1,
+    "CWE-367": 1,
+    "CWE-787": 1,
+    "CWE-327": 1,
+    "CWE-416": 1,
+    "CWE-214": 1,
+    "CWE-295": 1,
+    "CWE-312": 1,
+    "CWE-250": 1,
+    "CWE-88": 1
+   },
+   "split": {
+    "train": 36
+   },
+   "source": {
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/120.html": 5,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/78.html": 4,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/134.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/377.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/732.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/190.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/338.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/22.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/798.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/494.html": 2,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/242.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/367.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/787.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/327.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/416.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/214.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/295.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/312.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/250.html": 1,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/88.html": 1
+   },
+   "before_lines": {
+    "n": 36,
+    "median": 39.0,
+    "min": 26,
+    "max": 51,
+    "mean": 38
+   }
+  },
+  "sam": {
+   "path": "contributions/sam-py-js/gold_realism_v0.4_candidates.jsonl",
+   "count": 15,
+   "lang": {
+    "python": 6,
+    "javascript": 5,
+    "typescript": 4
+   },
+   "cwe": {
+    "CWE-89": 6,
+    "CWE-22": 3,
+    "CWE-78": 3,
+    "CWE-79": 3
+   },
+   "split": {
+    "train": 12,
+    "holdout": 3
+   },
+   "source": {
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/89.html": 6,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/22.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/78.html": 3,
+    "sintetico-cylab https://cwe.mitre.org/data/definitions/79.html": 3
+   },
+   "before_lines": {
+    "n": 15,
+    "median": 33,
+    "min": 29,
+    "max": 35,
+    "mean": 32.1
+   }
+  }
+ },
+ "dup_ids_within_buffers": [],
+ "collisions_vs_final": [],
+ "source_issues": [],
+ "license_issues": [],
+ "keys_seen": [
+  "after",
+  "before",
+  "cwe",
+  "explanation_pt",
+  "id",
+  "lang",
+  "license",
+  "opengrep_rule",
+  "source",
+  "split"
+ ],
+ "overall": {
+  "lang": {
+   "sql": 31,
+   "c": 12,
+   "cpp": 12,
+   "bash": 12,
+   "java": 6,
+   "php": 6,
+   "csharp": 6,
+   "python": 6,
+   "javascript": 5,
+   "typescript": 4
+  },
+  "cwe": {
+   "CWE-89": 23,
+   "CWE-78": 12,
+   "CWE-22": 8,
+   "CWE-798": 7,
+   "CWE-79": 6,
+   "CWE-120": 5,
+   "CWE-502": 3,
+   "CWE-918": 3,
+   "CWE-256": 3,
+   "CWE-134": 3,
+   "CWE-269": 2,
+   "CWE-426": 2,
+   "CWE-377": 2,
+   "CWE-732": 2,
+   "CWE-190": 2,
+   "CWE-338": 2,
+   "CWE-494": 2,
+   "CWE-90": 1,
+   "CWE-95": 1,
+   "CWE-601": 1,
+   "CWE-242": 1,
+   "CWE-367": 1,
+   "CWE-787": 1,
+   "CWE-327": 1,
+   "CWE-416": 1,
+   "CWE-214": 1,
+   "CWE-295": 1,
+   "CWE-312": 1,
+   "CWE-250": 1,
+   "CWE-88": 1
+  },
+  "split": {
+   "train": 97,
+   "holdout": 3
+  },
+  "before_lines": {
+   "n": 100,
+   "median": 34.0,
+   "min": 25,
+   "max": 51,
+   "mean": 35.2
+  }
+ }
+}

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.php.fetch-user-url
+    message: "O servidor busca a URL fornecida pelo usuário (para importar @T@), permitindo SSRF contra serviços internos e file:// (CWE-918)"
+    severity: ERROR
+    languages: [php]
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(curl_init|file_get_contents|fopen)\(\s*\$_(GET|POST|REQUEST)\[|curl_init\(\s*\$url\b'

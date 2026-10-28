@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.insecure-tempname
+    message: "O arquivo temporário de @T@ usa tmpnam/mktemp, cujo nome previsível permite corrida e ataque de symlink (CWE-377)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-377"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(tmpnam|tempnam|mktemp)\s*\('

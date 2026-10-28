@@ -1,0 +1,13 @@
+rules:
+  - id: cylab.javascript.ssrf
+    message: "fetch/axios em URL vinda da requisicao (CWE-918)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: fetch(req.query.$U, ...)
+      - pattern: fetch(req.query.$U)
+      - pattern: axios.get(req.query.$U, ...)
+      - pattern: axios.get(req.query.$U)

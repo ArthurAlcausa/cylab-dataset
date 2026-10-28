@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.bash.tls-insecure-flag
+    message: "O download/chamada de @T@ desliga a verificação TLS (-k / --no-check-certificate), permitindo MITM (CWE-295)"
+    severity: ERROR
+    languages: [bash]
+    metadata:
+      cwe: "CWE-295"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\bcurl\b[^\n]*(\s-k\b|\s--insecure\b)|--no-check-certificate'

@@ -1,0 +1,99 @@
+rules:
+- id: cylab.php.unserialize-input
+  mode: taint
+  message: 'O estado de @S@ é desserializado com unserialize() a partir de dados do
+    cliente, permitindo injeção de objetos e POP cha (CWE-502) [gold: taint]'
+  severity: ERROR
+  languages:
+  - php
+  metadata:
+    cwe: CWE-502
+    source: sintetico-cylab
+    gold: taint-v1
+  pattern-sources:
+  - pattern: $_GET
+  - pattern: $_POST
+  - pattern: $_REQUEST
+  - pattern: $_COOKIE
+  - pattern: $_SERVER
+  - pattern: $_FILES
+  - pattern: file_get_contents('php://input')
+  - patterns:
+    - pattern-inside: function $F(..., $P, ...) {...}
+    - pattern: $P
+    - metavariable-regex:
+        metavariable: $P
+        regex: ^\$(?!(db|conn|pdo|mysqli)$)
+  pattern-sinks:
+  - patterns:
+    - pattern: unserialize($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... preg_match(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... in_array(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... str_starts_with(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... strpos(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_digit(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... ctype_alnum(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... filter_var(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''host''] ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P[''scheme''] ...>) {...}
+
+        ...'
+  pattern-sanitizers:
+  - pattern: '$C ? $A : $D'
+  - pattern: urlencode(...)
+  - pattern: rawurlencode(...)
+  - pattern: intval(...)
+  - pattern: (int) $X
+  - pattern: htmlspecialchars(...)
+  - pattern: htmlentities(...)
+  - pattern: escapeshellarg(...)
+  - pattern: basename(...)
+  - pattern: filter_var(...)
+  - pattern: (float) $X
+  - pattern: $C->real_escape_string(...)
+  - pattern: mysqli_real_escape_string(...)
+  - pattern: json_decode(...)

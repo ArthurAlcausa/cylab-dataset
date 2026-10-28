@@ -1,0 +1,24 @@
+rules:
+  - id: cylab.csharp.sql-injection
+    message: "SqlCommand com SQL concatenado (CWE-89)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+    pattern-sources:
+      - pattern: Request.Query[...]
+      - pattern: Request.Form[...]
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) => $E;
+          - pattern: $S
+    pattern-sinks:
+      - patterns:
+          - pattern: new SqlCommand($Q, ...)
+          - focus-metavariable: $Q

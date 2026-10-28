@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.innerhtml-assign
+    message: "O campo @C@ do @S@ é inserido via innerHTML, então HTML/JS controlado pelo usuário é executado no navegador (XSS, CWE-79 (CWE-79)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-79"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\.innerHTML\s*[+]?='

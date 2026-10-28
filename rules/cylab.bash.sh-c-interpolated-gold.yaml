@@ -1,0 +1,12 @@
+rules:
+- id: cylab.bash.sh-c-interpolated-gold
+  languages:
+  - bash
+  severity: ERROR
+  message: O valor de @C@ é interpolado dentro da string passada a sh -c, então metacaracteres
+    viram comandos (CWE-78)
+  metadata:
+    cwe: CWE-78
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-regex: (?m)^(?!\s*#)[^#\n]*?\b(ba)?sh\s+-c\s+"[^"]*\$

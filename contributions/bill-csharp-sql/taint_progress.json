@@ -1,0 +1,86 @@
+{
+ "owner": "bill-csharp-sql",
+ "scope": "SQL only (C# handed to Markinho per steering)",
+ "date": "2026-10-27",
+ "mode_note": "opengrep has no SQL taint support (languages: generic); rules upgraded to tightened regex: pattern-regex + pattern-not-regex for '--' comments; dynamic-SQL rules require concat with an identifier/bind var and skip DBMS_ASSERT/quote_ident/quote_literal/QUOTENAME/QUOTE().",
+ "validated_against": [
+  "data/cylab-commercial-v0.3-gold-DRAFT.jsonl (SQL subset, 34)",
+  "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl (SQL subset, 20)"
+ ],
+ "gate_total": "54/54",
+ "fp_smoke": "6 safe/commented snippets: 0 hits across all 14 rules",
+ "rules_dir_changes": "none; rules/ untouched; rules-gold/mapping.json NOT modified (new files not yet activated)",
+ "rules": {
+  "cylab.sql.execute-immediate": {
+   "path": "rules-gold/cylab.sql.execute-immediate.yaml",
+   "mode": "regex-tightened",
+   "gate": "2/2"
+  },
+  "cylab.sql.grant-all-public": {
+   "path": "rules-gold/cylab.sql.grant-all-public.yaml",
+   "mode": "regex-tightened",
+   "gate": "5/5"
+  },
+  "cylab.sql.hardcoded-db-password": {
+   "path": "rules-gold/cylab.sql.hardcoded-db-password.yaml",
+   "mode": "regex-tightened",
+   "gate": "6/6"
+  },
+  "cylab.sql.link-mapping-password": {
+   "path": "rules-gold/cylab.sql.link-mapping-password.yaml",
+   "mode": "regex-tightened",
+   "gate": "4/4"
+  },
+  "cylab.sql.mysql-prepare-concat": {
+   "path": "rules-gold/cylab.sql.mysql-prepare-concat.yaml",
+   "mode": "regex-tightened",
+   "gate": "2/2"
+  },
+  "cylab.sql.oracle-execute-immediate": {
+   "path": "rules-gold/cylab.sql.oracle-execute-immediate.yaml",
+   "mode": "regex-tightened",
+   "gate": "4/4"
+  },
+  "cylab.sql.pg-format-unsafe-s": {
+   "path": "rules-gold/cylab.sql.pg-format-unsafe-s.yaml",
+   "mode": "regex-tightened",
+   "gate": "3/3"
+  },
+  "cylab.sql.plaintext-password-column": {
+   "path": "rules-gold/cylab.sql.plaintext-password-column.yaml",
+   "mode": "regex-tightened",
+   "gate": "4/4"
+  },
+  "cylab.sql.plpgsql-execute-concat": {
+   "path": "rules-gold/cylab.sql.plpgsql-execute-concat.yaml",
+   "mode": "regex-tightened",
+   "gate": "3/3"
+  },
+  "cylab.sql.security-definer-no-path": {
+   "path": "rules-gold/cylab.sql.security-definer-no-path.yaml",
+   "mode": "regex-tightened",
+   "gate": "3/3"
+  },
+  "cylab.sql.string-concat": {
+   "path": "rules-gold/cylab.sql.string-concat.yaml",
+   "mode": "regex-tightened",
+   "gate": "2/2"
+  },
+  "cylab.sql.tsql-exec-concat": {
+   "path": "rules-gold/cylab.sql.tsql-exec-concat.yaml",
+   "mode": "regex-tightened",
+   "gate": "6/6"
+  },
+  "cylab.sql.tsql-sql-var-concat": {
+   "path": "rules-gold/cylab.sql.tsql-sql-var-concat.yaml",
+   "mode": "regex-tightened",
+   "gate": "4/4"
+  },
+  "cylab.sql.xp-cmdshell": {
+   "path": "rules-gold/cylab.sql.xp-cmdshell.yaml",
+   "mode": "regex-tightened",
+   "gate": "6/6"
+  }
+ },
+ "csharp": "not done - stopped per steering; no csharp files written"
+}

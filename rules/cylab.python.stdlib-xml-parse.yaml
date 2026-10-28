@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.stdlib-xml-parse
+    message: "O XML de @T@ recebido de fora é processado com o parser padrão, sujeito a entidades externas e expansão exponencial (XXE (CWE-611)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-611"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(etree|ET|ElementTree|minidom)\.(fromstring|parse|parseString)\('

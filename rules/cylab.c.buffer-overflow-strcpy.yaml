@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.c.buffer-overflow-strcpy
+    message: "strcpy/gets sem limite de tamanho (CWE-120)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: strcpy($D, $S);
+      - pattern: gets($B);

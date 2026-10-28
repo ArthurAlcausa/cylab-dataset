@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.access-then-open
+    message: "O programa verifica o arquivo de @S@ com access() e depois o abre; entre as duas chamadas o arquivo pode ser trocado por (CWE-367)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-367"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\baccess\s*\('

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.weak-cipher-mode
+    message: "Os dados de @S@ são cifrados com algoritmo fraco (DES/RC4) ou modo ECB, que vaza padrões e é quebrável (CWE-327)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-327"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(DES|DES3|ARC4|Blowfish)\.new\(|MODE_ECB'

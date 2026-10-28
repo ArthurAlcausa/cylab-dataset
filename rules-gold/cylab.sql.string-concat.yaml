@@ -1,0 +1,15 @@
+rules:
+- id: cylab.sql.string-concat
+  message: 'SQL com concatenacao de string (CWE-89) [gold: regex-tightened; opengrep
+    sem taint p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-89
+    source: sintetico-cylab
+    gold: regex-tightened-v1
+    author: bill-csharp-sql
+  patterns:
+  - pattern-regex: (?i)\b(SELECT|INSERT|UPDATE|DELETE)\b[^;]{0,160}'\s*(\+|\|\|)\s*(?!quote_|QUOTENAME|DBMS_ASSERT)(?!')[A-Za-z_@:]
+  - pattern-not-regex: (?m)^\s*--.*$

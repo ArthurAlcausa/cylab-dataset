@@ -1,0 +1,18 @@
+rules:
+  - id: cylab.java.runtime-exec-concat
+    message: "Runtime.exec com comando derivado de dado externo (CWE-78)"
+    severity: ERROR
+    languages: [java]
+    mode: taint
+    metadata:
+      cwe: "CWE-78"
+      source: sintetico-cylab
+      author: markinho-gold
+    pattern-sources:
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., String $S, ...) { ... }
+          - pattern: $S
+    pattern-sinks:
+      - pattern: Runtime.getRuntime().exec($CMD)
+      - pattern: $RT.exec($CMD)

@@ -1,0 +1,23 @@
+rules:
+  - id: cylab.php.eval-user-code
+    message: "A expressão de cálculo/ordenação de @S@ vinda do usuário é executada com eval/create_function, permitindo execução de có (CWE-95)"
+    severity: ERROR
+    languages: [php]
+    mode: taint
+    metadata:
+      cwe: "CWE-95"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-sources:
+      - pattern: $_GET[...]
+      - pattern: $_POST[...]
+      - pattern: $_REQUEST[...]
+      - pattern: $_COOKIE[...]
+      - patterns:
+          - pattern-inside: |
+              function $F(..., $S, ...) { ... }
+          - pattern: $S
+    pattern-sinks:
+      - pattern: eval($X)
+      - pattern: assert($X)
+      - pattern: create_function(...)

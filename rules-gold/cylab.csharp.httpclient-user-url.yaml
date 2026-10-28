@@ -1,0 +1,34 @@
+rules:
+  - id: cylab.csharp.httpclient-user-url
+    message: "O serviço de @T@ faz HttpClient.Get na URL recebida do cliente, permitindo SSRF (CWE-918)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-sources:
+      - pattern: Request.Query[...]
+      - pattern: Request.Form[...]
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) => $E;
+          - pattern: $S
+    pattern-sanitizers:
+      - pattern: Uri.EscapeDataString(...)
+      - pattern: new Uri($"https://...", ...)
+      - pattern: new Uri($BASEURI, ...)
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: $H.GetAsync($U, ...)
+              - pattern: $H.GetStringAsync($U, ...)
+              - pattern: $H.GetStreamAsync($U, ...)
+              - pattern: $H.GetByteArrayAsync($U, ...)
+              - pattern: $H.PostAsync($U, ...)
+          - focus-metavariable: $U

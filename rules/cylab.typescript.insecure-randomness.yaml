@@ -1,0 +1,15 @@
+rules:
+  - id: cylab.typescript.insecure-randomness
+    message: "Math.random para valor de seguranca (CWE-338)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-338"
+      source: sintetico-cylab
+    patterns:
+      - pattern: Math.random()
+      - pattern-inside: |
+          function $F(...) { ... }
+      - metavariable-regex:
+          metavariable: $F
+          regex: (?i).*(token|senha|codigo|otp|secret).*

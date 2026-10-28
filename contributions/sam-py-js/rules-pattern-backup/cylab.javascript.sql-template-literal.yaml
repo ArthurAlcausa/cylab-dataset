@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.sql-template-literal
+    message: "O SQL é montado com template literal contendo @C@ vindo da requisição, permitindo injeção de SQL (CWE-89)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\.query\(\s*`[^`]*\$\{'

@@ -1,0 +1,12 @@
+rules:
+- id: cylab.cpp.dangling-cstr-gold
+  languages:
+  - cpp
+  severity: ERROR
+  message: O ponteiro obtido com c_str() de uma std::string temporária fica pendente
+    assim que a expressão termina; usá-lo depois é (CWE-416)
+  metadata:
+    cwe: CWE-416
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-regex: const\s+char\s*\*\s*\w+\s*=\s*\(?[\w:]+\([^;]*\)(\s*\+[^;]*\))?\.c_str\(\)

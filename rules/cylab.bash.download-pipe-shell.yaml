@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.bash.download-pipe-shell
+    message: "O instalador de @T@ é baixado e executado direto no shell sem verificar integridade, então um servidor ou rede compromet (CWE-494)"
+    severity: ERROR
+    languages: [bash]
+    metadata:
+      cwe: "CWE-494"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(curl|wget)\b[^|\n]*\|\s*(sudo\s+)?(ba|z)?sh\b'

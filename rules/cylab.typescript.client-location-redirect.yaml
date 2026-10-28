@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.client-location-redirect
+    message: "Após o login em @T@, o front-end redireciona para o valor do parâmetro da URL sem validação, permitindo open redirect e  (CWE-601)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-601"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'location(\.href)?\s*=\s*(new URLSearchParams|params|query|router\.query|searchParams)|location\.(assign|replace)\(\s*(params|query|searchParams|new URLSearchParams)'

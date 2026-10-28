@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.javascript.redirect-user
+    message: "O destino do redirecionamento após a ação em @T@ vem do cliente, permitindo open redirect para sites de phishing (CWE-601)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-601"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'res\.redirect\(\s*(\d+\s*,\s*)?req\.(query|body|params)'

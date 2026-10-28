@@ -1,0 +1,121 @@
+{
+  "strict_0_82": "gold_java_php_csharp_sql.jsonl",
+  "strict_count": 92,
+  "relaxed_0_90": "gold_java_php_csharp_sql_relaxed.jsonl",
+  "relaxed_count": 99,
+  "gate_gold": "92/92 PASS",
+  "gate_report": "contributions/markinho-java-php-sql-shell/gate-report-gold-taint.json",
+  "taint_active_rules_gold": [
+    "cylab.java.command-injection",
+    "cylab.java.file-from-parameter",
+    "cylab.java.insecure-deserialization",
+    "cylab.java.ldap-filter-concat",
+    "cylab.java.objectinputstream",
+    "cylab.java.path-traversal",
+    "cylab.java.runtime-exec-concat",
+    "cylab.java.servlet-writer-param",
+    "cylab.java.sql-injection",
+    "cylab.java.statement-concat",
+    "cylab.java.url-from-parameter",
+    "cylab.php.command-injection",
+    "cylab.php.echo-superglobal",
+    "cylab.php.eval-user-code",
+    "cylab.php.fetch-user-url",
+    "cylab.php.file-superglobal",
+    "cylab.php.insecure-deserialization",
+    "cylab.php.laravel-raw-interp",
+    "cylab.php.query-interpolated",
+    "cylab.php.shell-concat",
+    "cylab.php.sql-injection",
+    "cylab.php.unserialize-input",
+    "cylab.php.xss-echo",
+    "cylab.csharp.binaryformatter",
+    "cylab.csharp.html-content-interp",
+    "cylab.csharp.httpclient-user-url",
+    "cylab.csharp.insecure-deserialization",
+    "cylab.csharp.mvc-redirect-return",
+    "cylab.csharp.path-combine-file",
+    "cylab.csharp.process-start-shell",
+    "cylab.csharp.sql-injection",
+    "cylab.csharp.sqlcommand-concat"
+  ],
+  "taint_active_count": 32,
+  "left_regex_inactive": [
+    {
+      "id": "cylab.java.cipher-weak-mode",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.java.insecure-random",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.java.messagedigest-weak",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.java.trust-all-certs",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.java.weak-hash",
+      "mode": "structural",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.java.xxe-documentbuilder",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.php.header-location-user",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.php.libxml-noent",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.php.weak-password-hash",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.php.weak-random-token",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.csharp.connstring-password",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.csharp.system-random-token",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.csharp.weak-hash-create",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.csharp.weak-symmetric",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    },
+    {
+      "id": "cylab.csharp.xml-dtd-parse",
+      "mode": "regex",
+      "reason": "nao-dataflow (segredo literal/config/cripto fraca): permanece estrutural/texto"
+    }
+  ],
+  "note": "SQL by Bill in rules-gold (regex). Crypto/secret/header/xxe/libxml/xml-dtd left regex. Markinho fatia java/php/C# ready for FINAL re-gate."
+}

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.csharp.system-random-token
+    message: "System.Random gera o código/chave de @S@ de forma previsível (CWE-338)"
+    severity: ERROR
+    languages: [csharp]
+    metadata:
+      cwe: "CWE-338"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'new\s+Random\('

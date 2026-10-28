@@ -1,0 +1,15 @@
+rules:
+- id: cylab.sql.execute-immediate
+  message: 'EXECUTE IMMEDIATE com concatenacao (CWE-89) [gold: regex-tightened; opengrep
+    sem taint p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-89
+    source: sintetico-cylab
+    gold: regex-tightened-v1
+    author: bill-csharp-sql
+  patterns:
+  - pattern-regex: (?i)EXECUTE\s+IMMEDIATE\s+[^;]{0,120}?(\|\||\+)\s*(?!DBMS_ASSERT)[A-Za-z_:@v]
+  - pattern-not-regex: (?m)^\s*--.*$

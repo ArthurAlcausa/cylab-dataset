@@ -1,0 +1,9 @@
+rules:
+  - id: cylab.cpp.strcpy
+    message: "strcpy sem limite (CWE-120)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+    pattern: strcpy($D, $S);

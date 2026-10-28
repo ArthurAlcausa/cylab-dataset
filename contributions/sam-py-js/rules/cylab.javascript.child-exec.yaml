@@ -1,0 +1,6 @@
+rules:
+- id: cylab.javascript.child-exec
+  message: child_process exec
+  languages: [javascript]
+  severity: ERROR
+  pattern: exec(...)

@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.php.unserialize-input
+    message: "O estado de @S@ é desserializado com unserialize() a partir de dados do cliente, permitindo injeção de objetos e POP cha (CWE-502)"
+    severity: ERROR
+    languages: [php]
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'unserialize\(\s*(\$_(COOKIE|GET|POST|REQUEST)|base64_decode\(\s*\$_)'

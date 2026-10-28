@@ -1,0 +1,6 @@
+rules:
+  - id: cylab.javascript.disable-tls
+    message: rejectUnauthorized false
+    severity: ERROR
+    languages: [javascript]
+    pattern: "rejectUnauthorized: false"

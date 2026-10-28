@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.cpp.new-array-mul
+    message: "O buffer de @T@ é alocado com new[] usando produto de dimensões externas sem checar overflow; o valor pode estourar e al (CWE-190)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-190"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'new\s+[\w:]+(\s+[\w:]+)?\[\s*\w+\s*\*\s*\w+\s*\]'

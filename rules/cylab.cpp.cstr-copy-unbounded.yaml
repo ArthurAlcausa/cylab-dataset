@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.cpp.cstr-copy-unbounded
+    message: "Copiar o @C@ de @S@ para um array fixo com strcpy/sprintf não limita o tamanho e pode estourar a pilha (CWE-120)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\b(std::)?(strcpy|sprintf|strcat)\s*\('

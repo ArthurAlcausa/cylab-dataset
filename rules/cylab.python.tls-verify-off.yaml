@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.tls-verify-off
+    message: "A chamada HTTPS ao serviço de @T@ desativa a validação de certificado, permitindo ataque man-in-the-middle (CWE-295)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-295"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'verify\s*=\s*False|_create_unverified_context|CERT_NONE|check_hostname\s*=\s*False'

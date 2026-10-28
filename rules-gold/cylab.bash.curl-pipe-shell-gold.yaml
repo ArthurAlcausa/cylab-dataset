@@ -1,0 +1,10 @@
+rules:
+- id: cylab.bash.curl-pipe-shell-gold
+  languages:
+  - bash
+  severity: ERROR
+  message: Download executado sem verificacao de integridade (CWE-494)
+  metadata:
+    cwe: CWE-494
+    source: sintetico-cylab
+  pattern-regex: (?m)^(?!\s*#)[^#\n]*?\bcurl\b[^|\n#]*\|\s*(sudo\s+)?(ba)?sh\b

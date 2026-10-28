@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.cookie-insecure-flags
+    message: "O cookie de sessão de @T@ é emitido sem Secure/HttpOnly, podendo trafegar sem TLS e ser lido por scripts em XSS (CWE-614)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-614"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(httpOnly|secure)\s*:\s*false'

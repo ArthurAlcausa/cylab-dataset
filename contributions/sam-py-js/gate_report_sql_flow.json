@@ -1,0 +1,210 @@
+[
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-0820",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-0830",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-0860",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-1730",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-1733",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-1750",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-bill-sql-89-1800",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-mk-0202",
+  "rule": "cylab.sql.string-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "contributions/markinho-java-php-sql-shell/gold_java_php_csharp_sql.jsonl",
+  "id": "cylab-mk-0210",
+  "rule": "cylab.sql.execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0820",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0830",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0860",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1730",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1733",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1750",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1800",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-mk-0202",
+  "rule": "cylab.sql.string-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-mk-0210",
+  "rule": "cylab.sql.execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0823",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0802",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0804",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0801",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-0803",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1743",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1795",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "src": "data/cylab-commercial-v0.3-gold-DRAFT.jsonl",
+  "id": "cylab-bill-sql-89-1742",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ }
+]

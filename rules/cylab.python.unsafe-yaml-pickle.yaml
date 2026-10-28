@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.unsafe-yaml-pickle
+    message: "Desserializar dados de @S@ não confiáveis com pickle ou yaml.load permite construir objetos arbitrários e executar códig (CWE-502)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'pickle\.loads?\(|yaml\.load\((?![^)]*SafeLoader)'

@@ -1,0 +1,30 @@
+rules:
+  - id: cylab.csharp.insecure-deserialization
+    message: "BinaryFormatter.Deserialize (CWE-502)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+    pattern-sources:
+      - pattern: Request.Query[...]
+      - pattern: Request.Form[...]
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) => $E;
+          - pattern: $S
+    pattern-sinks:
+      - pattern: new BinaryFormatter().Deserialize(...)
+      - patterns:
+          - pattern-inside: |
+              var $B = new $FMT(...);
+              ...
+          - metavariable-regex:
+              metavariable: $FMT
+              regex: ^(BinaryFormatter|NetDataContractSerializer|SoapFormatter|LosFormatter)$
+          - pattern: $B.Deserialize(...)

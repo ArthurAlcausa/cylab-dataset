@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.bash.unquoted-rm-var
+    message: "A variável usada no rm de @T@ não está entre aspas nem validada; vazia ou com espaços/glob ela apaga caminhos errados ou (CWE-88)"
+    severity: ERROR
+    languages: [bash]
+    metadata:
+      cwe: "CWE-88"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\brm\s+-\w*\s+\$\{?\w+\}?(/|\s|$)'

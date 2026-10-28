@@ -1,0 +1,6 @@
+rules:
+- id: cylab.python.pickle-loads
+  message: pickle.loads
+  languages: [python]
+  severity: ERROR
+  pattern: pickle.loads(...)

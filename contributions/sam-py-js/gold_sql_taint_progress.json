@@ -1,0 +1,32 @@
+{
+ "date": "2026-10-27",
+ "owner": "sam",
+ "mode": "flow-pattern (generic)",
+ "taint_supported": false,
+ "blocker": "Opengrep 1.32: no 'sql' language; 'taint-mode and generic/regex matching are incompatible'",
+ "rules_converted": 8,
+ "converted": [
+  "cylab.sql.execute-immediate",
+  "cylab.sql.mysql-prepare-concat",
+  "cylab.sql.oracle-execute-immediate",
+  "cylab.sql.pg-format-unsafe-s",
+  "cylab.sql.plpgsql-execute-concat",
+  "cylab.sql.string-concat",
+  "cylab.sql.tsql-exec-concat",
+  "cylab.sql.tsql-sql-var-concat"
+ ],
+ "backup": "contributions/sam-py-js/rules-sql-pattern-backup/",
+ "gate": {
+  "pairs": 26,
+  "passed": 26,
+  "baseline_passed": 26,
+  "sources": {
+   "markinho_gold_sql": 9,
+   "v0.3_draft_sql": 17
+  }
+ },
+ "untouched_regex_rules": [
+  "secrets/grants/passwords/xp-cmdshell/security-definer/link-mapping/plaintext-password/grant-all-public/hardcoded-db-password"
+ ],
+ "report": "contributions/sam-py-js/gate_report_sql_flow.json"
+}

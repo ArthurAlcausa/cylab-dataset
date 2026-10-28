@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.python.weak-hash
+    message: "Hash fraco (MD5/SHA1) para dado sensivel (CWE-328)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-328"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: hashlib.md5(...)
+      - pattern: hashlib.sha1(...)

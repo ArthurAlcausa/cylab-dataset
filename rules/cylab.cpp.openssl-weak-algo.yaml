@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.cpp.openssl-weak-algo
+    message: "O código de @T@ usa primitiva fraca da OpenSSL (DES/RC4/AES-ECB/MD5/SHA-1) para proteger dados (CWE-327)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-327"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'EVP_(des_\w+|aes_\d+_ecb|rc4|md5|sha1)\s*\(\s*\)|\bMD5\s*\('

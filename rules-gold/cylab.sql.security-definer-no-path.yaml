@@ -1,0 +1,16 @@
+rules:
+- id: cylab.sql.security-definer-no-path
+  message: 'A função de @T@ roda como SECURITY DEFINER sem fixar search_path; um usuário
+    pode criar objetos em schema próprio e sequ (CWE-426) [gold: regex-tightened;
+    opengrep sem taint p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-426
+    source: sintetico-cylab
+    author: bill-csharp-sql
+    gold: regex-tightened-v1
+  patterns:
+  - pattern-regex: (?is)SECURITY\s+DEFINER(?![\s\S]*SET\s+search_path)
+  - pattern-not-regex: (?m)^\s*--.*$

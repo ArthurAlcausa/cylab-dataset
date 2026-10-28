@@ -1,0 +1,22 @@
+rules:
+  - id: cylab.php.query-interpolated
+    message: "Query SQL interpola dado externo (CWE-89)"
+    severity: ERROR
+    languages: [php]
+    mode: taint
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: markinho-gold
+    pattern-sources:
+      - patterns:
+          - pattern-inside: |
+              function $F(..., $S, ...) { ... }
+          - pattern: $S
+      - pattern: $_GET[...]
+      - pattern: $_POST[...]
+      - pattern: $_REQUEST[...]
+    pattern-sinks:
+      - pattern: $DB->query($Q)
+      - pattern: mysqli_query($C, $Q)
+      - pattern: pg_query($C, $Q)

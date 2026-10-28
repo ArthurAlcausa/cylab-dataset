@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.c.scanf-unbounded-s
+    message: "scanf com %s sem largura lê o @C@ sem limite para buffer fixo, permitindo estouro (CWE-120)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-120"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'scanf\s*\(\s*[^;]*"[^"]*%s'

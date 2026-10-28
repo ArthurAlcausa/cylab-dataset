@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.unsafe-unserialize
+    message: "Os dados de @S@ são desserializados com node-serialize/js-yaml sem schema seguro, o que permite executar funções ou cons (CWE-502)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '\bunserialize\(|yaml\.load\(\s*\w+\s*\)'

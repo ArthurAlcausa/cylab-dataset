@@ -1,0 +1,16 @@
+rules:
+- id: cylab.sql.tsql-exec-concat
+  message: 'A procedure de @T@ monta SQL dinâmico concatenando o parâmetro @C@ e executa
+    com EXEC, permitindo injeção (CWE-89) [gold: regex-tightened; opengrep sem taint
+    p/ SQL]'
+  severity: ERROR
+  languages:
+  - generic
+  metadata:
+    cwe: CWE-89
+    source: sintetico-cylab
+    author: bill-csharp-sql
+    gold: regex-tightened-v1
+  patterns:
+  - pattern-regex: (?i)EXEC(UTE)?\s*\(\s*N?'(?:[^']|'')*'\s*\+\s*@\w+
+  - pattern-not-regex: (?m)^\s*--.*$

@@ -1,0 +1,7 @@
+rules:
+  - id: cylab.python.xml-xxe
+    message: "XML parser com entidades externas (CWE-611)"
+    severity: ERROR
+    languages: [python]
+    metadata: {cwe: "CWE-611", source: sintetico-cylab}
+    pattern: etree.parse($X)

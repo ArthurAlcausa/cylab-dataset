@@ -1,0 +1,190 @@
+{
+  "pairs": [
+    {
+      "id": "cylab-sam-real-js-22-001",
+      "rule": "cylab.javascript.path-traversal",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.25,
+      "before_lines": 33,
+      "after_lines": 37
+    },
+    {
+      "id": "cylab-sam-real-js-78-001",
+      "rule": "cylab.javascript.command-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.2164,
+      "before_lines": 33,
+      "after_lines": 34
+    },
+    {
+      "id": "cylab-sam-real-js-79-001",
+      "rule": "cylab.javascript.xss-innerhtml",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.1871,
+      "before_lines": 34,
+      "after_lines": 39
+    },
+    {
+      "id": "cylab-sam-real-js-89-001",
+      "rule": "cylab.javascript.sql-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.236,
+      "before_lines": 30,
+      "after_lines": 32
+    },
+    {
+      "id": "cylab-sam-real-js-89-002",
+      "rule": "cylab.javascript.sql-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.1697,
+      "before_lines": 33,
+      "after_lines": 33
+    },
+    {
+      "id": "cylab-sam-real-py-22-001",
+      "rule": "cylab.python.path-traversal",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.2913,
+      "before_lines": 32,
+      "after_lines": 33
+    },
+    {
+      "id": "cylab-sam-real-py-78-001",
+      "rule": "cylab.python.command-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.2264,
+      "before_lines": 29,
+      "after_lines": 31
+    },
+    {
+      "id": "cylab-sam-real-py-78-002",
+      "rule": "cylab.python.command-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.1791,
+      "before_lines": 31,
+      "after_lines": 35
+    },
+    {
+      "id": "cylab-sam-real-py-79-001",
+      "rule": "cylab.python.flask-unsafe-html",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.272,
+      "before_lines": 29,
+      "after_lines": 27
+    },
+    {
+      "id": "cylab-sam-real-py-89-001",
+      "rule": "cylab.python.sql-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.2696,
+      "before_lines": 33,
+      "after_lines": 33
+    },
+    {
+      "id": "cylab-sam-real-py-89-002",
+      "rule": "cylab.python.sql-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.1205,
+      "before_lines": 35,
+      "after_lines": 37
+    },
+    {
+      "id": "cylab-sam-real-ts-22-001",
+      "rule": "cylab.typescript.readfile-template-path",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.14,
+      "before_lines": 30,
+      "after_lines": 34
+    },
+    {
+      "id": "cylab-sam-real-ts-79-001",
+      "rule": "cylab.typescript.innerhtml-assign",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.0788,
+      "before_lines": 35,
+      "after_lines": 44
+    },
+    {
+      "id": "cylab-sam-real-ts-89-001",
+      "rule": "cylab.typescript.sql-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.1296,
+      "before_lines": 34,
+      "after_lines": 37
+    },
+    {
+      "id": "cylab-sam-real-ts-89-002",
+      "rule": "cylab.typescript.sql-injection",
+      "before_hits": 1,
+      "after_hits": 0,
+      "gate": true,
+      "max_sim_vs_final": 0.1317,
+      "before_lines": 30,
+      "after_lines": 34
+    }
+  ],
+  "near_dup_drops": [],
+  "gate_failures": [],
+  "total_drafted": 15,
+  "passed": 15,
+  "by_lang": {
+    "python": 6,
+    "javascript": 5,
+    "typescript": 4
+  },
+  "by_cwe": {
+    "CWE-22": 3,
+    "CWE-78": 3,
+    "CWE-79": 3,
+    "CWE-89": 6
+  },
+  "splits": {
+    "train": 12,
+    "holdout": 3
+  },
+  "near_dup_threshold": 0.85,
+  "near_dup_method": "Jaccard 4-gram normalized tokens (scripts/gold_near_dup.py) vs FINAL v0.3 gold before, same lang",
+  "max_similarity_observed": 0.2913,
+  "line_stats": {
+    "before": {
+      "min": 29,
+      "median": 33,
+      "max": 35
+    },
+    "after": {
+      "min": 27,
+      "median": 34,
+      "max": 44
+    }
+  },
+  "gate": "opengrep before>=1 and after==0, rules-gold preferred",
+  "opengrep": "/home/box/.opengrep/cli/latest/opengrep"
+}

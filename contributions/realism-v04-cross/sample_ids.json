@@ -1,0 +1,170 @@
+[
+ {
+  "id": "cylab-bill-sqlreal-256-plaintext-password-column-01",
+  "owner": "bill",
+  "lang": "sql",
+  "cwe": "CWE-256",
+  "split": "train"
+ },
+ {
+  "id": "cylab-bill-sqlreal-269-grant-all-public-02",
+  "owner": "bill",
+  "lang": "sql",
+  "cwe": "CWE-269",
+  "split": "train"
+ },
+ {
+  "id": "cylab-bill-sqlreal-426-security-definer-no-path-01",
+  "owner": "bill",
+  "lang": "sql",
+  "cwe": "CWE-426",
+  "split": "train"
+ },
+ {
+  "id": "cylab-bill-sqlreal-78-xp-cmdshell-02",
+  "owner": "bill",
+  "lang": "sql",
+  "cwe": "CWE-78",
+  "split": "train"
+ },
+ {
+  "id": "cylab-bill-sqlreal-798-hardcoded-db-password-03",
+  "owner": "bill",
+  "lang": "sql",
+  "cwe": "CWE-798",
+  "split": "train"
+ },
+ {
+  "id": "cylab-bill-sqlreal-89-tsql-exec-concat-01",
+  "owner": "bill",
+  "lang": "sql",
+  "cwe": "CWE-89",
+  "split": "train"
+ },
+ {
+  "id": "cylab-elon-real-bash-494-0002",
+  "owner": "elon",
+  "lang": "bash",
+  "cwe": "CWE-494",
+  "split": "train"
+ },
+ {
+  "id": "cylab-elon-real-bash-78-0002",
+  "owner": "elon",
+  "lang": "bash",
+  "cwe": "CWE-78",
+  "split": "train"
+ },
+ {
+  "id": "cylab-elon-real-c-120-0003",
+  "owner": "elon",
+  "lang": "c",
+  "cwe": "CWE-120",
+  "split": "train"
+ },
+ {
+  "id": "cylab-elon-real-cpp-120-0001",
+  "owner": "elon",
+  "lang": "cpp",
+  "cwe": "CWE-120",
+  "split": "train"
+ },
+ {
+  "id": "cylab-elon-real-cpp-134-0001",
+  "owner": "elon",
+  "lang": "cpp",
+  "cwe": "CWE-134",
+  "split": "train"
+ },
+ {
+  "id": "cylab-elon-real-cpp-22-0001",
+  "owner": "elon",
+  "lang": "cpp",
+  "cwe": "CWE-22",
+  "split": "train"
+ },
+ {
+  "id": "cylab-markinho-java-22-r001",
+  "owner": "markinho",
+  "lang": "java",
+  "cwe": "CWE-22",
+  "split": "train"
+ },
+ {
+  "id": "cylab-markinho-java-502-r001",
+  "owner": "markinho",
+  "lang": "java",
+  "cwe": "CWE-502",
+  "split": "train"
+ },
+ {
+  "id": "cylab-markinho-java-78-r001",
+  "owner": "markinho",
+  "lang": "java",
+  "cwe": "CWE-78",
+  "split": "train"
+ },
+ {
+  "id": "cylab-markinho-java-79-r001",
+  "owner": "markinho",
+  "lang": "java",
+  "cwe": "CWE-79",
+  "split": "train"
+ },
+ {
+  "id": "cylab-markinho-java-90-r001",
+  "owner": "markinho",
+  "lang": "java",
+  "cwe": "CWE-90",
+  "split": "train"
+ },
+ {
+  "id": "cylab-markinho-java-918-r001",
+  "owner": "markinho",
+  "lang": "java",
+  "cwe": "CWE-918",
+  "split": "train"
+ },
+ {
+  "id": "cylab-sam-real-js-22-001",
+  "owner": "sam",
+  "lang": "javascript",
+  "cwe": "CWE-22",
+  "split": "holdout"
+ },
+ {
+  "id": "cylab-sam-real-js-89-001",
+  "owner": "sam",
+  "lang": "javascript",
+  "cwe": "CWE-89",
+  "split": "train"
+ },
+ {
+  "id": "cylab-sam-real-py-78-002",
+  "owner": "sam",
+  "lang": "python",
+  "cwe": "CWE-78",
+  "split": "holdout"
+ },
+ {
+  "id": "cylab-sam-real-py-89-001",
+  "owner": "sam",
+  "lang": "python",
+  "cwe": "CWE-89",
+  "split": "train"
+ },
+ {
+  "id": "cylab-sam-real-ts-79-001",
+  "owner": "sam",
+  "lang": "typescript",
+  "cwe": "CWE-79",
+  "split": "holdout"
+ },
+ {
+  "id": "cylab-sam-real-ts-89-002",
+  "owner": "sam",
+  "lang": "typescript",
+  "cwe": "CWE-89",
+  "split": "train"
+ }
+]

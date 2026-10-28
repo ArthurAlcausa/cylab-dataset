@@ -1,0 +1,646 @@
+[
+ {
+  "id": "cylab-bill-csharp-22-0590",
+  "rule": "cylab.csharp.path-combine-file",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-22-0599",
+  "rule": "cylab.csharp.path-combine-file",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-327-1540",
+  "rule": "cylab.csharp.weak-symmetric",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-328-0579",
+  "rule": "cylab.csharp.weak-hash-create",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-328-0580",
+  "rule": "cylab.csharp.weak-hash-create",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-338-1511",
+  "rule": "cylab.csharp.system-random-token",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-338-1520",
+  "rule": "cylab.csharp.system-random-token",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-502-0550",
+  "rule": "cylab.csharp.binaryformatter",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-601-1500",
+  "rule": "cylab.csharp.mvc-redirect-return",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-611-1469",
+  "rule": "cylab.csharp.xml-dtd-parse",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-611-1470",
+  "rule": "cylab.csharp.xml-dtd-parse",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-78-0523",
+  "rule": "cylab.csharp.process-start-shell",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-78-0530",
+  "rule": "cylab.csharp.process-start-shell",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-79-1460",
+  "rule": "cylab.csharp.html-content-interp",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-798-1521",
+  "rule": "cylab.csharp.connstring-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-798-1530",
+  "rule": "cylab.csharp.connstring-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-89-0510",
+  "rule": "cylab.csharp.sqlcommand-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-918-1485",
+  "rule": "cylab.csharp.httpclient-user-url",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-csharp-918-1490",
+  "rule": "cylab.csharp.httpclient-user-url",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-22-1277",
+  "rule": "cylab.java.file-from-parameter",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-22-1280",
+  "rule": "cylab.java.file-from-parameter",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-295-1355",
+  "rule": "cylab.java.trust-all-certs",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-295-1360",
+  "rule": "cylab.java.trust-all-certs",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-327-1330",
+  "rule": "cylab.java.cipher-weak-mode",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-328-0370",
+  "rule": "cylab.java.messagedigest-weak",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-328-0379",
+  "rule": "cylab.java.messagedigest-weak",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-330-1313",
+  "rule": "cylab.java.insecure-random",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-330-1320",
+  "rule": "cylab.java.insecure-random",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-502-0390",
+  "rule": "cylab.java.objectinputstream",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-611-0350",
+  "rule": "cylab.java.xxe-documentbuilder",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-78-0323",
+  "rule": "cylab.java.runtime-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-78-0330",
+  "rule": "cylab.java.runtime-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-79-1290",
+  "rule": "cylab.java.servlet-writer-param",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-89-0303",
+  "rule": "cylab.java.statement-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-89-0310",
+  "rule": "cylab.java.statement-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-90-1340",
+  "rule": "cylab.java.ldap-filter-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-918-1300",
+  "rule": "cylab.java.url-from-parameter",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-java-918-1303",
+  "rule": "cylab.java.url-from-parameter",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-22-0470",
+  "rule": "cylab.php.file-superglobal",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-328-1407",
+  "rule": "cylab.php.weak-password-hash",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-328-1410",
+  "rule": "cylab.php.weak-password-hash",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-330-1443",
+  "rule": "cylab.php.weak-random-token",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-330-1450",
+  "rule": "cylab.php.weak-random-token",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-502-1365",
+  "rule": "cylab.php.unserialize-input",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-502-1370",
+  "rule": "cylab.php.unserialize-input",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-601-0490",
+  "rule": "cylab.php.header-location-user",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-611-1430",
+  "rule": "cylab.php.libxml-noent",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-611-1433",
+  "rule": "cylab.php.libxml-noent",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-78-0430",
+  "rule": "cylab.php.shell-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-78-0439",
+  "rule": "cylab.php.shell-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-79-0443",
+  "rule": "cylab.php.echo-superglobal",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-79-0460",
+  "rule": "cylab.php.echo-superglobal",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-0403",
+  "rule": "cylab.php.query-interpolated",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-0410",
+  "rule": "cylab.php.query-interpolated",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-1420",
+  "rule": "cylab.php.laravel-raw-interp",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-89-1421",
+  "rule": "cylab.php.laravel-raw-interp",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-918-1391",
+  "rule": "cylab.php.fetch-user-url",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-918-1400",
+  "rule": "cylab.php.fetch-user-url",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-95-1381",
+  "rule": "cylab.php.eval-user-code",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-php-95-1390",
+  "rule": "cylab.php.eval-user-code",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-256-1771",
+  "rule": "cylab.sql.plaintext-password-column",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-256-1780",
+  "rule": "cylab.sql.plaintext-password-column",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-269-0890",
+  "rule": "cylab.sql.grant-all-public",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-269-0899",
+  "rule": "cylab.sql.grant-all-public",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-426-1760",
+  "rule": "cylab.sql.security-definer-no-path",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-78-1781",
+  "rule": "cylab.sql.xp-cmdshell",
+  "before_hits": 2,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-78-1790",
+  "rule": "cylab.sql.xp-cmdshell",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-0879",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-0880",
+  "rule": "cylab.sql.hardcoded-db-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-1807",
+  "rule": "cylab.sql.link-mapping-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-798-1810",
+  "rule": "cylab.sql.link-mapping-password",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0820",
+  "rule": "cylab.sql.tsql-exec-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0830",
+  "rule": "cylab.sql.plpgsql-execute-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-0860",
+  "rule": "cylab.sql.mysql-prepare-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1730",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1733",
+  "rule": "cylab.sql.oracle-execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1750",
+  "rule": "cylab.sql.tsql-sql-var-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-bill-sql-89-1800",
+  "rule": "cylab.sql.pg-format-unsafe-s",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0001",
+  "rule": "cylab.java.sql-injection",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0002",
+  "rule": "cylab.java.command-injection",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0003",
+  "rule": "cylab.java.path-traversal",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0004",
+  "rule": "cylab.java.weak-hash",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0202",
+  "rule": "cylab.sql.string-concat",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0210",
+  "rule": "cylab.sql.execute-immediate",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0605",
+  "rule": "cylab.java.weak-hash",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0707",
+  "rule": "cylab.php.command-injection",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0710",
+  "rule": "cylab.php.xss-echo",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0801",
+  "rule": "cylab.php.insecure-deserialization",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0806",
+  "rule": "cylab.csharp.sql-injection",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-mk-0807",
+  "rule": "cylab.csharp.insecure-deserialization",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0025",
+  "rule": "cylab.java.insecure-deserialization",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ },
+ {
+  "id": "cylab-v0.1-0028",
+  "rule": "cylab.php.sql-injection",
+  "before_hits": 1,
+  "after_hits": 0,
+  "passed": true
+ }
+]

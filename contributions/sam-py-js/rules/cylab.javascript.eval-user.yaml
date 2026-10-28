@@ -1,0 +1,6 @@
+rules:
+- id: cylab.javascript.eval-user
+  message: eval
+  languages: [javascript]
+  severity: ERROR
+  pattern: eval(...)

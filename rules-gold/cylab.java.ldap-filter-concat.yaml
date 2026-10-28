@@ -1,0 +1,20 @@
+rules:
+  - id: cylab.java.ldap-filter-concat
+    message: "O filtro LDAP para localizar o @S@ concatena o valor do usuário, permitindo injetar *, ) ou | e alterar a busca (CWE-90)"
+    severity: ERROR
+    languages: [java]
+    mode: taint
+    metadata:
+      cwe: "CWE-90"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-sources:
+      - pattern: $REQ.getParameter(...)
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+    pattern-sinks:
+      - patterns:
+          - pattern: $CTX.search($BASE, $FILTER, $SC)
+          - focus-metavariable: $FILTER

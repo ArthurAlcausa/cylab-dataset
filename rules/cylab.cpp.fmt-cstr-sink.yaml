@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.cpp.fmt-cstr-sink
+    message: "A mensagem de @S@ (std::string externa) é usada como string de formato em snprintf/syslog, permitindo %n/%x (CWE-134)"
+    severity: ERROR
+    languages: [cpp]
+    metadata:
+      cwe: "CWE-134"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(snprintf\(\s*\w+\s*,\s*[^,]+,\s*|syslog\(\s*\w+\s*,\s*)\w+\.c_str\(\)\s*\)'

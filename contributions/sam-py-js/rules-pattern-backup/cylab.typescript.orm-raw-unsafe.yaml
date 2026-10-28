@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.typescript.orm-raw-unsafe
+    message: "A consulta de @T@ usa API raw/unsafe do ORM com interpolação do parâmetro, voltando a permitir injeção de SQL (CWE-89)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(\$queryRawUnsafe|\$executeRawUnsafe)\(|\.(raw|whereRaw)\(\s*`[^`]*\$\{'

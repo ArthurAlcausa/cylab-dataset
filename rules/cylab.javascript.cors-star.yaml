@@ -1,0 +1,7 @@
+rules:
+  - id: cylab.javascript.cors-star
+    message: "CORS *"
+    severity: ERROR
+    languages: [javascript]
+    metadata: {cwe: "CWE-942", source: sintetico-cylab}
+    pattern: res.setHeader("Access-Control-Allow-Origin", "*")

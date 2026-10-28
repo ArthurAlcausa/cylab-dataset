@@ -1,0 +1,351 @@
+rules:
+- id: cylab.java.url-from-parameter
+  mode: taint
+  message: 'O backend busca a URL passada pelo cliente para gerar a prévia/webhook
+    de @S@, permitindo SSRF contra serviços internos (CWE-918) [gold: taint]'
+  severity: ERROR
+  languages:
+  - java
+  metadata:
+    cwe: CWE-918
+    source: sintetico-cylab
+    gold: taint-v1
+  pattern-sources:
+  - patterns:
+    - pattern-inside: $RT $M(..., $T $P, ...) {...}
+    - pattern: $P
+    - metavariable-regex:
+        metavariable: $T
+        regex: ^(String|InputStream|byte\[\]|Object|String\[\]|HttpServletRequest)$
+  - pattern: (HttpServletRequest $R).$F(...)
+  - pattern: $R.getParameter(...)
+  - pattern: $R.getHeader(...)
+  pattern-sinks:
+  - patterns:
+    - pattern: $U.openStream()
+    - focus-metavariable: $U
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: $U.openConnection()
+    - focus-metavariable: $U
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: HttpRequest.newBuilder($X)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: HttpRequest.newBuilder($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: $C.exchange($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: Jsoup.connect($X)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  - patterns:
+    - pattern: $C.getForObject($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.startsWith(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.matches(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $S.contains(...) ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $P.matcher(...).matches() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getHost() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $V.getScheme() ...>) {...}
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) $STMT;
+
+        ...'
+    - pattern-not-inside: 'if (<... $A.equals($B) ...>) {...}
+
+        ...'
+  pattern-sanitizers:
+  - pattern: '$C ? $A : $D'
+  - pattern: URLEncoder.encode(...)
+  - pattern: Integer.parseInt(...)
+  - pattern: Long.parseLong(...)
+  - pattern: Integer.valueOf(...)
+  - pattern: Long.valueOf(...)
+  - pattern: StringEscapeUtils.escapeHtml4(...)
+  - pattern: Encode.forHtml(...)
+  - pattern: HtmlUtils.htmlEscape(...)
+  - pattern: $P.getFileName()
+  - pattern: FilenameUtils.getName(...)
+  - pattern: UUID.fromString(...)

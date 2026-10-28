@@ -1,0 +1,12 @@
+rules:
+- id: cylab.bash.sudoers-nopasswd-all-gold
+  languages:
+  - bash
+  severity: ERROR
+  message: O script de provisionamento de @T@ concede sudo irrestrito sem senha ao
+    usuário de serviço; comprometer o serviço vira r (CWE-250)
+  metadata:
+    cwe: CWE-250
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-regex: (?m)^(?!\s*#)[^#\n]*?NOPASSWD:\s*ALL\b

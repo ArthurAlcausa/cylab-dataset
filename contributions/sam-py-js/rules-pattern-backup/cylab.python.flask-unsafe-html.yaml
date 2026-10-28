@@ -1,0 +1,6 @@
+rules:
+- id: cylab.python.flask-unsafe-html
+  message: Markup unsafe
+  languages: [python]
+  severity: ERROR
+  pattern: Markup(...)

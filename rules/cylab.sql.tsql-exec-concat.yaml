@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.sql.tsql-exec-concat
+    message: "A procedure de @T@ monta SQL dinâmico concatenando o parâmetro @C@ e executa com EXEC, permitindo injeção (CWE-89)"
+    severity: ERROR
+    languages: [generic]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?i)EXEC(UTE)?\s*\(\s*''(?:[^'']|'''')*''\s*\+\s*@'

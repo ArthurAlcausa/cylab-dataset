@@ -1,0 +1,7 @@
+rules:
+  - id: cylab.javascript.react-href
+    message: "href com javascript: (CWE-79)"
+    severity: ERROR
+    languages: [javascript, typescript]
+    metadata: {cwe: "CWE-79", source: sintetico-cylab}
+    pattern-regex: 'href\s*=\s*\{[^}]*\}'

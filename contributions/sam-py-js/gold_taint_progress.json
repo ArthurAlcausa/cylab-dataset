@@ -1,0 +1,280 @@
+{
+ "date": "2026-10-27",
+ "rules_converted": 30,
+ "converted": [
+  "cylab.javascript.child-exec",
+  "cylab.javascript.command-injection",
+  "cylab.javascript.dom-sink-html",
+  "cylab.javascript.exec-template",
+  "cylab.javascript.express-file-param",
+  "cylab.javascript.innerhtml-user",
+  "cylab.javascript.path-join-user",
+  "cylab.javascript.path-traversal",
+  "cylab.javascript.res-send-reflect",
+  "cylab.javascript.sql-concat",
+  "cylab.javascript.sql-injection",
+  "cylab.javascript.sql-template-literal",
+  "cylab.javascript.xss-innerhtml",
+  "cylab.python.command-injection",
+  "cylab.python.flask-unsafe-html",
+  "cylab.python.open-join-user",
+  "cylab.python.os-system",
+  "cylab.python.path-join-user",
+  "cylab.python.path-traversal",
+  "cylab.python.sql-injection",
+  "cylab.python.sqli-fstring-execute",
+  "cylab.python.subprocess-shell-true",
+  "cylab.python.tar-zip-extractall",
+  "cylab.python.template-string-user",
+  "cylab.typescript.angular-bypass-sanitizer",
+  "cylab.typescript.innerhtml-assign",
+  "cylab.typescript.orm-raw-unsafe",
+  "cylab.typescript.readfile-template-path",
+  "cylab.typescript.sql-injection",
+  "cylab.typescript.sql-template-query"
+ ],
+ "method": "Generated from scripts/gen_taint_rules.py build() (snapshot at gen_taint_rules_snapshot.py; shared script was being edited concurrently), minus broad sanitizer `$S[$K]` (it killed request.args[...] sources), then patch_taint.py: param sources taint the declaration via focus-metavariable (not every use) so by-side-effect guards work; py CWE-22 drops send_from_directory as sink (it is the fix); js/ts CWE-22 add unlink sinks + startsWith/regex.test side-effect sanitizers; js/ts CWE-79 add {__html:$X} and bypassSecurityTrust* sinks; js/ts CWE-89 allowlist ternary sanitizer.",
+ "iterations": [
+  {
+   "step": "v1 generator as-is",
+   "gate": "56/68"
+  },
+  {
+   "step": "+sink/sanitizer patches",
+   "gate": "63/68"
+  },
+  {
+   "step": "+declaration-focused param sources, fixed generator snapshot",
+   "gate": "65/68 (3 fails = TS JSX .ts extension)"
+  }
+ ],
+ "gate_151_gold_candidates": "151/151",
+ "gate_full_slice_converted_rules": "364/376 (all 12 fails = typescript.xss-dangerously-set taint, not promoted)",
+ "per_rule": {
+  "cylab.javascript.child-exec": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.javascript.command-injection": {
+   "status": "taint",
+   "gold_candidates": 3,
+   "gold_pass": 3,
+   "full_slice_pairs": 11,
+   "full_slice_pass_with_taint": 11
+  },
+  "cylab.javascript.dom-sink-html": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.javascript.exec-template": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.javascript.express-file-param": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.javascript.innerhtml-user": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.javascript.path-join-user": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.javascript.path-traversal": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.javascript.res-send-reflect": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.javascript.sql-concat": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.javascript.sql-injection": {
+   "status": "taint",
+   "gold_candidates": 4,
+   "gold_pass": 4,
+   "full_slice_pairs": 14,
+   "full_slice_pass_with_taint": 14
+  },
+  "cylab.javascript.sql-template-literal": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.javascript.xss-innerhtml": {
+   "status": "taint",
+   "gold_candidates": 5,
+   "gold_pass": 5,
+   "full_slice_pairs": 16,
+   "full_slice_pass_with_taint": 16
+  },
+  "cylab.python.command-injection": {
+   "status": "taint",
+   "gold_candidates": 6,
+   "gold_pass": 6,
+   "full_slice_pairs": 15,
+   "full_slice_pass_with_taint": 15
+  },
+  "cylab.python.flask-unsafe-html": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 2,
+   "full_slice_pass_with_taint": 2
+  },
+  "cylab.python.open-join-user": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.python.os-system": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.python.path-join-user": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.python.path-traversal": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.python.sql-injection": {
+   "status": "taint",
+   "gold_candidates": 5,
+   "gold_pass": 5,
+   "full_slice_pairs": 46,
+   "full_slice_pass_with_taint": 46
+  },
+  "cylab.python.sqli-fstring-execute": {
+   "status": "taint",
+   "gold_candidates": 3,
+   "gold_pass": 3,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.python.subprocess-shell-true": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.python.tar-zip-extractall": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.python.template-string-user": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.typescript.angular-bypass-sanitizer": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.typescript.innerhtml-assign": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.typescript.orm-raw-unsafe": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.typescript.readfile-template-path": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 13,
+   "full_slice_pass_with_taint": 13
+  },
+  "cylab.typescript.sql-injection": {
+   "status": "taint",
+   "gold_candidates": 1,
+   "gold_pass": 1,
+   "full_slice_pairs": 1,
+   "full_slice_pass_with_taint": 1
+  },
+  "cylab.typescript.sql-template-query": {
+   "status": "taint",
+   "gold_candidates": 2,
+   "gold_pass": 2,
+   "full_slice_pairs": 20,
+   "full_slice_pass_with_taint": 20
+  },
+  "cylab.typescript.xss-dangerously-set": {
+   "status": "pattern-only (kept)",
+   "gold_candidates": 3,
+   "gold_pass": 3,
+   "full_slice_pairs": 12,
+   "full_slice_pass_with_taint": 0,
+   "note": "Taint version works on .tsx (verified manually) but gate_queue.py writes typescript as .ts, where JSX does not parse -> 0 hits (12/12 slice pairs fail). Kept original pattern-regex rule. Fix: gate EXT typescript->tsx (shared script, not changed by Sam slice)."
+  }
+ },
+ "pending_pattern_only": 47,
+ "gated_file": "contributions/sam-py-js/gold_py_js_ts.jsonl",
+ "originals_backup": "contributions/sam-py-js/rules-pattern-backup/",
+ "caveats": [
+  "Rules in shared rules/ were overwritten for 30 py/js/ts ids; originals in rules-pattern-backup/ for revert.",
+  "FP testing against non-dataset code not done yet; taint param sources treat all function params (minus res/db/etc) as tainted, deliberately broad."
+ ]
+}

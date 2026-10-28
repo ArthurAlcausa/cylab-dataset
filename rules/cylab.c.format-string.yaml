@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.c.format-string
+    message: "printf com string de formato controlada (CWE-134)"
+    severity: ERROR
+    languages: [c]
+    metadata:
+      cwe: "CWE-134"
+      source: sintetico-cylab
+    patterns:
+      - pattern: printf($X);
+      - pattern-not: printf("...");

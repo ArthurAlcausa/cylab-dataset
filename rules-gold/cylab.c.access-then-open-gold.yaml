@@ -1,0 +1,44 @@
+rules:
+- id: cylab.c.access-then-open-gold
+  languages:
+  - c
+  severity: ERROR
+  message: O programa verifica o arquivo de @S@ com access() e depois o abre; entre
+    as duas chamadas o arquivo pode ser trocado por (CWE-367)
+  metadata:
+    cwe: CWE-367
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-either:
+  - pattern: 'if (<... access($P, $M) ...>) $S;
+
+      ...
+
+      open($P, ...);'
+  - pattern: 'if (<... access($P, $M) ...>) $S;
+
+      ...
+
+      return open($P, ...);'
+  - pattern: 'if (<... access($P, $M) ...>) $S;
+
+      ...
+
+      fopen($P, ...);'
+  - pattern: if (<... access($P, $M) ...>) { ... open($P, ...); ... }
+  - pattern: if (<... access($P, $M) ...>) { ... fopen($P, ...); ... }
+  - pattern: 'if (<... access($P, $M) ...>) $S;
+
+      ...
+
+      $X = open($P, ...);'
+  - pattern: 'if (<... access($P, $M) ...>) $S;
+
+      ...
+
+      $X = fopen($P, ...);'
+  - pattern: 'if (<... access($P, $M) ...>) $S;
+
+      ...
+
+      return fopen($P, ...);'

@@ -1,0 +1,12 @@
+rules:
+- id: cylab.bash.predictable-tmp-gold
+  languages:
+  - bash
+  severity: ERROR
+  message: O script grava dados de @T@ em arquivo de /tmp com nome fixo ou previsível,
+    permitindo ataques de symlink e corrida (CWE-377)
+  metadata:
+    cwe: CWE-377
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-regex: (?m)^(?!\s*#)[^#\n]*?>\s*/tmp/[\w.\-]*(\$\$|\$\{?\w+\}?)?[\w.\-]*(\s|$)

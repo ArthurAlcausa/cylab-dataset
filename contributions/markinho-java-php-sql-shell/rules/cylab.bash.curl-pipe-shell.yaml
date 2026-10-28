@@ -1,0 +1,9 @@
+rules:
+  - id: cylab.bash.curl-pipe-shell
+    message: "Download executado sem verificacao de integridade (CWE-494)"
+    severity: ERROR
+    languages: [bash]
+    metadata:
+      cwe: "CWE-494"
+      source: sintetico-cylab
+    pattern: curl ... | bash

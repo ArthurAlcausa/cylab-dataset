@@ -1,0 +1,14 @@
+rules:
+  - id: cylab.python.ssrf
+    message: "Requisicao HTTP para URL controlada pelo usuario (CWE-918)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-918"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: requests.$M(request.args.get(...), ...)
+      - pattern: |
+          $U = request.args.get(...)
+          ...
+          requests.$M($U, ...)

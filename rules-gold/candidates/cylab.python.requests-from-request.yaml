@@ -1,0 +1,97 @@
+rules:
+- id: cylab.python.requests-from-request
+  mode: taint
+  message: 'A URL requisitada pelo servidor vem direto do parâmetro do cliente, permitindo
+    SSRF para serviços internos ou metadados  (CWE-918) [gold: taint]'
+  severity: ERROR
+  languages:
+  - python
+  metadata:
+    cwe: CWE-918
+    source: sintetico-cylab
+    gold: taint-v1
+  pattern-sources:
+  - patterns:
+    - pattern-inside: "def $F(..., $P, ...):\n  ..."
+    - pattern: $P
+  - pattern: request.$A
+  - pattern: request.$A[...]
+  - pattern: request.$A.get(...)
+  - pattern: request.$A(...)
+  pattern-sinks:
+  - patterns:
+    - pattern: requests.$M($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: "if <... $V.startswith(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... os.path.commonpath(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.is_relative_to(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V not in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.fullmatch(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.match(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isdigit() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isalnum() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.hostname ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.netloc ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.scheme ...>:\n  ...\n..."
+  - patterns:
+    - pattern: urllib.request.urlopen($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: "if <... $V.startswith(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... os.path.commonpath(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.is_relative_to(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V not in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.fullmatch(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.match(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isdigit() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isalnum() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.hostname ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.netloc ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.scheme ...>:\n  ...\n..."
+  - patterns:
+    - pattern: urlopen($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: "if <... $V.startswith(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... os.path.commonpath(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.is_relative_to(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V not in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.fullmatch(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.match(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isdigit() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isalnum() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.hostname ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.netloc ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.scheme ...>:\n  ...\n..."
+  - patterns:
+    - pattern: httpx.$M($X, ...)
+    - focus-metavariable: $X
+    - pattern-not-inside: "if <... $V.startswith(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... os.path.commonpath(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.is_relative_to(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V not in $S ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.fullmatch(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... re.match(...) ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isdigit() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.isalnum() ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.hostname ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.netloc ...>:\n  ...\n..."
+    - pattern-not-inside: "if <... $V.scheme ...>:\n  ...\n..."
+  pattern-sanitizers:
+  - pattern: urllib.parse.quote(...)
+  - pattern: quote(...)
+  - pattern: urlencode(...)
+  - pattern: os.path.basename(...)
+  - pattern: $X if $X in $S else $D
+  - pattern: int(...)
+  - pattern: float(...)
+  - pattern: shlex.quote(...)
+  - pattern: os.path.basename(...)
+  - pattern: secure_filename(...)
+  - pattern: html.escape(...)
+  - pattern: escape(...)
+  - pattern: markupsafe.escape(...)
+  - pattern: bool(...)
+  - pattern: len(...)

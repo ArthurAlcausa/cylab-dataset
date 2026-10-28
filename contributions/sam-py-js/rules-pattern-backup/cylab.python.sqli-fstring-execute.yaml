@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.python.sqli-fstring-execute
+    message: "A query monta SQL com interpolação de string usando o valor de @C@ vindo do chamador, o que permite injeção de SQL (CWE-89)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'execute\(\s*(f["'']|"[^"]*"\s*(%|\.format)|''[^'']*''\s*(%|\.format))'

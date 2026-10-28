@@ -1,0 +1,34 @@
+rules:
+  - id: cylab.csharp.path-combine-file
+    message: "Path.Combine com nome externo usado em File.* (CWE-22)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-22"
+      source: sintetico-cylab
+      author: markinho-gold
+    pattern-sources:
+      - pattern: Request.Query[...]
+      - pattern: Request.Form[...]
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) => $E;
+          - pattern: $S
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: File.$FN($P, ...)
+              - pattern: new FileStream($P, ...)
+              - pattern: new StreamReader($P, ...)
+          - metavariable-regex:
+              metavariable: $FN
+              regex: ^(ReadAllText|ReadAllBytes|ReadAllLines|OpenRead|OpenWrite|Open|WriteAllText|WriteAllBytes|Delete|Copy|Move|AppendAllText)$
+          - focus-metavariable: $P
+    pattern-sanitizers:
+      - pattern: Path.GetFileName(...)
+      - pattern: Path.GetFullPath(...)

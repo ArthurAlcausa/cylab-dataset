@@ -1,0 +1,15 @@
+rules:
+- id: cylab.c.libc-rand-key-gold
+  languages:
+  - c
+  severity: ERROR
+  message: A chave/identificador de sessão de @S@ é gerado com rand()/random(), PRNG
+    previsível semeado com pouca entropia (CWE-338)
+  metadata:
+    cwe: CWE-338
+    source: sintetico-cylab
+    author: bill-scale
+  pattern-either:
+  - pattern: rand()
+  - pattern: random()
+  - pattern: drand48()

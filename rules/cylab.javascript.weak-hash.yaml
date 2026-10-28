@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.javascript.weak-hash
+    message: "Hash fraco MD5/SHA1 (CWE-328)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-328"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: crypto.createHash("md5")
+      - pattern: crypto.createHash("sha1")

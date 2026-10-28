@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.javascript.xss-innerhtml
+    message: "Atribuicao de dado externo a innerHTML (CWE-79)"
+    severity: ERROR
+    languages: [javascript]
+    metadata:
+      cwe: "CWE-79"
+      source: sintetico-cylab
+    patterns:
+      - pattern: $EL.innerHTML = $X
+      - pattern-not: $EL.innerHTML = "..."

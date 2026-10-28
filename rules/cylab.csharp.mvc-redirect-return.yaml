@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.csharp.mvc-redirect-return
+    message: "Após autenticar em @T@, o controller redireciona para o returnUrl informado sem checagem, permitindo open redirect (CWE-601)"
+    severity: ERROR
+    languages: [csharp]
+    metadata:
+      cwe: "CWE-601"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: '(?<!Local)Redirect\(\s*\w*[rR]eturn\w*\s*\)'

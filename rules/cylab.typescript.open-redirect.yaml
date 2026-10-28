@@ -1,0 +1,11 @@
+rules:
+  - id: cylab.typescript.open-redirect
+    message: "Redirecionamento para URL da requisicao (CWE-601)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-601"
+      source: sintetico-cylab
+    pattern-either:
+      - pattern: $RES.redirect(req.query.$X)
+      - pattern: $RES.redirect(req.query.$X as string)

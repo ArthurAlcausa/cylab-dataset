@@ -1,0 +1,14 @@
+rules:
+  - id: cylab.python.sql-injection
+    message: "SQL montado com formatacao de string (CWE-89)"
+    severity: ERROR
+    languages: [python]
+    metadata:
+      cwe: "CWE-89"
+      source: sintetico-cylab
+    patterns:
+      - pattern-either:
+          - pattern: $C.execute(f"...", ...)
+          - pattern: $C.execute("..." % $X, ...)
+          - pattern: $C.execute("..." + $X, ...)
+          - pattern: $C.execute("...".format(...), ...)

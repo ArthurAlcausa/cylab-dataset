@@ -1,0 +1,9 @@
+rules:
+  - id: cylab.typescript.xss-dangerously-set
+    message: "dangerouslySetInnerHTML com dado externo (CWE-79)"
+    severity: ERROR
+    languages: [typescript]
+    metadata:
+      cwe: "CWE-79"
+      source: sintetico-cylab
+    pattern-regex: 'dangerouslySetInnerHTML\s*=\s*\{\{\s*__html\s*:'

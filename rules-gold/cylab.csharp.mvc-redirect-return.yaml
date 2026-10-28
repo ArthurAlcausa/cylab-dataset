@@ -1,0 +1,23 @@
+rules:
+  - id: cylab.csharp.mvc-redirect-return
+    message: "Após autenticar em @T@, o controller redireciona para o returnUrl informado sem checagem, permitindo open redirect (CWE-601)"
+    severity: ERROR
+    languages: [csharp]
+    mode: taint
+    metadata:
+      cwe: "CWE-601"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-sources:
+      - pattern: Request.Query[...]
+      - pattern: Request.Form[...]
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) { ... }
+          - pattern: $S
+      - patterns:
+          - pattern-inside: |
+              $RET $M(..., $T $S, ...) => $E;
+          - pattern: $S
+    pattern-sinks:
+      - pattern: Redirect($X)

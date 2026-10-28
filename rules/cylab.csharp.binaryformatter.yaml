@@ -1,0 +1,10 @@
+rules:
+  - id: cylab.csharp.binaryformatter
+    message: "BinaryFormatter (e similares) desserializa tipos arbitrários dos dados de @S@, permitindo execução remota (CWE-502)"
+    severity: ERROR
+    languages: [csharp]
+    metadata:
+      cwe: "CWE-502"
+      source: sintetico-cylab
+      author: bill-scale
+    pattern-regex: 'new\s+(BinaryFormatter|NetDataContractSerializer|SoapFormatter|LosFormatter)\s*\('
