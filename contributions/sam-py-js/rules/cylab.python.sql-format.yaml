@@ -1,7 +1,0 @@
-rules:
-- id: cylab.python.sql-format
-  message: SQL com f-string
-  languages: [python]
-  severity: ERROR
-  pattern: |
-    f"...{$X}..."

@@ -1,6 +1,0 @@
-rules:
-- id: cylab.python.os-system
-  message: os.system
-  languages: [python]
-  severity: ERROR
-  pattern: os.system(...)
