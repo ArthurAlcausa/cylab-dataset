@@ -1,7 +1,0 @@
-rules:
-- id: cylab.python.requests-url-user
-  message: requests.get url param
-  languages: [python]
-  severity: ERROR
-  pattern: requests.get($URL)
-  pattern-not: requests.get($URL, ...)

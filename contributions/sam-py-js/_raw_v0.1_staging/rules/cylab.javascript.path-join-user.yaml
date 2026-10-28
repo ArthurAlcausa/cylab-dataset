@@ -1,6 +1,0 @@
-rules:
-- id: cylab.javascript.path-join-user
-  message: path.join user
-  languages: [javascript]
-  severity: ERROR
-  pattern: path.join(..., $NAME)

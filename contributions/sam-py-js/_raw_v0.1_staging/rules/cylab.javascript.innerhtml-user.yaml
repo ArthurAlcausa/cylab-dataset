@@ -1,6 +1,0 @@
-rules:
-- id: cylab.javascript.innerhtml-user
-  message: innerHTML
-  languages: [javascript]
-  severity: ERROR
-  pattern: $EL.innerHTML = ...
