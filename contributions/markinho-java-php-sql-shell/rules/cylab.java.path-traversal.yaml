@@ -1,9 +1,0 @@
-rules:
-  - id: cylab.java.path-traversal
-    message: "File construido com parametro HTTP (CWE-22)"
-    severity: ERROR
-    languages: [java]
-    metadata:
-      cwe: "CWE-22"
-      source: sintetico-cylab
-    pattern: new File($BASE, $REQ.getParameter(...))

@@ -1,9 +1,0 @@
-rules:
-  - id: cylab.cpp.sprintf
-    message: "sprintf sem limite (CWE-120)"
-    severity: ERROR
-    languages: [cpp]
-    metadata:
-      cwe: "CWE-120"
-      source: sintetico-cylab
-    pattern: sprintf($B, $FMT, ...);

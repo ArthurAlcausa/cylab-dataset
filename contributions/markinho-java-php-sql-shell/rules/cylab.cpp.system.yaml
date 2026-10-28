@@ -1,9 +1,0 @@
-rules:
-  - id: cylab.cpp.system
-    message: "system() com comando montado (CWE-78)"
-    severity: ERROR
-    languages: [cpp]
-    metadata:
-      cwe: "CWE-78"
-      source: sintetico-cylab
-    pattern: system($CMD);

@@ -1,9 +1,0 @@
-rules:
-  - id: cylab.java.insecure-deserialization
-    message: "ObjectInputStream.readObject em dados externos (CWE-502)"
-    severity: ERROR
-    languages: [java]
-    metadata:
-      cwe: "CWE-502"
-      source: sintetico-cylab
-    pattern: new ObjectInputStream($IN).readObject()

@@ -1,9 +1,0 @@
-rules:
-  - id: cylab.csharp.sql-injection
-    message: "SqlCommand com SQL concatenado (CWE-89)"
-    severity: ERROR
-    languages: [csharp]
-    metadata:
-      cwe: "CWE-89"
-      source: sintetico-cylab
-    pattern: new SqlCommand("..." + $X + "...", $C)
