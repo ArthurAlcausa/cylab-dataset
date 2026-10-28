@@ -111,7 +111,7 @@ for j, (c, t) in enumerate([(CHAR, "Opengrep: detecção e verificação determi
 # painel do dataset
 DY = 604
 a(f'<rect x="30" y="{DY}" width="1540" height="196" rx="18" fill="{CHAR}"/>')
-a(text(60, DY + 38, "DATASET OURO · FINAL v0.4-gold", 15, "#7FD1B9", 700, FT, "start"))
+a(text(60, DY + 38, "DATASET OURO · v0.4-gold", 15, "#7FD1B9", 700, FT, "start"))
 a(text(60, DY + 64, "treina e avalia o componente de linguagem (o passo 4)", 14, "#C9D6D1", 400, FB, "start"))
 steps = [("2.191", "v0.2 comercial", "10 linguagens"), ("476", "v0.3-gold", "após quase-duplicatas"), ("+100", "buffer de realismo", "mediana de 35 linhas"), ("576", "v0.4-gold", "gate 576/576")]
 filters = ["Jaccard 4-gramas ≥ 0,85 · estrato lang+CWE", "onda v0.4 · 4 frentes", "re-scan rules-gold"]

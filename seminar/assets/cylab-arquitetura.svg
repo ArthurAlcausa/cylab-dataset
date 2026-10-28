@@ -83,7 +83,7 @@
 <rect x="70" y="537" width="12" height="12" rx="3" fill="#E9B44C"/>
 <text x="90" y="548" font-family="Poppins, 'DejaVu Sans', sans-serif" font-size="13.5" font-weight="400" fill="#1F2A27" text-anchor="start"><tspan x="90" dy="0.0">Nesta entrega: explicação e patch vêm do dataset; nenhum LLM rodando</tspan></text>
 <rect x="30" y="604" width="1540" height="196" rx="18" fill="#1F2A27"/>
-<text x="60" y="642" font-family="Lexend, Poppins, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#7FD1B9" text-anchor="start"><tspan x="60" dy="0.0">DATASET OURO · FINAL v0.4-gold</tspan></text>
+<text x="60" y="642" font-family="Lexend, Poppins, 'DejaVu Sans', sans-serif" font-size="15" font-weight="700" fill="#7FD1B9" text-anchor="start"><tspan x="60" dy="0.0">DATASET OURO · v0.4-gold</tspan></text>
 <text x="60" y="668" font-family="Poppins, 'DejaVu Sans', sans-serif" font-size="14" font-weight="400" fill="#C9D6D1" text-anchor="start"><tspan x="60" dy="0.0">treina e avalia o componente de linguagem (o passo 4)</tspan></text>
 <rect x="60" y="686" width="190" height="96" rx="12" fill="#2C3A36" stroke="#41524D" stroke-width="2"/>
 <text x="155.0" y="726" font-family="Lexend, Poppins, 'DejaVu Sans', sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="155.0" dy="0.0">2.191</tspan></text>
