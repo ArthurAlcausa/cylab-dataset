@@ -1,6 +1,11 @@
-# Cylab Dataset v0.1
+# Cylab Dataset
 
 Pares sintéticos originais (vulnerável → corrigido) para treinar e avaliar a correção de vulnerabilidades. Licença: CC-BY-4.0.
+
+## Versões comerciais (gold)
+- `data/cylab-commercial-v0.3-gold.jsonl`: 476 pares, selada (SHA256 `f37e1316…`).
+- `data/cylab-commercial-v0.4-gold.jsonl`: 576 pares (v0.3-gold + 100 de realismo), 489 train / 87 holdout, 10 linguagens. Gate: `scripts/gate_gold.py --rules-dir rules-gold` 576/576. Metadados em `data/v0.4-gold-cut-meta.json`.
+- A v0.1 abaixo continua sendo a semente do pipeline.
 
 - `data/cylab-v0.1.jsonl` tem 38 pares em 8 linguagens e 14 CWEs (33 train, 5 holdout).
 - `rules/` tem 34 regras Opengrep/Semgrep, um arquivo por `opengrep_rule`.

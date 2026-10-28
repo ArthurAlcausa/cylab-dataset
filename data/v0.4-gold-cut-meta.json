@@ -1,0 +1,33 @@
+{
+  "n_pairs": 576,
+  "n_from_v03": 476,
+  "n_from_realism": 100,
+  "by_lang": {
+    "python": 74,
+    "javascript": 68,
+    "typescript": 37,
+    "csharp": 33,
+    "java": 40,
+    "php": 39,
+    "sql": 65,
+    "c": 67,
+    "bash": 67,
+    "cpp": 86
+  },
+  "by_split": {
+    "train": 489,
+    "holdout": 87
+  },
+  "sha256_v04_gold": "ea328aef50b1dba1645af8318ab576a5a206ad41ba065d24cab0dad958b9806c",
+  "sha256_v03_gold": "f37e131674bb1c01c444de40b957e1aa546703f0ff819b13b350200e47a25ea3",
+  "sha256_realism_draft": "ca5e020164f948173e7921270ac9790537379c0211be031ebc5b0216ffb4319e",
+  "gate": {
+    "command": "scripts/gate_gold.py --rules-dir rules-gold",
+    "passed": 576,
+    "total": 576,
+    "report": "data/gate-report-v0.4-gold.json"
+  },
+  "validate_dataset": "OK: 576 pares, 87 holdout",
+  "id_collisions": 0,
+  "timestamp": "2026-10-28T09:08:07-03:00"
+}

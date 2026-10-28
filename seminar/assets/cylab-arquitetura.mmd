@@ -1,0 +1,27 @@
+%% Cylab — arquitetura híbrida (fallback textual de cylab-arquitetura.svg/.png)
+%% Renderizar com: npx @mermaid-js/mermaid-cli -i cylab-arquitetura.mmd -o cylab-arquitetura-mmd.svg
+flowchart LR
+  subgraph LOCAL["Máquina do usuário · 100% local (o código não sai daqui)"]
+    direction LR
+    A["1 · Código-fonte<br/>Python, JS/TS, Java, PHP, C#, C, C++, SQL, Bash"]
+    B["2 · Opengrep 1.32<br/>regras Cylab / CWE<br/>(rules-gold/: taint, estrutural, regex)"]
+    C["3 · Achado<br/>{regra, CWE, trecho}"]
+    D["4 · LLM local (Ollama)<br/>Qwen2.5-Coder-14B + LoRA/QLoRA<br/>PLANEJADO"]
+    E["5 · Explicação pt-BR + patch<br/>(trecho corrigido completo)"]
+    F{"6 · Re-scan Opengrep (gate)<br/>achados(before) ≥ 1 ∧ achados(after) = 0"}
+    G["7 · Aceite<br/>patch + explicação ao desenvolvedor"]
+    A --> B --> C --> D --> E --> F
+    F -- "passa" --> G
+    F -. "reprovado: nova tentativa ou descarte" .-> D
+  end
+  subgraph DS["Dataset ouro · FINAL v0.4-gold"]
+    direction LR
+    V2["v0.2 comercial<br/>2.191 pares"] -- "quase-duplicatas<br/>Jaccard 4-gramas ≥ 0,85" --> V3["v0.3-gold<br/>476 pares"]
+    V3 -- "+ buffer de realismo (100)" --> V4["v0.4-gold<br/>576 pares · gate 576/576<br/>489 treino / 87 holdout"]
+  end
+  V4 -. "ajuste fino (planejado)" .-> D
+  V4 -. "avaliação no holdout (planejada)" .-> F
+  classDef det fill:#1F2A27,color:#fff,stroke:#1F2A27;
+  classDef llm fill:#2E6B57,color:#fff,stroke:#2E6B57;
+  classDef data fill:#ECEAE4,color:#1F2A27,stroke:#D9D6CF;
+  class B,F det; class D,E llm; class A,C,G,V2,V3,V4 data;

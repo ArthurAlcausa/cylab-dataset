@@ -1,6 +1,6 @@
 # Cylab — Roteiro do Seminário (PUC Campinas, banca)
 
-> **Status deste documento:** ROTEIRO, não são os slides finais. Dataset ouro **FINAL v0.3** cortado (`data/cylab-commercial-v0.3-gold.jsonl`, 476 pares, gate 476/476).
+> **Status deste documento:** ROTEIRO, não são os slides finais. Dataset ouro atual: **FINAL v0.4-gold** (`data/cylab-commercial-v0.4-gold.jsonl`, **576 pares** = v0.3-gold 476 + buffer de realismo 100, gate 576/576, 489 train / 87 holdout; metadados em `data/v0.4-gold-cut-meta.json`). Corte anterior: FINAL v0.3-gold (476, gate 476/476). Diagrama de arquitetura para o slide 4: `seminar/assets/cylab-arquitetura.png` (SVG e Mermaid ao lado).
 > **Duração-alvo:** 25 min de apresentação + 5 a 10 min de perguntas (cabe entre 20 e 30 min; veja a versão de 20 min no fim).
 > **Público:** banca e professores da PUC Campinas.
 > **Tom:** acadêmico e direto. Toda afirmação numérica vem de um artefato do repositório (caminho indicado). Nada de métrica de desempenho do modelo, porque **ainda não existe modelo treinado**.
@@ -68,18 +68,19 @@
 - Problema encontrado na v0.2: muitos pares eram *near-clones* gerados a partir do mesmo template. Exemplo da fatia C/C++/Bash: entraram 602 pares e, após deduplicação por similaridade (limiar 0,85), ficaram 182 (`contributions/elon-c-cpp-sql-bash/REPORT.md`).
 - **Fala-chave:** "Volume não é qualidade. Um dataset com 20 variações do mesmo `system()` ensina o modelo a decorar o template, não a entender a falha. Por isso cortamos clones antes de chamar qualquer coisa de ouro."
 
-**Slide 9: Ouro v0.3 FINAL: números.** Fonte: `data/cylab-commercial-v0.3-gold.jsonl` + `data/gold-progress.json` (`gold_final`).
-- **476 pares**, gate **476/476**.
+**Slide 9: Ouro FINAL v0.4-gold: números.** Fonte: `data/cylab-commercial-v0.4-gold.jsonl` + `data/v0.4-gold-cut-meta.json` (v0.4) e `data/gold-progress.json` (`gold_final`, v0.3).
+- **Atual: 576 pares**, gate **576/576** (`scripts/gate_gold.py --rules-dir rules-gold`), split 489 train / 87 holdout. São os 476 da v0.3 sem alteração + **100 pares de realismo** (funções de 26 a 52 linhas, mediana 35; 0 near-dup contra a v0.3).
+- Corte anterior v0.3-gold: **476 pares**, gate **476/476**.
 - Origem: Sam 151 (Python/JS/TS) + Markinho 92 (Java/PHP/C#/SQL) + Elon 182 (C/C++/Bash) + 51 do conjunto candidato global que não eram near-dup.
 - Split: 401 train / 75 holdout.
 - 10 linguagens presentes (nenhuma faltando).
 - Regras endurecidas: 314 dos 476 pares são verificados por regras `-gold` endurecidas e 162 ainda pelas regras originais.
 - **Fala-chave:** "O número é menor que o da v0.2 de propósito. Preferimos 476 pares distintos e verificados a 2 mil com repetição."
-- **Dizer explicitamente:** "O status oficial é **FINAL v0.3-gold** (476 pares)."
+- **Dizer explicitamente:** "O status oficial é **FINAL v0.4-gold** (576 pares); a v0.3-gold (476) é o corte anterior e está contida nela."
 
 ### 14:30–19:00 · Demo ao vivo (slide 10)
 Roteiro da demo (comandos na seção 3):
-1. (30 s) Mostrar o FINAL: 476 pares, gate 476/476, status **FINAL** (`gold-progress.json` → `gold_final`).
+1. (30 s) Mostrar o FINAL v0.4-gold: 576 pares, gate 576/576 (`data/v0.4-gold-cut-meta.json`); a v0.3 (476) segue registrada em `gold-progress.json` → `gold_final`.
 2. (90 s) **Par C, CWE-120** (`cylab-bill-c-120-0613`, holdout): `strcpy` sem limite. Opengrep encontra **2 achados no before e 0 no after**. Ler a `explanation_pt` em voz alta.
 3. (90 s) **Par Python, CWE-89** (`cylab-bill-python-89-0002`, regra `cylab.python.sqli-fstring-execute`): SQL montado com f-string/`.format()`. O before dá 1 achado e o after, com parâmetro vinculado, dá 0.
 4. (30 s) Abrir uma regra `-gold` de C (`rules-gold/cylab.c.strcpy-strcat-gold.yaml`) e mostrar que é um padrão estrutural, não uma busca de texto.
@@ -89,29 +90,29 @@ Roteiro da demo (comandos na seção 3):
 
 ### 19:00–21:30 · Status atual e honestidade (slide 11)
 Falar com transparência. A banca valoriza isso.
-- **FINAL v0.3:** cortado em `data/cylab-commercial-v0.3-gold.jsonl` (476/476, SHA em `gold-progress.json`). Metadados `source` (65) **já normalizados** em 28/10/2026 (`data/source-fix-2026-10-28.md`); validador OK.
+- **FINAL v0.4-gold (atual):** `data/cylab-commercial-v0.4-gold.jsonl` (576/576, SHA em `data/v0.4-gold-cut-meta.json`). **FINAL v0.3 (anterior):** `data/cylab-commercial-v0.3-gold.jsonl` (476/476, SHA em `gold-progress.json`). Metadados `source` (65) **já normalizados** em 28/10/2026 (`data/source-fix-2026-10-28.md`); validador OK.
 - **Limites do taint:**
   - Java/PHP/C#: 32 rules active taint em `rules-gold/` (crypto/secret/header/xxe/libxml ficaram regex de propósito).
   - SQL: 14 rules em `rules-gold/` com regex apertado (Opengrep sem taint SQL).
   - Em C/C++, o taint do Opengrep 1.32 não produziu achados nos nossos testes. Por isso as regras `-gold` de C/C++ são **estruturais** (metavariáveis, `pattern-not`, `pattern-inside`), não de fluxo de dados.
   - Em Bash, o suporte estrutural é fraco, então as regras usam regex restrita (ignorando comentários).
-- **Near-clone:** a deduplicação reduz a repetição, mas os pares continuam sintéticos e curtos (funções de 3 a 10 linhas). Isso não representa código real de produção.
+- **Near-clone:** a deduplicação reduz a repetição, mas os pares continuam sintéticos e, na maioria, curtos (funções de 3 a 10 linhas; o buffer v0.4 traz 100 pares de 26 a 52 linhas, ainda arquivo único). Isso não representa código real de produção.
 - **Gate ≠ correção semântica:** "0 achados no after" prova que a regra não dispara mais, não que o patch esteja funcionalmente correto em todo contexto.
-- **Metadados:** os 65 `source` sem URL da CWE foram normalizados; `validate_dataset.py` passa (OK: 476).
+- **Metadados:** os 65 `source` sem URL da CWE foram normalizados; `validate_dataset.py` passa (OK: 476 na v0.3; OK: 576 pares, 87 holdout na v0.4).
 - **Fala-chave:** "Nada aqui é métrica de modelo. O que medimos até agora é a consistência do dataset contra as regras."
 
 ### 21:30–24:00 · Próximos passos (slide 12)
 1. ~~Congelar o v0.3 FINAL~~ **feito**. ~~Corrigir metadados `source` (65)~~ **feito** (28/10/2026).
 2. Fine-tuning LoRA/QLoRA no Qwen2.5-Coder-14B, depois Qwen3.8-27B.
-3. Avaliação no holdout (75 pares), com critério principal objetivo: **o patch gerado pelo modelo passa no gate?** (> 0 achados no before, 0 no after). Somar revisão humana das explicações.
+3. Avaliação no holdout (87 pares na v0.4: 75 da v0.3 + 12 do buffer de realismo), com critério principal objetivo: **o patch gerado pelo modelo passa no gate?** (> 0 achados no before, 0 no after). Somar revisão humana das explicações.
 4. Empacotamento: Ollama + CLI + extensão VS Code, tudo local.
-5. Ampliar com código mais realista (funções maiores, múltiplos arquivos) e rever o taint de C quando houver suporte no Opengrep.
+5. Ampliar com código mais realista (funções maiores: 1ª onda **feita** na v0.4; falta múltiplos arquivos) e rever o taint de C quando houver suporte no Opengrep.
 - **Fala-chave:** "A próxima entrega responde à pergunta que hoje deixamos em aberto: um modelo local, treinado nesses pares, gera patches que passam no gate?"
 
 ### 24:00–25:00 · Fechamento (slide 13)
 - Três frases:
   1. Detecção determinística + LLM só para explicar e corrigir.
-  2. Dataset ouro com critério de aceite automático: 476/476 no gate, FINAL v0.3.
+  2. Dataset ouro com critério de aceite automático: 576/576 no gate, FINAL v0.4-gold (v0.3 = 476 é o corte anterior).
   3. Tudo local e open-source.
 - "Obrigado. Ficamos à disposição para perguntas."
 
@@ -127,9 +128,9 @@ Falar com transparência. A banca valoriza isso.
 6. Anatomia de um par do dataset (schema)
 7. O gate: > 0 achados no before, 0 no after
 8. De 2.191 para ouro: o problema dos near-clones
-9. Ouro v0.3 FINAL: 476 pares, 10 linguagens, gate 476/476
+9. Ouro FINAL v0.4-gold: 576 pares (476 + 100 de realismo), 10 linguagens, gate 576/576
 10. Demo: um par C e um par Python no Opengrep
-11. Status e limitações: FINAL v0.3; metadados residual; near-clone; gate ≠ semântica
+11. Status e limitações: FINAL v0.4-gold; metadados normalizados; near-clone; gate ≠ semântica
 12. Próximos passos: FINAL → LoRA/QLoRA → avaliação no holdout → CLI/VS Code
 13. Conclusão
 14. (Backup) Detalhes: regras `-gold` em C/C++, política de holdout, deduplicação
@@ -147,6 +148,7 @@ Todos os comandos rodam a partir de `/workspace/cylab-dataset` (no box) e foram 
   - [ ] `seminar/demo/demo_pair.sh cylab-bill-python-89-0002` → before **1**, after **0** ✅ (testado)
 - [ ] Par reserva, caso a banca peça outro: `cylab-bill-c-78-0642` (CWE-78, `system()`) ou `cylab-bill-c-134-0638` (CWE-134, format string). **TBD:** ensaiar antes.
 - [ ] Deixar abertos em abas:
+  - `data/v0.4-gold-cut-meta.json` (FINAL v0.4-gold, sha256, 576/576)
   - `data/gold-progress.json` → chave `gold_final` (status FINAL, sha256, 476)
   - `data/gate-report-v0.3-gold-draft-retake.json` (re-gate 476/476)
   - `rules-gold/cylab.c.strcpy-strcat-gold.yaml`
@@ -166,22 +168,22 @@ cat rules-gold/cylab.c.strcpy-strcat-gold.yaml                        # regra es
 
 ### NÃO fazer ao vivo
 - `python3 scripts/gate_draft.py data/cylab-commercial-v0.3-gold.jsonl --report /tmp/g.json` leva **cerca de 6 min** (476/476 OK, testado). Mostrar só o relatório.
-- `python3 scripts/validate_dataset.py data/cylab-commercial-v0.3-gold.jsonl` → **OK: 476 pares, 75 holdout** (após source-fix 28/10/2026). Pode mostrar se a banca perguntar.
+- `python3 scripts/validate_dataset.py data/cylab-commercial-v0.4-gold.jsonl` → **OK: 576 pares, 87 holdout** (v0.3: OK: 476 pares, 75 holdout, após source-fix 28/10/2026). Pode mostrar se a banca perguntar.
 - Modelo / Ollama / CLI / VS Code: **TBD**. Não há Ollama instalado no box e não existe modelo treinado. Mostrar só como diagrama.
 
 ---
 
 ## 4. Perguntas previstas da banca (e respostas curtas)
 
-1. **"Qual a acurácia do modelo?"** Ainda não existe modelo treinado. Esta entrega é o dataset e a arquitetura. A métrica planejada é a taxa de patches que passam no gate, medida no holdout de 75 pares.
+1. **"Qual a acurácia do modelo?"** Ainda não existe modelo treinado. Esta entrega é o dataset e a arquitetura. A métrica planejada é a taxa de patches que passam no gate, medida no holdout de 87 pares (v0.4).
 2. **"Por que não usar só o LLM?"** Porque o LLM alucina achados e não dá para auditar. Com o Opengrep cada achado tem regra e CWE rastreáveis, e o LLM só trabalha a partir disso.
 3. **"Por que não usar só o Opengrep?"** Ele detecta, mas não explica em pt-BR nem adapta a correção ao código. É essa lacuna que o modelo cobre.
 4. **"O gate prova que o patch é correto?"** Não. Prova que a regra deixou de disparar. A correção funcional precisa de revisão humana e, no futuro, de testes. Isso está nas limitações.
 5. **"O modelo não vai só aprender a satisfazer a regra?"** É um risco real (overfitting na regra). Por isso deduplicamos near-clones, separamos o holdout por estrato e planejamos revisão humana e código mais realista.
 6. **"Dados sintéticos generalizam para código real?"** É a principal limitação. Os pares são curtos e originais (sem dados de terceiros). A próxima fase precisa de exemplos maiores e realistas.
-7. **"Por que o ouro tem 476 e não 2 mil?"** Porque cortamos clones de template. Na fatia C/C++/Bash, por exemplo, 602 viraram 182. Qualidade e diversidade vêm antes do volume.
+7. **"Por que o ouro tem 576 e não 2 mil?"** Porque cortamos clones de template (v0.3 = 476) e só depois somamos 100 pares maiores e distintos. Na fatia C/C++/Bash, por exemplo, 602 viraram 182. Qualidade e diversidade vêm antes do volume.
 8. **"Por que não taint em C/C++?"** Nos testes, o taint do Opengrep 1.32 não gerou achados em C/C++. Usamos padrões estruturais e vamos revisitar quando a ferramenta suportar.
-9. **"O dataset é FINAL?"** Sim, v0.3-gold (476). Metadados `source` normalizados; validador OK.
+9. **"O dataset é FINAL?"** Sim, v0.4-gold (576), que contém integralmente o corte anterior v0.3-gold (476). Metadados `source` normalizados; validador OK.
 10. **"Como evitam vazamento entre train e holdout?"** O split é determinístico por hash dentro de cada estrato (linguagem + regra), e a deduplicação é feita antes. Ver `holdout_split_proposal.py` e a `holdout_policy` no manifesto.
 11. **"Qual hardware para rodar local?"** **TBD:** medir depois do fine-tuning. Não citar números agora.
 12. **"Licença e proveniência?"** Pares escritos do zero para a Cylab, licença CC-BY-4.0, sem dados de terceiros e sem dados VigIA.
@@ -193,7 +195,7 @@ cat rules-gold/cylab.c.strcpy-strcat-gold.yaml                        # regra es
 | Risco | Mitigação na fala |
 |---|---|
 | A banca entender que o modelo já existe | Repetir "planejado" e "próxima entrega", sem nenhum número de modelo |
-| Confundir status do dataset | Dizer **FINAL v0.3** (476) no slide 9; `source` já normalizado |
+| Confundir status do dataset | Dizer **FINAL v0.4-gold** (576; v0.3 = 476 é o corte anterior) no slide 9; `source` já normalizado |
 | Superestimar o gate | Dizer explicitamente "gate ≠ correção semântica" |
 | Pergunta sobre taint em C | Resposta 8; é uma limitação da ferramenta, documentada |
 | Near-clone residual | Admitir: os pares são curtos e sintéticos; o plano é aumentar o realismo |
